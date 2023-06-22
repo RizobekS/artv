@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+{% trans "Blog Detail" %}
+{% endblock title %}
+
+{% block main %}
+<div class="wrapper">
+    <div class="container">
+        {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
+        <main class="content">
+      <div class="center blog-page">
+        <h1>{{article.title}}</h1>
+        <div class="article-blog">
+           <div class="article-img">
+               <img src="{{article.image.url}}" alt=""/>
+           </div>
+          <div class="caption">
+            <span>{{article.pub_date}}</span>
+            <h3>{{article.description }}</h3>            
+            <p>{{article.text | safe}}</p>            
+          </div>
+        </div>
+        <div class="blog-list">
+          <div class="cards ">
+            {% for other in others %}
+            <div class="card">
+              <a href="{% url 'general:blog_detail_page' other.slug %}" class="img h360">
+                <img src="{{ other.image.url }}" alt=""/>
+              </a>
+              <div class="caption">
+                <span class="date">{{other.pub_date}}</span>
+                <strong><a href="{% url 'general:blog_detail_page' other.slug %}">{{other.title}}</a> </strong>
+                <p>{{other.description}}</p>
+
+              </div>
+            </div>
+        {% endfor %}
+          </div>
+        </div>
+      </div>
+
+    </main>
+    </div>
+    {% include 'footer.html' %}
+</div>
+{% endblock main %}
+{% block js_partials %}
+    <script type="text/javascript" src="{% static 'js/home.page.js' %}"></script>
+{% endblock js_partials %}

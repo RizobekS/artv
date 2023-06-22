@@ -1,0 +1,15 @@
+**/.env
+__pycache__/*
+*/__pycache__/*
+**/__pycache__
+**/.idea
+/public/prepros-6.config
+*/migrations/*
+/migrations/*
+migrations/*
+**/migrations
+**/.vscode
+**/venv
+**/env
+media
+

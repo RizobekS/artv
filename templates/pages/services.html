@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+    {% trans "Services" %}
+{% endblock title %}
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name %}
+            <main class="content">
+                <div class="center ">
+                    <div class="about-page">
+                        {% for a in servicesy %}
+                            <div class="about">
+                                <div class="text">
+                                    <a href="{% url 'general:services_detail_page' a.slug %}"><strong>{{ a.name }}</strong></a>
+                                    <p>{{ a.content|safe }}</p>
+                                </div>
+                                {% if a.image %}
+                                    <div class="img">
+                                        <img src="{{ a.image.url }}" alt=""/>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+        {% include 'footer.html' %}
+
+    </div>
+{% endblock main %}

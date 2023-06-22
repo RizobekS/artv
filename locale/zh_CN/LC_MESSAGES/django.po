@@ -1,0 +1,1687 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-08 11:26+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\accounts\apps.py:7
+msgid "Пользователи аккаунта"
+msgstr "賬戶用戶"
+
+#: .\accounts\models.py:46
+msgid "Доллар США"
+msgstr "美元"
+
+#: .\accounts\models.py:47
+msgid "Узбекский Сум"
+msgstr "SO’M / 烏茲別克斯坦總和"
+
+#: .\accounts\models.py:48
+msgid "Российский Рубль"
+msgstr "RUB / 俄羅斯盧布"
+
+#: .\accounts\models.py:49
+msgid "Китайский Юань"
+msgstr "CNY / 人民幣"
+
+#: .\accounts\models.py:57
+msgid "Эл. адрес"
+msgstr "電子郵件"
+
+#: .\accounts\models.py:58
+msgid "Ющер"
+msgstr "用户"
+
+#: .\accounts\models.py:59 .\accounts\models.py:93 .\accounts\models.py:130
+#: .\general\models.py:53 .\general\models.py:267 .\templates\base.html:96
+#: .\templates\pages\registration.html:91
+msgid "Имя"
+msgstr "名稱"
+
+#: .\accounts\models.py:60 .\templates\base.html:100
+#: .\templates\pages\registration.html:95
+msgid "Фамилия"
+msgstr "姓"
+
+#: .\accounts\models.py:61 .\templates\base.html:174
+#: .\templates\pages\login.html:26 .\templates\pages\registration.html:35
+msgid "Номер телефона"
+msgstr "電話號碼"
+
+#: .\accounts\models.py:62 .\accounts\models.py:109
+#: .\templates\pages\profile.html:83
+msgid "Дата рождения"
+msgstr "出生日期"
+
+#: .\accounts\models.py:63 .\accounts\models.py:105
+msgid "Соц. сети"
+msgstr "社交網站"
+
+#: .\accounts\models.py:65 .\templates\pages\profile.html:134
+#: .\templates\pages\sell.html:60
+msgid "Валюта"
+msgstr "貨幣"
+
+#: .\accounts\models.py:66
+msgid "почтовый индекс"
+msgstr "郵政編碼"
+
+#: .\accounts\models.py:69 .\templates\pages\profile.html:103
+msgid "Улица/дом/квартира"
+msgstr "街道/房子/公寓"
+
+#: .\accounts\models.py:88 .\gallery\models.py:339 .\gallery\models.py:379
+#: .\gallery\models.py:455 .\gallery\models.py:473
+msgid "Пользователь"
+msgstr "用戶"
+
+#: .\accounts\models.py:89
+msgid "Пользователи"
+msgstr "用戶"
+
+#: .\accounts\models.py:94 .\gallery\models.py:300 .\gallery\models.py:495
+#: .\general\models.py:116 .\general\models.py:197
+msgid "Фото"
+msgstr "照片"
+
+#: .\accounts\models.py:95
+msgid "Иконка генерируется автоматически"
+msgstr "圖標（自動生成）"
+
+#: .\accounts\models.py:96
+msgid "Вид деятельности"
+msgstr "活動種類"
+
+#: .\accounts\models.py:98 .\general\models.py:170
+#: .\templates\pages\auction-detail.html:42
+#: .\templates\pages\catalog-detail.html:66
+#: .\templates\pages\main_filter.html:28
+msgid "Течение"
+msgstr "課程"
+
+#: .\accounts\models.py:100 .\accounts\models.py:132
+msgid "Занятие1"
+msgstr "類別"
+
+#: .\accounts\models.py:102
+msgid "Номер договора"
+msgstr "合同號"
+
+#: .\accounts\models.py:107 .\templates\pages\artists-detail.html:24
+msgid "Занятие"
+msgstr "職業"
+
+#: .\accounts\models.py:108
+msgid "Био"
+msgstr "生物"
+
+#: .\accounts\models.py:110
+msgid "Дата смерти"
+msgstr "死亡日期"
+
+#: .\accounts\models.py:111
+msgid "Организация"
+msgstr "組織"
+
+#: .\accounts\models.py:125 .\gallery\models.py:59 .\gallery\models.py:201
+#: .\gallery\models.py:317 .\templates\pages\catalog.html:24
+#: .\templates\pages\filter.html:18 .\templates\pages\sell.html:31
+msgid "Автор"
+msgstr "作者"
+
+#: .\accounts\models.py:126 .\templates\header.html:104
+msgid "Авторы"
+msgstr "作者"
+
+#: .\accounts\models.py:148
+msgid "Ремесло"
+msgstr "工藝"
+
+#: .\accounts\models.py:149
+msgid "Ремесла"
+msgstr "工藝品"
+
+#: .\accounts\models.py:153
+msgid "Название соц. сети"
+msgstr "社交網站名稱"
+
+#: .\accounts\models.py:155
+msgid "Ссылка на соц.сеть"
+msgstr "社交網站鏈接"
+
+#: .\accounts\models.py:160
+msgid "Соц.сеть"
+msgstr "社交網站"
+
+#: .\accounts\models.py:161
+msgid "Соц.сети"
+msgstr "社交網站"
+
+#: .\accounts\translation.py:9 .\accounts\translation.py:14
+#: .\gallery\translation.py:8 .\gallery\translation.py:13
+#: .\gallery\translation.py:18 .\gallery\translation.py:23
+#: .\general\translation.py:24 .\general\translation.py:29
+#: .\general\translation.py:34 .\general\translation.py:39
+#: .\general\translation.py:44 .\general\translation.py:49
+#: .\general\translation.py:54
+msgid "-- sorry, no translation provided --"
+msgstr "-- 抱歉，沒有提供翻譯 --"
+
+#: .\accounts\views.py:91 .\general\views.py:795 .\general\views.py:950
+msgid "Your profile has been saved successfully!"
+msgstr "用戶資料更新成功"
+
+#: .\art\settings.py:142
+msgid "Russian"
+msgstr "俄語"
+
+#: .\art\settings.py:143
+msgid "Uzbek"
+msgstr "烏茲別克語"
+
+#: .\art\settings.py:144
+msgid "English"
+msgstr "英語"
+
+#: .\art\settings.py:145
+msgid "Chinese"
+msgstr "中文"
+
+#: .\billing\models.py:8
+msgid "Выполнен"
+msgstr "完全的"
+
+#: .\billing\models.py:9
+msgid "Отменён"
+msgstr "取消"
+
+#: .\gallery\apps.py:7 .\gallery\models.py:504 .\templates\header.html:94
+msgid "Галерея"
+msgstr "畫廊"
+
+#: .\gallery\models.py:16
+msgid "Заказан"
+msgstr "已訂購"
+
+#: .\gallery\models.py:17 .\gallery\models.py:31 .\gallery\models.py:38
+#: .\templates\pages\catalog-detail.html:130
+#: .\templates\pages\catalog-detail.html:190
+msgid "Продано"
+msgstr "已售出"
+
+#: .\gallery\models.py:18
+msgid "Новый"
+msgstr "新"
+
+#: .\gallery\models.py:22
+msgid "Оплачено"
+msgstr "有薪酬的"
+
+#: .\gallery\models.py:23 .\gallery\models.py:33 .\gallery\models.py:39
+msgid "Ожидается"
+msgstr "待定"
+
+#: .\gallery\models.py:24
+msgid "Завершено"
+msgstr "已完成"
+
+#: .\gallery\models.py:25 .\gallery\models.py:40
+msgid "Отменено"
+msgstr "取消"
+
+#: .\gallery\models.py:26
+msgid "Возврашено"
+msgstr "返回"
+
+#: .\gallery\models.py:27
+msgid "Отклонено"
+msgstr "拒絕"
+
+#: .\gallery\models.py:32
+msgid "В корзине"
+msgstr "在購物車中"
+
+#: .\gallery\models.py:34
+msgid "В избранном"
+msgstr "在收藏夾中"
+
+#: .\gallery\models.py:45 .\gallery\models.py:178
+msgid "Уникальный артикль (генерируется автоматически)"
+msgstr "獨特的文章（自動生成）"
+
+#: .\gallery\models.py:51
+msgid "Oтдел"
+msgstr "部門"
+
+#: .\gallery\models.py:64
+msgid "жанр"
+msgstr "流派"
+
+#: .\gallery\models.py:66 .\gallery\models.py:198 .\general\models.py:41
+#: .\general\models.py:133 .\general\models.py:143 .\general\models.py:153
+#: .\general\models.py:163 .\general\models.py:175 .\general\models.py:185
+#: .\general\models.py:231 .\templates\pages\sell.html:34
+msgid "Название"
+msgstr "名稱"
+
+#: .\gallery\models.py:67 .\gallery\models.py:209 .\gallery\models.py:299
+#: .\templates\pages\gallery-detail.html:118 .\templates\pages\priklad.html:105
+msgid "Описание"
+msgstr "描述"
+
+#: .\gallery\models.py:69 .\gallery\models.py:189
+msgid "Bид"
+msgstr "類型"
+
+#: .\gallery\models.py:71
+msgid "период"
+msgstr "句號"
+
+#: .\gallery\models.py:74
+msgid "течение"
+msgstr "流"
+
+#: .\gallery\models.py:76
+msgid "сервисы"
+msgstr "服務"
+
+#: .\gallery\models.py:79 .\gallery\models.py:211
+#: .\templates\pages\auction-detail.html:37
+#: .\templates\pages\catalog-detail.html:48 .\templates\pages\sell.html:47
+msgid "Размер"
+msgstr "大小"
+
+#: .\gallery\models.py:81 .\gallery\models.py:213
+msgid "Система Исчесления"
+msgstr "符号"
+
+#: .\gallery\models.py:87 .\templates\pages\auction-detail.html:38
+#: .\templates\pages\catalog-detail.html:51
+msgid "Подпись (положение подписи)"
+msgstr "簽名（簽名位置）"
+
+#: .\gallery\models.py:88 .\gallery\models.py:235
+msgid "Контент 16+"
+msgstr "内容 16+"
+
+#: .\gallery\models.py:91 .\gallery\models.py:222 .\general\models.py:15
+#: .\general\models.py:29 .\templates\base.html:117 .\templates\base.html:118
+#: .\templates\pages\basket.html:131 .\templates\pages\catalog-detail.html:60
+#: .\templates\pages\catalog.html:18 .\templates\pages\filter.html:8
+#: .\templates\pages\profile.html:91
+msgid "Страна"
+msgstr "國家"
+
+#: .\gallery\models.py:99 .\gallery\models.py:228 .\general\models.py:37
+msgid "Регионы"
+msgstr "區域"
+
+#: .\gallery\models.py:100 .\gallery\models.py:218 .\general\models.py:203
+#: .\templates\pages\auction-detail.html:50
+#: .\templates\pages\catalog-detail.html:96
+#: .\templates\pages\catalog-detail.html:99 .\templates\pages\priklad.html:64
+#: .\templates\pages\sell.html:57
+msgid "Цена"
+msgstr "價格"
+
+#: .\gallery\models.py:101 .\gallery\models.py:236
+msgid "Количество"
+msgstr "數量"
+
+#: .\gallery\models.py:104 .\gallery\models.py:239 .\gallery\models.py:425
+#: .\gallery\models.py:436
+msgid "Скидка"
+msgstr "折扣"
+
+#: .\gallery\models.py:110 .\gallery\models.py:249
+msgid "Доступно для продажи"
+msgstr "有售"
+
+#: .\gallery\models.py:111 .\gallery\models.py:250
+msgid "Популярный"
+msgstr "熱門"
+
+#: .\gallery\models.py:112 .\gallery\models.py:195
+msgid "Изображение"
+msgstr "圖片"
+
+#: .\gallery\models.py:113 .\gallery\models.py:196
+msgid "Иконка (генерируется автоматически)"
+msgstr "圖標（自動生成）"
+
+#: .\gallery\models.py:116 .\gallery\models.py:210
+#: .\templates\pages\auction-detail.html:41
+#: .\templates\pages\catalog-detail.html:57
+msgid "Mатериал"
+msgstr "材料"
+
+#: .\gallery\models.py:118
+msgid "Год исполнения"
+msgstr "完成年份"
+
+#: .\gallery\models.py:120 .\gallery\models.py:219 .\general\models.py:237
+msgid "Теги"
+msgstr "標籤"
+
+#: .\gallery\models.py:121
+msgid "прайс ап"
+msgstr "漲價"
+
+#: .\gallery\models.py:123 .\gallery\models.py:230 .\general\models.py:190
+msgid "продавец"
+msgstr "賣家"
+
+#: .\gallery\models.py:126 .\gallery\models.py:233
+msgid "для интерьера"
+msgstr "用於內部"
+
+#: .\gallery\models.py:128 .\gallery\models.py:245 .\gallery\models.py:365
+#: .\gallery\models.py:410
+msgid "Cтатус"
+msgstr "狀態"
+
+#: .\gallery\models.py:130 .\gallery\models.py:248 .\gallery\models.py:314
+msgid "Дата публикации"
+msgstr "發布日期"
+
+#: .\gallery\models.py:132 .\gallery\models.py:246
+msgid "Дата начала продажи"
+msgstr "銷售開始日期"
+
+#: .\gallery\models.py:134 .\gallery\models.py:247
+msgid "Дата окончания продажи"
+msgstr "銷售結束日期"
+
+#: .\gallery\models.py:135 .\gallery\models.py:251
+msgid "Просмотры"
+msgstr "查看次數"
+
+#: .\gallery\models.py:136 .\gallery\models.py:252
+msgid "Добавить логотип"
+msgstr "添加徽标"
+
+#: .\gallery\models.py:172 .\gallery\models.py:304 .\gallery\models.py:360
+#: .\gallery\models.py:405 .\gallery\models.py:443 .\gallery\models.py:479
+#: .\gallery\models.py:498
+msgid "Произведение"
+msgstr "藝術品"
+
+#: .\gallery\models.py:173 .\gallery\models.py:344 .\gallery\models.py:391
+msgid "Произведения"
+msgstr "藝術品"
+
+#: .\gallery\models.py:191 .\general\models.py:148
+#: .\templates\pages\priklad.html:75
+msgid "Тип"
+msgstr "類型"
+
+#: .\gallery\models.py:193 .\general\models.py:158\
+msgid "Центр/школа"
+msgstr "中心/学校"
+
+#: .\gallery\models.py:206 .\templates\pages\filter-result.html:19
+msgid "Год создания"
+msgstr "創建年份"
+
+#: .\gallery\models.py:207 .\general\models.py:180
+#: .\templates\pages\auction-detail.html:39
+#: .\templates\pages\catalog-detail.html:54 .\templates\pages\sell.html:41
+msgid "Период"
+msgstr "期間"
+
+#: .\gallery\models.py:229 .\gallery\models.py:578 .\gallery\models.py:579
+#: .\gallery\models.py:615 .\gallery\models.py:616
+msgid "Прайс ап"
+msgstr "漲價"
+
+#: .\gallery\models.py:288 .\templates\pages\home.html:66
+msgid "Прикладное искусство"
+msgstr "應用藝術"
+
+#: .\gallery\models.py:289 .\gallery\models.py:586
+msgid "Прикладные искусства"
+msgstr "應用藝術"
+
+#: .\gallery\models.py:293
+msgid "Заголовок"
+msgstr "標題"
+
+#: .\gallery\models.py:301 .\general\models.py:115 .\general\models.py:196
+msgid "Текст"
+msgstr "文本"
+
+#: .\gallery\models.py:310 .\general\models.py:109
+#: .\templates\pages\auction-detail.html:43
+#: .\templates\pages\catalog-detail.html:69 .\templates\pages\sell.html:25
+msgid "Жанр"
+msgstr "流派"
+
+#: .\gallery\models.py:332
+msgid "Статья"
+msgstr "文章"
+
+#: .\gallery\models.py:333
+msgid "Статьи"
+msgstr "文章"
+
+#: .\gallery\models.py:353 .\templates\pages\basket.html:18
+msgid "Корзина"
+msgstr "購物車"
+
+#: .\gallery\models.py:354
+msgid "Корзины"
+msgstr "購物車"
+
+#: .\gallery\models.py:372
+msgid "Продукт в корзине"
+msgstr "購物車中的產品"
+
+#: .\gallery\models.py:373
+msgid "Продукты в корзине"
+msgstr "購物車中的產品"
+
+#: .\gallery\models.py:384
+msgid "Статус"
+msgstr "狀態"
+
+#: .\gallery\models.py:385
+msgid "Под итог"
+msgstr "小計"
+
+#: .\gallery\models.py:386 .\gallery\models.py:437
+msgid "Скидки"
+msgstr "折扣"
+
+#: .\gallery\models.py:387 .\templates\pages\basket.html:104
+#: .\templates\pages\basket.html:107 .\templates\pages\favorite.html:118
+msgid "Итого"
+msgstr "總計"
+
+#: .\gallery\models.py:388
+msgid "Оформлено"
+msgstr "形成"
+
+#: .\gallery\models.py:389
+msgid "Обновлено"
+msgstr "更新"
+
+#: .\gallery\models.py:398
+msgid "Заказ"
+msgstr "訂單"
+
+#: .\gallery\models.py:399
+msgid "Заказы"
+msgstr "訂單"
+
+#: .\gallery\models.py:420
+msgid "Продукт в заказе"
+msgstr "訂單中的產品"
+
+#: .\gallery\models.py:421
+msgid "Продукты в заказе"
+msgstr "訂單中的產品"
+
+#: .\gallery\models.py:427
+msgid "Дата начала скидки"
+msgstr "折扣開始日期"
+
+#: .\gallery\models.py:430
+msgid "Дата окончания скидки"
+msgstr "折扣結束日期"
+
+#: .\gallery\models.py:449
+msgid "Родительский обзор"
+msgstr "家長評論"
+
+#: .\gallery\models.py:457 .\templates\header.html:128
+msgid "Оценка"
+msgstr "標記"
+
+#: .\gallery\models.py:458 .\gallery\models.py:466
+msgid "Обзор"
+msgstr "評論"
+
+#: .\gallery\models.py:459
+msgid "Виден"
+msgstr "可見"
+
+#: .\gallery\models.py:460
+msgid "Дата обзора"
+msgstr "審核日期"
+
+#: .\gallery\models.py:467
+msgid "Обзоры"
+msgstr "評論"
+
+#: .\gallery\models.py:483
+msgid "Дата создания"
+msgstr "創建日期"
+
+#: .\gallery\models.py:484
+msgid "Дата изменения"
+msgstr "更新日期"
+
+#: .\gallery\models.py:490
+msgid "Лайк"
+msgstr "喜歡"
+
+#: .\gallery\models.py:491
+msgid "Лайки"
+msgstr "喜歡"
+
+#: .\gallery\models.py:505
+msgid "Галереи"
+msgstr "畫廊"
+
+#: .\gallery\models.py:512 .\gallery\models.py:549
+msgid "Предмет Искусства"
+msgstr "藝術主題"
+
+#: .\gallery\models.py:524
+msgid "Победитель аукциона"
+msgstr "拍賣贏家"
+
+#: .\gallery\models.py:528
+msgid "Участники аукциона"
+msgstr "拍賣參與者"
+
+#: .\gallery\models.py:529 .\gallery\models.py:566 .\gallery\models.py:603
+#: .\templates\pages\auctions.html:30
+msgid "Дата начала"
+msgstr "開始日期"
+
+#: .\gallery\models.py:530 .\gallery\models.py:567 .\gallery\models.py:604
+msgid "Дата окончания"
+msgstr "結束日期"
+
+#: .\gallery\models.py:541 .\templates\pages\auction-detail.html:17
+msgid "Аукцион"
+msgstr "拍賣"
+
+#: .\gallery\models.py:542 .\templates\header.html:121
+msgid "Аукционы"
+msgstr "拍賣"
+
+#: .\gallery\models.py:561 .\gallery\models.py:598
+msgid "Победитель прайс ап"
+msgstr "價格上漲的贏家"
+
+#: .\gallery\models.py:565 .\gallery\models.py:602
+msgid "Участники прайс ап"
+msgstr "漲價的參與者"
+
+#: .\general\apps.py:7
+msgid "Главный"
+msgstr "主要"
+
+#: .\general\models.py:9
+msgid "Код страны"
+msgstr "國家代碼"
+
+#: .\general\models.py:10
+msgid "Название страны"
+msgstr "國家名稱"
+
+#: .\general\models.py:16
+msgid "Страны"
+msgstr "國家"
+
+#: .\general\models.py:27
+msgid "Название региона"
+msgstr "區域名稱"
+
+#: .\general\models.py:36 .\templates\pages\catalog-detail.html:63
+msgid "Регион"
+msgstr "區域"
+
+#: .\general\models.py:42
+msgid "Путь к значку"
+msgstr "圖標路徑"
+
+#: .\general\models.py:43 .\general\models.py:65 .\general\models.py:123
+#: .\general\models.py:204
+msgid "Порядок"
+msgstr "訂單"
+
+#: .\general\models.py:48 .\general\models.py:63 .\templates\pages\sell.html:18
+msgid "Раздел"
+msgstr "部分"
+
+#: .\general\models.py:49
+msgid "Разделы"
+msgstr "章節"
+
+#: .\general\models.py:56
+msgid "Родительская категория"
+msgstr "父母類別"
+
+#: .\general\models.py:80 .\general\models.py:165
+msgid "Категория"
+msgstr "類別"
+
+#: .\general\models.py:81
+msgid "Категории"
+msgstr "類別"
+
+#: .\general\models.py:85
+msgid "Название жанра"
+msgstr "流派名稱"
+
+#: .\general\models.py:86
+msgid "Описание жанра"
+msgstr "類型描述"
+
+#: .\general\models.py:89
+msgid "Родительский жанр"
+msgstr "親子類型"
+
+#: .\general\models.py:110 .\templates\pages\main_filter.html:16
+msgid "Жанры"
+msgstr "流派"
+
+#: .\general\models.py:128 .\general\models.py:129 .\templates\header.html:148
+msgid "О нас"
+msgstr "關於我們"
+
+#: .\general\models.py:138 .\templates\pages\main_filter.html:41
+msgid "Вид"
+msgstr "類型"
+
+#: .\general\models.py:139
+msgid "Виды"
+msgstr "類型"
+
+#: .\general\models.py:149
+msgid "Типы"
+msgstr "类型"
+
+#: .\general\models.py:159
+msgid "Центр/школы"
+msgstr "中心/学校"
+
+#: .\general\models.py:171
+msgid "Течении"
+msgstr "流"
+
+#: .\general\models.py:181
+msgid "Периоды"
+msgstr "期間"
+
+#: .\general\models.py:191
+msgid "продавцы"
+msgstr "賣家"
+
+#: .\general\models.py:205
+msgid "Показать картины"
+msgstr "展示畫作"
+
+#: .\general\models.py:215
+msgid "Услуга"
+msgstr "服務"
+
+#: .\general\models.py:216 .\templates\header.html:161
+msgid "Услуги"
+msgstr "服務"
+
+#: .\general\models.py:226
+msgid "Картинка в сервисах"
+msgstr "服务中的图片"
+
+#: .\general\models.py:227
+msgid "Картинки в сервисах"
+msgstr "服务中的图片"
+
+#: .\general\models.py:236
+msgid "Тег"
+msgstr "標籤"
+
+#: .\general\models.py:262
+msgid "Запрос на продажу"
+msgstr "請求出售"
+
+#: .\general\models.py:263
+msgid "Запросы на продажу"
+msgstr "銷售請求"
+
+#: .\general\models.py:269
+msgid "Описание члена команды"
+msgstr "團隊成員描述"
+
+#: .\general\models.py:270
+msgid "Эксперт"
+msgstr "專家"
+
+#: .\general\models.py:275
+msgid "Член команды"
+msgstr "團隊成員"
+
+#: .\general\models.py:276
+msgid "Члены команды"
+msgstr "團隊成員"
+
+#: .\general\models.py:280 .\general\models.py:285
+msgid "Система измерения"
+msgstr "测量系统"
+
+#: .\general\models.py:286
+msgid "Системы измерения"
+msgstr "测量系统"
+
+#: .\general\views.py:797
+msgid "Error in your profile"
+msgstr "您的个人资料中的错误"
+
+#: .\public\artists.html:315 .\templates\pages\catalog.html:85
+#: .\templates\pages\catalog.html:217 .\templates\pages\catalog.html:261
+msgid "Размер:"
+msgstr "大小"
+
+#: .\public\artists.html:315 .\templates\pages\catalog-detail.html:92
+#: .\templates\pages\catalog.html:85 .\templates\pages\catalog.html:217
+#: .\templates\pages\catalog.html:261
+msgid "Материал:"
+msgstr "材料"
+
+#: .\public\artists.html:329 .\templates\pages\catalog.html:100
+#: .\templates\pages\catalog.html:231 .\templates\pages\catalog.html:275
+msgid "KУПИТЬ"
+msgstr "購買"
+
+#: .\templates\base.html:88 .\templates\base.html:144
+msgid "Регистрация"
+msgstr "國家地區"
+
+#: .\templates\base.html:89
+msgid "Вход"
+msgstr "入口"
+
+#: .\templates\base.html:92 .\templates\base.html:148
+msgid "Зарегистрироваться по SMS"
+msgstr "通过短信注册"
+
+#: .\templates\base.html:97 .\templates\base.html:101 .\templates\base.html:105
+#: .\templates\base.html:109 .\templates\base.html:113
+#: .\templates\base.html:121 .\templates\base.html:127
+#: .\templates\base.html:133 .\templates\base.html:142
+#: .\templates\pages\registration.html:39
+#: .\templates\pages\registration.html:63
+#: .\templates\pages\registration.html:86
+#: .\templates\pages\registration.html:92
+#: .\templates\pages\registration.html:96
+#: .\templates\pages\registration.html:100
+msgid "обязательно для заполнения"
+msgstr "需要填写"
+
+#: .\templates\base.html:108 .\templates\pages\basket.html:149
+msgid "Почтовый индекс"
+msgstr "郵政編碼"
+
+#: .\templates\base.html:114 .\templates\pages\registration.html:40
+msgid "Введите корректный Email"
+msgstr "请输入有效电子邮件"
+
+#: .\templates\base.html:119 .\templates\pages\basket.html:137
+#: .\templates\pages\profile.html:97
+msgid "Город"
+msgstr "城市"
+
+#: .\templates\base.html:131
+msgid "Повторить пароль"
+msgstr "重复输入密码"
+
+#: .\templates\base.html:134
+msgid "Пароль не совпадает"
+msgstr "密码不匹配"
+
+#: .\templates\base.html:140
+msgid "Регистрируясь или авторизуясь вы соглашаетесь с "
+msgstr "通过注册或登录，您同意"
+
+#: .\templates\base.html:140
+msgid "Пользовательским соглашением"
+msgstr "用户协议"
+
+#: .\templates\base.html:140
+msgid "Политикой конфеденциальности"
+msgstr "隐私政策"
+
+#: .\templates\base.html:155 .\templates\pages\login.html:29
+#: .\templates\pages\registration.html:43
+msgid "Пароль"
+msgstr "密碼"
+
+#: .\templates\base.html:168
+msgid "Авторизация"
+msgstr "授權"
+
+#: .\templates\base.html:177
+msgid "Получить код заново"
+msgstr "再次获取代码"
+
+#: .\templates\base.html:181
+msgid "Подтвердить код"
+msgstr "确认码"
+
+#: .\templates\base.html:183
+msgid "Получить код"
+msgstr "获取代码"
+
+#: .\templates\footer.html:6
+msgid "Подписывайтесь на нас"
+msgstr "訂閱我們"
+
+#: .\templates\footer.html:7
+msgid "и следите последними новостями`"
+msgstr "敬請關注最新消息"
+
+#: .\templates\footer.html:58
+msgid "Каталог"
+msgstr "目錄"
+
+#: .\templates\footer.html:59
+msgid "Художники"
+msgstr "藝術家"
+
+#: .\templates\footer.html:60
+msgid "Блог"
+msgstr "博客"
+
+#: .\templates\footer.html:63
+msgid "Жанры изобразительного искусства"
+msgstr "美術類型"
+
+#: .\templates\footer.html:64 .\templates\header.html:155
+msgid "Эксперты"
+msgstr "專家"
+
+#: .\templates\footer.html:93
+msgid "Адресс"
+msgstr "地址"
+
+#: .\templates\header.html:87
+msgid "Доставить в"
+msgstr "送達"
+
+#: .\templates\header.html:88 .\templates\pages\artists-detail.html:127
+msgid "Узбекистан"
+msgstr "烏茲別克斯坦"
+
+#: .\templates\header.html:123 .\templates\pages\auctions.html:17
+#: .\templates\pages\priklad.html:18
+msgid "Календарь"
+msgstr "日曆"
+
+#: .\templates\header.html:124
+msgid "Результаты"
+msgstr "結果"
+
+#: .\templates\header.html:130
+msgid "Совершение сделок с предметами искусства"
+msgstr "藝術品交易"
+
+#: .\templates\header.html:131
+msgid "Пополнение музейных коллекций"
+msgstr "博物館藏品的補充"
+
+#: .\templates\header.html:132
+msgid "Оценка стоимости коллекций"
+msgstr "評估集合的價值"
+
+#: .\templates\header.html:133
+msgid "Экспертиза"
+msgstr "專業知識"
+
+#: .\templates\header.html:134
+msgid "Оценка залоговой стоимости"
+msgstr "估計的抵押品價值"
+
+#: .\templates\header.html:135
+msgid "Страхование и оценка ущерба"
+msgstr "保險和損害評估"
+
+#: .\templates\header.html:143
+msgid "Продать"
+msgstr "賣出"
+
+#: .\templates\header.html:156 .\templates\pages\team.html:15
+msgid "Наша команда"
+msgstr "我們的隊伍"
+
+#: .\templates\header.html:174
+msgid "Проекты"
+msgstr "項目"
+
+#: .\templates\header.html:176
+msgid "Журнал"
+msgstr "雜誌"
+
+#: .\templates\header.html:177
+msgid "Арт- лекторий"
+msgstr "藝術大講堂"
+
+#: .\templates\header.html:186 .\templates\header.html:188
+msgid "Искать на art-v"
+msgstr "在 art-v 上搜索"
+
+#: .\templates\header.html:261
+msgid "Курсы валют ЦБ с"
+msgstr "烏茲別克斯坦共和國中央銀行對 1 蘇姆的匯率"
+
+#: .\templates\header.html:299
+msgid "Сайт работает в тестовом режиме"
+msgstr "該站點在測試模式下工作"
+
+#: .\templates\pages\about-detail.html:5 .\templates\pages\priklad.html:6
+msgid "About Detail"
+msgstr "關於詳情"
+
+#: .\templates\pages\about.html:5
+msgid "About"
+msgstr "關於我們"
+
+#: .\templates\pages\appliedart-genres-detail.html:5
+#: .\templates\pages\gallery-detail.html:5
+#: .\templates\pages\genres-detail.html:5
+msgid "Gallery"
+msgstr "畫廊"
+
+#: .\templates\pages\appliedart-genres.html:5 .\templates\pages\genres.html:5
+msgid "Genres"
+msgstr "流派"
+
+#: .\templates\pages\appliedart-genres.html:15 .\templates\pages\genres.html:15
+msgid "Жанры в изобразительном искусстве"
+msgstr "視覺藝術中的流派"
+
+#: .\templates\pages\appliedart-genres.html:23 .\templates\pages\genres.html:26
+msgid "images"
+msgstr "圖片"
+
+#: .\templates\pages\artists-detail.html:5
+msgid "Artist Detail"
+msgstr "藝術家詳情"
+
+#: .\templates\pages\artists-detail.html:22
+msgid "Год рождения"
+msgstr "出生年份"
+
+#: .\templates\pages\artists-detail.html:35
+msgid "Стиль художника"
+msgstr "藝術家風格"
+
+#: .\templates\pages\artists-detail.html:47
+msgid "Работы"
+msgstr "作品"
+
+#: .\templates\pages\artists-detail.html:73
+#: .\templates\pages\artists-detail.html:101 .\templates\pages\artists.html:43
+#: .\templates\pages\craftmanship.html:45
+msgid "ПОДРОБНЕЕ"
+msgstr "閱讀全文"
+
+#: .\templates\pages\artists-detail.html:108
+msgid "Схожие Авторы"
+msgstr "相似的藝術家"
+
+#: .\templates\pages\artists-detail.html:133
+#: .\templates\pages\auction-detail.html:94
+#: .\templates\pages\catalog-detail.html:255
+#: .\templates\pages\filter-result.html:30
+#: .\templates\pages\gallery-detail.html:130 .\templates\pages\home.html:52
+#: .\templates\pages\home.html:95 .\templates\pages\home.html:140
+#: .\templates\pages\priklad.html:117
+msgid "Подробнее"
+msgstr "閱讀全文"
+
+#: .\templates\pages\artists-detail.html:137 .\templates\pages\artists.html:47
+#: .\templates\pages\craftmanship.html:50
+#: .\templates\pages\gallery-detail.html:36
+#: .\templates\pages\gallery-detail.html:38
+msgid "Показать ещё"
+msgstr "查看更多"
+
+#: .\templates\pages\artists.html:5
+msgid "Artists"
+msgstr "藝術家"
+
+#: .\templates\pages\auction-detail.html:5
+msgid "Auction Detail"
+msgstr "拍賣詳情"
+
+#: .\templates\pages\auction-detail.html:16
+#: .\templates\pages\catalog-detail.html:20
+msgid "Назад"
+msgstr "返回"
+
+#: .\templates\pages\auction-detail.html:17
+#: .\templates\pages\catalog-detail.html:22
+msgid "Название работы"
+msgstr "工作名稱"
+
+#: .\templates\pages\auction-detail.html:31
+#: .\templates\pages\catalog-detail.html:42
+msgid "Детали"
+msgstr "詳細信息"
+
+#: .\templates\pages\auction-detail.html:40
+msgid "Происхождение"
+msgstr "來源"
+
+#: .\templates\pages\auction-detail.html:48
+#: .\templates\pages\auction-detail.html:82 .\templates\pages\priklad.html:29
+msgid "Название картин"
+msgstr "繪畫名稱"
+
+#: .\templates\pages\auction-detail.html:49
+msgid "Имя художника, описание картины"
+msgstr "藝術家姓名，畫作描述"
+
+#: .\templates\pages\auction-detail.html:52
+msgid "Закрытие регистрации"
+msgstr "關閉註冊"
+
+#: .\templates\pages\auction-detail.html:52
+#: .\templates\pages\auction-detail.html:53
+msgid "дней"
+msgstr "天"
+
+#: .\templates\pages\auction-detail.html:53
+msgid "Аукцион начнется"
+msgstr "拍賣開始"
+
+#: .\templates\pages\auction-detail.html:54
+msgid "Зарегистрироваться на аукцион"
+msgstr "註冊拍賣"
+
+#: .\templates\pages\auction-detail.html:56
+#: .\templates\pages\catalog-detail.html:106
+#: .\templates\pages\catalog-detail.html:118
+#: .\templates\pages\catalog-detail.html:168
+#: .\templates\pages\catalog-detail.html:180 .\templates\pages\profile.html:140
+msgid "Сохранить"
+msgstr "保存"
+
+#: .\templates\pages\auction-detail.html:62
+#: .\templates\pages\catalog-detail.html:157
+#: .\templates\pages\catalog-detail.html:216
+msgid "Локальная доставка"
+msgstr "本地配送"
+
+#: .\templates\pages\auction-detail.html:63
+#: .\templates\pages\catalog-detail.html:158
+#: .\templates\pages\catalog-detail.html:217
+msgid "Международная доставка"
+msgstr "國際快遞"
+
+#: .\templates\pages\auction-detail.html:72
+#: .\templates\pages\catalog-detail.html:222
+msgid "Похожие"
+msgstr "相關"
+
+#: .\templates\pages\auction-detail.html:73
+#: .\templates\pages\catalog-detail.html:223 .\templates\pages\home.html:20
+#: .\templates\pages\home.html:67 .\templates\pages\home.html:111
+msgid "Смотреть все работы"
+msgstr "查看所有作品"
+
+#: .\templates\pages\auction-detail.html:88 .\templates\pages\priklad.html:35
+#: .\templates\pages\priklad.html:115
+msgid "Узбекистан, Самарканд"
+msgstr "烏茲別克斯坦，撒馬爾罕"
+
+#: .\templates\pages\auctions.html:5
+msgid "Auctions"
+msgstr "拍賣"
+
+#: .\templates\pages\auctions.html:14
+msgid "Раздел на стадии разработки"
+msgstr "正在開發的部分"
+
+#: .\templates\pages\auctions.html:18 .\templates\pages\priklad.html:19
+msgid "Результаты аукционов"
+msgstr "拍賣結果"
+
+#: .\templates\pages\auctions.html:49 .\templates\pages\gallery-detail.html:22
+#: .\templates\pages\priklad.html:45
+msgid "Фильтровать по"
+msgstr "篩選依據"
+
+#: .\templates\pages\auctions.html:50 .\templates\pages\gallery-detail.html:24
+#: .\templates\pages\priklad.html:46
+msgid "Очистить все"
+msgstr "清除所有"
+
+#: .\templates\pages\basket.html:8
+msgid "Cart"
+msgstr "大車"
+
+#: .\templates\pages\basket.html:30 .\templates\pages\basket.html:66
+#: .\templates\pages\favorite.html:23 .\templates\pages\favorite.html:69
+msgid "Товар"
+msgstr "產品"
+
+#: .\templates\pages\basket.html:31 .\templates\pages\basket.html:67
+#: .\templates\pages\favorite.html:24 .\templates\pages\favorite.html:70
+msgid "Автор и название картин"
+msgstr "作者和畫名"
+
+#: .\templates\pages\basket.html:32 .\templates\pages\basket.html:68
+#: .\templates\pages\favorite.html:26 .\templates\pages\favorite.html:72
+msgid "Артикул"
+msgstr "文章"
+
+#: .\templates\pages\basket.html:102
+msgid "в вашей корзине"
+msgstr "在你的購物車裡"
+
+#: .\templates\pages\basket.html:102
+msgid "товар"
+msgstr "產品"
+
+#: .\templates\pages\basket.html:109
+msgid "Товаров"
+msgstr "產品"
+
+#: .\templates\pages\basket.html:111
+msgid "Очистить корзину"
+msgstr "清除購物車"
+
+#: .\templates\pages\basket.html:114 .\templates\pages\order.html:19
+msgid "Оформление заказа"
+msgstr "查看"
+
+#: .\templates\pages\basket.html:119
+msgid "E-mail"
+msgstr ""
+
+#: .\templates\pages\basket.html:125 .\templates\pages\profile.html:110
+msgid "Телефон"
+msgstr "電話號碼"
+
+#: .\templates\pages\basket.html:143
+msgid "Улица/Дом/Квартира"
+msgstr "街道/房子/公寓"
+
+#: .\templates\pages\basket.html:155
+msgid "Если все данные верны, нажмите 'Оформить':"
+msgstr "如果所有数据都正确，请单击“簽出”："
+
+#: .\templates\pages\basket.html:157 .\templates\pages\favorite.html:119
+msgid "Оформить"
+msgstr "簽出"
+
+#: .\templates\pages\blog-detail.html:5
+msgid "Blog Detail"
+msgstr "博客詳情"
+
+#: .\templates\pages\blog.html:6
+msgid "Blog"
+msgstr "博客"
+
+#: .\templates\pages\blog.html:16 .\templates\pages\blog.html:64
+#: .\templates\pages\blog.html:65 .\templates\pages\home.html:154
+msgid "Интересные статьи"
+msgstr "有趣的文章"
+
+#: .\templates\pages\blog.html:25 .\templates\pages\blog.html:37
+#: .\templates\pages\blog.html:49
+msgid "Заголовок статьи"
+msgstr "文章標題"
+
+#: .\templates\pages\blog.html:28 .\templates\pages\blog.html:39
+#: .\templates\pages\blog.html:51
+msgid "Текст текст"
+msgstr "文字文字文字文字文字文字文字文字文字文字..."
+
+#: .\templates\pages\catalog-detail.html:8
+msgid "Catalog Detail"
+msgstr "目錄詳情"
+
+#: .\templates\pages\catalog-detail.html:84
+msgid "Для интерьера"
+msgstr "用於內部"
+
+#: .\templates\pages\catalog-detail.html:89
+msgid "Год создания:"
+msgstr "創建年份"
+
+#: .\templates\pages\catalog-detail.html:138
+#: .\templates\pages\catalog-detail.html:148
+#: .\templates\pages\catalog-detail.html:198
+#: .\templates\pages\catalog-detail.html:208
+msgid "Добавить в корзину"
+msgstr "加入購物車"
+
+#: .\templates\pages\catalog-detail.html:236 .\templates\pages\home.html:123
+#: .\templates\pages\priklad.html:29
+msgid "год"
+msgstr "年份"
+
+#: .\templates\pages\catalog.html:5
+msgid "Catalog"
+msgstr "目錄"
+
+#: .\templates\pages\catalog.html:39 .\templates\pages\filter.html:44
+msgid "По возрастанию"
+msgstr "升序"
+
+#: .\templates\pages\catalog.html:40 .\templates\pages\filter.html:45
+msgid "По убыванию"
+msgstr "降序"
+
+#: .\templates\pages\catalog.html:311
+msgid "По вашему запросу ничего не найдено"
+msgstr "没有找到您的请求"
+
+#: .\templates\pages\contact.html:6
+msgid "Contacts"
+msgstr "聯繫人"
+
+#: .\templates\pages\craftmanship.html:5
+msgid "Craftmanship"
+msgstr "工藝"
+
+#: .\templates\pages\experts.html:5 .\templates\pages\team.html:5
+msgid "Team"
+msgstr "團隊"
+
+#: .\templates\pages\experts.html:15
+msgid "Наши эксперты"
+msgstr "我們的專家"
+
+#: .\templates\pages\favorite.html:8
+msgid "Favorite"
+msgstr "最喜歡的"
+
+#: .\templates\pages\favorite.html:18
+msgid "Избранное"
+msgstr "收藏夾"
+
+#: .\templates\pages\favorite.html:25 .\templates\pages\favorite.html:71
+msgid "Кол-во"
+msgstr "數量"
+
+#: .\templates\pages\favorite.html:91
+msgid "сум"
+msgstr "總和"
+
+#: .\templates\pages\filter.html:49
+msgid "Поиск"
+msgstr "搜索"
+
+#: .\templates\pages\gallery-detail.html:121 .\templates\pages\priklad.html:108
+msgid "Номер лота"
+msgstr "批號"
+
+#: .\templates\pages\history.html:6
+msgid "History of Orders"
+msgstr "訂單歷史"
+
+#: .\templates\pages\history.html:17 .\templates\pages\profile.html:31
+msgid "Профиль пользователя"
+msgstr "用戶資料"
+
+#: .\templates\pages\history.html:19 .\templates\pages\profile.html:33
+msgid "Добро пожаловать в пользовательский центр!"
+msgstr "歡迎來到用戶中心"
+
+#: .\templates\pages\history.html:38 .\templates\pages\history.html:54
+#: .\templates\pages\profile.html:50
+msgid "История заказов"
+msgstr "訂單歷史"
+
+#: .\templates\pages\history.html:43 .\templates\pages\profile.html:55
+msgid "Личные данные"
+msgstr "個人資料"
+
+#: .\templates\pages\history.html:49 .\templates\pages\history.html:136
+#: .\templates\pages\profile.html:61 .\templates\pages\profile.html:143
+msgid "Выйти"
+msgstr "註銷"
+
+#: .\templates\pages\home.html:19
+msgid "Изобразительное искусство"
+msgstr "美術"
+
+#: .\templates\pages\home.html:110
+msgid "Самые активные"
+msgstr "最活躍"
+
+#: .\templates\pages\home.html:126
+msgid "просмотров"
+msgstr "意見"
+
+#: .\templates\pages\login.html:5
+msgid "Login"
+msgstr "登錄"
+
+#: .\templates\pages\login.html:14
+msgid "Войдите в свой личный кабинет"
+msgstr "登錄您的個人文件櫃"
+
+#: .\templates\pages\login.html:49
+msgid "Забыли пароль?"
+msgstr "忘記密碼？"
+
+#: .\templates\pages\login.html:50
+msgid "Авторизоваться"
+msgstr "授權"
+
+#: .\templates\pages\login.html:53
+msgid "Нет учетной записи?"
+msgstr "沒有賬號？"
+
+#: .\templates\pages\login.html:54 .\templates\pages\registration.html:104
+msgid "Зарегистрироваться"
+msgstr "註冊"
+
+#: .\templates\pages\main_filter.html:4
+msgid "Художник/Мастер"
+msgstr "藝術家/大師"
+
+#: .\templates\pages\main_filter.html:54
+msgid "Регионы страны"
+msgstr "國家地區"
+
+#: .\templates\pages\order.html:5 .\templates\pages\profile.html:6
+msgid "User Profile"
+msgstr "用戶資料"
+
+#: .\templates\pages\order.html:26
+msgid "Улица, номер дома:"
+msgstr "街道、门牌号："
+
+#: .\templates\pages\order.html:27
+msgid "Город:"
+msgstr "城市"
+
+#: .\templates\pages\order.html:28
+msgid "Страна:"
+msgstr "國家"
+
+#: .\templates\pages\order.html:29
+msgid "Почтовый индекс:"
+msgstr "郵政編碼"
+
+#: .\templates\pages\order.html:30
+msgid "Телефон:"
+msgstr "電話號碼"
+
+#: .\templates\pages\order.html:39
+msgid "Всего"
+msgstr "全部的"
+
+#: .\templates\pages\order.html:39
+msgid "предмета"
+msgstr "主题"
+
+#: .\templates\pages\priklad.html:50
+msgid "Мастер"
+msgstr "大師"
+
+#: .\templates\pages\priklad.html:69 .\templates\pages\priklad.html:70
+msgid "млн"
+msgstr "mln"
+
+#: .\templates\pages\priklad.html:74
+msgid "Частные коллекции"
+msgstr "私人收藏"
+
+#: .\templates\pages\priklad.html:76
+msgid "Традиционный"
+msgstr "傳統"
+
+#: .\templates\pages\priklad.html:77
+msgid "Современный"
+msgstr "現代"
+
+#: .\templates\pages\priklad.html:78
+msgid "Центры"
+msgstr "中心"
+
+#: .\templates\pages\priklad.html:79
+msgid "Ташкент"
+msgstr "塔什幹"
+
+#: .\templates\pages\priklad.html:80
+msgid "Бухара"
+msgstr "布哈拉"
+
+#: .\templates\pages\priklad.html:81
+msgid "Вид изделия"
+msgstr "產品類型"
+
+#: .\templates\pages\priklad.html:82
+msgid "Кольца"
+msgstr "戒指"
+
+#: .\templates\pages\priklad.html:83
+msgid "Серьги"
+msgstr "耳環"
+
+#: .\templates\pages\priklad.html:89
+msgid "Все"
+msgstr "全部"
+
+#: .\templates\pages\priklad.html:90
+msgid "Сегодня"
+msgstr "今天"
+
+#: .\templates\pages\priklad.html:91
+msgid "Этот месяц"
+msgstr "本月"
+
+#: .\templates\pages\priklad.html:92 .\templates\pages\priklad.html:99
+msgid "Январь"
+msgstr "一月"
+
+#: .\templates\pages\priklad.html:93
+msgid "Февраль"
+msgstr "二月"
+
+#: .\templates\pages\priklad.html:94
+msgid "Март"
+msgstr "三月"
+
+#: .\templates\pages\priklad.html:106
+msgid "Описание картины"
+msgstr "繪畫描述"
+
+#: .\templates\pages\profile.html:68
+msgid "Логин"
+msgstr "用戶名"
+
+#: .\templates\pages\profile.html:77
+msgid "Электронная почта"
+msgstr "國際快遞"
+
+#: .\templates\pages\registration.html:5
+msgid "Registration"
+msgstr "登記"
+
+#: .\templates\pages\registration.html:16
+msgid "Создать учетную запись"
+msgstr "創建賬戶"
+
+#: .\templates\pages\registration.html:38
+msgid "Адрес электронной почты"
+msgstr "國際快遞"
+
+#: .\templates\pages\registration.html:44
+msgid ""
+"Должен содержать не менее одной цифры и одной прописной и строчной буквы, а "
+"также не менее 8 символов."
+msgstr "必须至少包含一个数字和一个大小写字母，以及至少 8 个字符。"
+
+#: .\templates\pages\registration.html:67
+msgid "Подтвердить пароль"
+msgstr "確認密碼"
+
+#: .\templates\pages\registration.html:87
+msgid "пароль не совпадает"
+msgstr "密码不匹配"
+
+#: .\templates\pages\registration.html:99
+msgid "ДД/ММ/ГГГГ"
+msgstr "日/月/年"
+
+#: .\templates\pages\registration.html:105
+msgid "Уже есть аккаунт?"
+msgstr "已经有一个帐户？"
+
+#: .\templates\pages\section-cards.html:26
+#: .\templates\pages\section-cards.html:28
+msgid "Все Жанры"
+msgstr "所有流派"
+
+#: .\templates\pages\sell.html:5
+msgid "Sell"
+msgstr "賣"
+
+#: .\templates\pages\sell.html:13
+msgid "Запрос на продажу картины"
+msgstr "請求出售一幅畫"
+
+#: .\templates\pages\sell.html:22
+msgid "Выберите файл"
+msgstr "選擇一個文件"
+
+#: .\templates\pages\sell.html:28
+msgid "Стиль/течение"
+msgstr "樣式/流"
+
+#: .\templates\pages\sell.html:36 .\templates\pages\sell.html:38
+msgid "Дата"
+msgstr "日期"
+
+#: .\templates\pages\sell.html:44
+msgid "Материалы"
+msgstr "材料"
+
+#: .\templates\pages\sell.html:50
+msgid "Оформление"
+msgstr "設計"
+
+#: .\templates\pages\sell.html:53
+msgid "Состояние"
+msgstr "條件"
+
+#: .\templates\pages\sell.html:65
+msgid "ФИО"
+msgstr "全名"
+
+#: .\templates\pages\sell.html:68
+msgid "Контактный номер"
+msgstr "聯繫電話"
+
+#: .\templates\pages\sell.html:71
+msgid "Почтовый адрес"
+msgstr "郵政編碼"
+
+#: .\templates\pages\sell.html:73
+msgid "Отправить запрос"
+msgstr "發送請求"
+
+#: .\templates\pages\service-detail.html:5
+msgid "Service Detail"
+msgstr "服務詳情"
+
+#: .\templates\pages\service-detail.html:27
+msgid "Наши работы"
+msgstr "我们的工作"
+
+#: .\templates\pages\services.html:5
+msgid "Services"
+msgstr "服務"
+
+#~ msgid "диаметр"
+#~ msgstr "直徑"
+
+#~ msgid "длина/ширина"
+#~ msgstr "長度/寬度"
+
+#~ msgid "Измерение"
+#~ msgstr "維度"
+
+#~ msgid "Vid"
+#~ msgstr "看法"
+
+#~ msgid "Vidy"
+#~ msgstr "种类"
+
+#~ msgid "Type"
+#~ msgstr "类型"
+
+#~ msgid "Types"
+#~ msgstr "类型"
+
+#~ msgid "Улица"
+#~ msgstr "街道"
+
+#~ msgid "Адресс 2"
+#~ msgstr "地址 2"
+
+#~ msgid "Адресс пользователья"
+#~ msgstr "用戶地址"
+
+#~ msgid "Адрессы пользователья"
+#~ msgstr "用戶地址"
+
+#~ msgid "Passwords do not match"
+#~ msgstr "密碼不匹配"
+
+#~ msgid "Password must be longer than 6 characters"
+#~ msgstr "密碼必須超過 6 個字符"
+
+#~ msgid "Some error occured"
+#~ msgstr "發生了一些錯誤"
+
+#~ msgid "Id заказа"
+#~ msgstr "訂單編號"
+
+#~ msgid "Соответсвующего артикла не существует"
+#~ msgstr "關於文章不存在"
+
+#~ msgid "Сумма"
+#~ msgstr "總和"
+
+#~ msgid "Адрес доставки"
+#~ msgstr "收貨地址"
+
+#~ msgid "Подтвердить Пароль"
+#~ msgstr "確認密碼"
+
+#~ msgid "SO’M"
+#~ msgstr "SO'M"
+
+#~ msgid "$"
+#~ msgstr "$"
+
+#~ msgid "RUB"
+#~ msgstr "RUB"
+
+#~ msgid "CNY"
+#~ msgstr "CNY"
+
+#~ msgid "Страна/Адрес"
+#~ msgstr "國家/地址"
+
+#~ msgid "Адрес"
+#~ msgstr "地址"
+
+#~ msgid "$ / Американский доллар"
+#~ msgstr "$ / 我們"

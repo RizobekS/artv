@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+{% trans "About" %}
+{% endblock title %}
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
+            <main class="content">
+                <div class="center ">
+                    {% for aocv in aocv %}
+                    <div class="row_aocv">
+                        <div class="infoAac">
+                            <h2 class="h2Aocv">{{ aocv.title }}</h2>
+                            <p class="pUser">{{ aocv.text }}</p>
+                        </div>
+
+                        <div class="blockAocv">
+                            <img src="{{ aocv.image.url }}" alt="{{ aocv.title }}" class="logoAocv">
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% for aocv_member in aocv_member %}
+                    <div class="hr"></div>
+                    <div class="row_aac4">
+                        <div class="blockLogoUserAac">
+                            <img src="{{ aocv_member.photo.url }}" alt="{{ aocv_member.name }}" class="logoUserAac">
+                        </div>
+                        <div class="infoAac">
+                            <h2 class="h2User">{{ aocv_member.name }}</h2>
+                            <p class="pUser">{{ aocv_member.text }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <div class="exit"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+        {% include 'footer.html' %}
+
+
+{% endblock main %}

@@ -1,0 +1,3 @@
+Host: https://artv.l-b.uz/
+User-Agent: *
+Allow: /

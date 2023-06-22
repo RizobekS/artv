@@ -1,0 +1,51 @@
+{% load static %}
+{% load i18n %}
+
+
+<div class="filters">
+    <form method="get" action="">
+        <div class="selectbox">
+            <span class="label">{% trans "Страна" %}</span>
+            <label>
+                <select name="country" class="filter">
+                    {% for country in countries %}
+                        <option value="{{ country.country__name }}">{{ country.country__name }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+        </div>
+        <div class="selectbox">
+            <span class="label">{% trans "Автор" %}</span>
+            <label>
+                <select name="category" class="filter">
+                    {% for author in authors %}
+                        <option value="{{ author.author__name }}">{{ author.author__name }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+        </div>
+
+        <div class="selectbox sort">
+            <span class="label">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M10.384 14H8.864L7.92 11.632H2.608L1.664 14H0.144L4.432 3.328H6.08L10.384 14ZM7.52 10.448L5.264 4.704L2.992 10.448H7.52Z"
+                            fill="#B4B4B4"/>
+                    <path
+                            d="M18.304 21H16.752L19.632 16.648C18.8533 16.584 18.192 16.28 17.648 15.736C17.1147 15.192 16.848 14.4613 16.848 13.544C16.848 12.5733 17.1573 11.7947 17.776 11.208C18.4053 10.6213 19.216 10.328 20.208 10.328H24.496V21H23.168V16.76H21.024L18.304 21ZM20.352 15.592H23.168V11.512H20.352C19.7227 11.512 19.2107 11.704 18.816 12.088C18.4213 12.4613 18.224 12.9467 18.224 13.544C18.224 14.1413 18.4213 14.632 18.816 15.016C19.2213 15.4 19.7333 15.592 20.352 15.592Z"
+                            fill="#B4B4B4"/>
+                    <path
+                            d="M11.6464 21.3536C11.8417 21.5488 12.1583 21.5488 12.3536 21.3536L15.5355 18.1716C15.7308 17.9763 15.7308 17.6597 15.5355 17.4645C15.3403 17.2692 15.0237 17.2692 14.8284 17.4645L12 20.2929L9.17157 17.4645C8.97631 17.2692 8.65973 17.2692 8.46447 17.4645C8.2692 17.6597 8.2692 17.9763 8.46447 18.1716L11.6464 21.3536ZM11.5 3L11.5 21L12.5 21L12.5 3L11.5 3Z"
+                            fill="#B4B4B4"/>
+                </svg>
+            </span>
+            <label>
+                <select name="price" class="filter">
+                    <option value="asc" name="asc">{% trans "По возрастанию" %}</option>
+                    <option value="desc" name="desc">{% trans "По убыванию" %}</option>
+                </select>
+            </label>
+        </div>
+        <button type="submit">{% trans "Поиск" %}</button>
+    </form>
+</div>

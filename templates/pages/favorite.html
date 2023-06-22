@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% load humanize %}
+{% load intspace from sexify%}
+{% load intcomma from sexify%}
+{% block title %}
+    {% trans "Favorite" %}
+{% endblock title %}
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name %}
+            <main class="content">
+                <div class="basket-page">
+                    <div class="center">
+                        <h1>{% trans "Избранное" %}</h1>
+                    </div>
+                    <table class="table center favorite">
+                        <thead>
+                        <tr>
+                            <th class="title">{% trans "Товар" %}</th>
+                            <th class="title">{% trans "Автор и название картин" %}</th>
+                            <th class="title">{% trans "Кол-во" %}</th>
+                            <th class="title">{% trans "Артикул" %}</th>
+                            <th class="title"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for wishlist_item in wishlist_items %}
+                            {% if wishlist_item.is_applied_art %}
+                                <tr>
+                                    <td class="table-body">
+                                        <label>
+                                            <input type="checkbox" value="" name="">
+                                            <span></span>
+                                        </label>
+                                        <div class="img">
+                                            <img src="{{ wishlist_item.applied_art.photo.url }}" alt=""/>
+                                        </div>
+                                    </td>
+                                    <td class="table-body">
+                                        <a href="/catalog/{{ wishlist_item.applied_art.slug }}"><strong>“{{ wishlist_item.applied_art.name }}”</strong></a>
+                                        <p>{{ wishlist_item.applied_art.price | intcomma:'.2f' | intspace }} {{ currency }} </p>
+                                    </td>
+
+                                    <td class="table-body">
+                                        <a href="{% url "general:blog_detail_page" wishlist_item.applied_art.slug %}">
+                                            {{ wishlist_item.applied_art.quantity }}
+                                        </a>
+                                    </td>
+                                    <td class="table-body">
+                                        <a href="{% url "general:blog_detail_page" wishlist_item.applied_art.slug %}">
+                                        {{ wishlist_item.applied_art.u_id }}
+                                        </a>
+                                    </td>
+                                    <td class="table-body">
+                                        <a href="{% url "gallery:remove_from_wishlist" wishlist_item.applied_art.slug %}" class="wishlist__remove-icon remove-item">x</a>
+                                    </td>
+                                </tr>
+
+                            {% else %}
+                                <tr>
+                                    <td class="table-body">
+                                        <label>
+                                            <input type="checkbox" value="" name="">
+                                            <span></span>
+                                        </label>
+                                        <div class="img">
+                                            <img src="{{ wishlist_item.art_work.photo.url }}" alt=""/>
+                                        </div>
+                                    </td>
+                                    <td class="table-body">
+                                        <a href="/catalog/{{ wishlist_item.art_work.slug }}"><strong>“{{ wishlist_item.art_work.name }}”</strong></a>
+                                        <p>{{ wishlist_item.art_work.price | intcomma:'.2f' | intspace }} {{ currency }} </p>
+                                    </td>
+
+                                    <td class="table-body">
+                                        <a href="{% url "general:blog_detail_page" wishlist_item.art_work.slug %}">
+                                            {{ wishlist_item.art_work.quantity }}
+                                        </a>
+                                    </td>
+                                    <td class="table-body">
+                                        <a href="{% url "general:blog_detail_page" wishlist_item.art_work.slug %}">
+                                        {{ wishlist_item.art_work.u_id }}
+                                        </a>
+{#                                    </td>#}
+                                    <td class="table-body">
+                                        <a href="{% url "gallery:remove_from_wishlist" wishlist_item.art_work.slug %}" class="wishlist__remove-icon remove-item">x</a>
+                                    </td>
+                                </tr>
+                            {% endif %}
+                        {% endfor %}
+
+                        </tbody>
+                    </table>
+
+                    <div class="selected-panel">
+                        <div class="center">
+                            <div class="selected">
+                                <div class="checked">
+
+                                </div>
+                                <div class="action">
+                                    {% if currency %}
+                                        <p>{% trans "Итого" %}: <strong>{{ wishlist_total| floatformat:-2 | intspace }} {{ currency }}</strong></p>
+
+                                    {% else %}
+                                        <p>{% trans "Итого" %}: <strong>0.00</strong></p>
+                                    {% endif %}
+{#                                    <a href="{% url 'general:order_page' %}" class="order-btn">{% trans "Оформить" %}</a>#}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        {% include 'footer.html' %}
+    </div>
+{% endblock main %}
+{% block js_partials %}
+    <script type="text/javascript" src="{% static 'js/favorite.page.js' %}"></script>
+{% endblock js_partials %}

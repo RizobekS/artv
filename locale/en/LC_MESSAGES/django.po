@@ -1,0 +1,1744 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-18 23:27+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\accounts\apps.py:7
+msgid "Пользователи аккаунта"
+msgstr "Account users"
+
+#: .\accounts\models.py:46
+msgid "Доллар США"
+msgstr "United States Dollar"
+
+#: .\accounts\models.py:47
+msgid "Китайский Юань"
+msgstr "CNY / Chinese Yuan"
+
+#: .\accounts\models.py:48
+msgid "Российский Рубль"
+msgstr "RUB / Russian Ruble"
+
+#: .\accounts\models.py:49
+msgid "Узбекский Сум"
+msgstr "SO’M / Uzbek sum"
+
+#: .\accounts\models.py:57
+msgid "Эл. адрес"
+msgstr "Email"
+
+#: .\accounts\models.py:58
+msgid "Ющер"
+msgstr "User"
+
+#: .\accounts\models.py:59 .\accounts\models.py:93 .\accounts\models.py:130
+#: .\general\models.py:53 .\general\models.py:270 .\templates\base.html:116
+#: .\templates\pages\registration.html:91
+msgid "Имя"
+msgstr "Name"
+
+#: .\accounts\models.py:60 .\templates\base.html:120
+#: .\templates\pages\registration.html:95
+msgid "Фамилия"
+msgstr "Surname"
+
+#: .\accounts\models.py:61 .\templates\base.html:194
+#: .\templates\pages\login.html:26 .\templates\pages\registration.html:35
+msgid "Номер телефона"
+msgstr "Phone number"
+
+#: .\accounts\models.py:62 .\accounts\models.py:109
+#: .\templates\pages\profile.html:83
+msgid "Дата рождения"
+msgstr "Date of birth"
+
+#: .\accounts\models.py:63 .\accounts\models.py:105
+msgid "Соц. сети"
+msgstr "Social sites"
+
+#: .\accounts\models.py:65 .\templates\pages\profile.html:134
+#: .\templates\pages\sell.html:60
+msgid "Валюта"
+msgstr "Currency"
+
+#: .\accounts\models.py:66
+msgid "почтовый индекс"
+msgstr "postal code"
+
+#: .\accounts\models.py:69 .\templates\pages\profile.html:103
+msgid "Улица/дом/квартира"
+msgstr "Street/building/apartment"
+
+#: .\accounts\models.py:88 .\gallery\models.py:337 .\gallery\models.py:391
+#: .\gallery\models.py:478 .\gallery\models.py:496
+msgid "Пользователь"
+msgstr "User"
+
+#: .\accounts\models.py:89
+msgid "Пользователи"
+msgstr "Users"
+
+#: .\accounts\models.py:94 .\gallery\models.py:298 .\gallery\models.py:518
+#: .\general\models.py:117 .\general\models.py:136 .\general\models.py:200
+msgid "Фото"
+msgstr "Photo"
+
+#: .\accounts\models.py:95
+msgid "Иконка генерируется автоматически"
+msgstr "Icon generated automatically"
+
+#: .\accounts\models.py:96
+msgid "Вид деятельности"
+msgstr "Occupation Type"
+
+#: .\accounts\models.py:98 .\general\models.py:173
+#: .\templates\pages\auction-detail.html:42
+#: .\templates\pages\catalog-detail.html:66
+#: .\templates\pages\main_filter.html:28
+msgid "Течение"
+msgstr "Course"
+
+#: .\accounts\models.py:100 .\accounts\models.py:132
+msgid "Занятие1"
+msgstr "Category"
+
+#: .\accounts\models.py:102
+msgid "Номер договора"
+msgstr "Contract number"
+
+#: .\accounts\models.py:107 .\templates\pages\artists-detail.html:24
+msgid "Занятие"
+msgstr "Occupation"
+
+#: .\accounts\models.py:108
+msgid "Био"
+msgstr "Bio"
+
+#: .\accounts\models.py:110
+msgid "Дата смерти"
+msgstr "Date of death"
+
+#: .\accounts\models.py:111
+msgid "Организация"
+msgstr "Organization"
+
+#: .\accounts\models.py:125 .\gallery\models.py:59 .\gallery\models.py:200
+#: .\gallery\models.py:315 .\templates\pages\filter.html:18
+#: .\templates\pages\sell.html:31
+msgid "Автор"
+msgstr "Author"
+
+#: .\accounts\models.py:126 .\templates\header.html:104
+msgid "Авторы"
+msgstr "Authors"
+
+#: .\accounts\models.py:148
+msgid "Ремесло"
+msgstr "The Craft"
+
+#: .\accounts\models.py:149
+msgid "Ремесла"
+msgstr "The Crafts"
+
+#: .\accounts\models.py:153
+msgid "Название соц. сети"
+msgstr "Name of social sites"
+
+#: .\accounts\models.py:155
+msgid "Ссылка на соц.сеть"
+msgstr "Links to social sites"
+
+#: .\accounts\models.py:160
+msgid "Соц.сеть"
+msgstr "Social site"
+
+#: .\accounts\models.py:161
+msgid "Соц.сети"
+msgstr "Social sites"
+
+#: .\accounts\translation.py:9 .\accounts\translation.py:14
+#: .\gallery\translation.py:8 .\gallery\translation.py:13
+#: .\gallery\translation.py:18 .\gallery\translation.py:23
+#: .\general\translation.py:24 .\general\translation.py:29
+#: .\general\translation.py:34 .\general\translation.py:39
+#: .\general\translation.py:44 .\general\translation.py:49
+#: .\general\translation.py:54
+msgid "-- sorry, no translation provided --"
+msgstr ""
+
+#: .\accounts\views.py:91 .\general\views.py:874 .\general\views.py:1035
+msgid "Your profile has been saved successfully!"
+msgstr ""
+
+#: .\art\settings.py:144
+msgid "Russian"
+msgstr "Russian"
+
+#: .\art\settings.py:145
+msgid "Uzbek"
+msgstr "Uzbek"
+
+#: .\art\settings.py:146
+msgid "English"
+msgstr "English"
+
+#: .\art\settings.py:147
+msgid "Chinese"
+msgstr "Chinese"
+
+#: .\billing\models.py:8
+msgid "Выполнен"
+msgstr "Year of fulfillment"
+
+#: .\billing\models.py:9
+msgid "Отменён"
+msgstr "Canceled"
+
+#: .\gallery\apps.py:7 .\gallery\models.py:527 .\templates\header.html:94
+msgid "Галерея"
+msgstr "Gallery"
+
+#: .\gallery\models.py:16
+msgid "Заказан"
+msgstr "Ordered"
+
+#: .\gallery\models.py:17 .\gallery\models.py:31 .\gallery\models.py:38
+#: .\templates\pages\catalog-detail.html:130
+#: .\templates\pages\catalog-detail.html:190
+msgid "Продано"
+msgstr "Sold"
+
+#: .\gallery\models.py:18
+msgid "Новый"
+msgstr "New"
+
+#: .\gallery\models.py:22
+msgid "Оплачено"
+msgstr "Paid"
+
+#: .\gallery\models.py:23 .\gallery\models.py:33 .\gallery\models.py:39
+msgid "Ожидается"
+msgstr "Pending"
+
+#: .\gallery\models.py:24
+msgid "Завершено"
+msgstr "Completed"
+
+#: .\gallery\models.py:25 .\gallery\models.py:40
+msgid "Отменено"
+msgstr "Canceled"
+
+#: .\gallery\models.py:26
+msgid "Возврашено"
+msgstr "Returned"
+
+#: .\gallery\models.py:27
+msgid "Отклонено"
+msgstr "Declined"
+
+#: .\gallery\models.py:32
+msgid "В корзине"
+msgstr "In cart"
+
+#: .\gallery\models.py:34
+msgid "В избранном"
+msgstr "In favorites"
+
+#: .\gallery\models.py:45 .\gallery\models.py:177
+msgid "Уникальный артикль (генерируется автоматически)"
+msgstr "Unique article (automatically generated)"
+
+#: .\gallery\models.py:51
+msgid "Oтдел"
+msgstr "Category"
+
+#: .\gallery\models.py:64
+msgid "жанр"
+msgstr "genre"
+
+#: .\gallery\models.py:66 .\gallery\models.py:197 .\general\models.py:41
+#: .\general\models.py:134 .\general\models.py:146 .\general\models.py:156
+#: .\general\models.py:166 .\general\models.py:178 .\general\models.py:188
+#: .\general\models.py:234 .\templates\pages\sell.html:34
+msgid "Название"
+msgstr "Name"
+
+#: .\gallery\models.py:67 .\gallery\models.py:208 .\gallery\models.py:297
+#: .\general\models.py:135 .\templates\pages\priklad.html:105
+msgid "Описание"
+msgstr "Description"
+
+#: .\gallery\models.py:69 .\gallery\models.py:188
+msgid "Bид"
+msgstr "Type"
+
+#: .\gallery\models.py:71
+msgid "период"
+msgstr "period"
+
+#: .\gallery\models.py:74
+msgid "течение"
+msgstr "flow"
+
+#: .\gallery\models.py:76
+msgid "сервисы"
+msgstr "services"
+
+#: .\gallery\models.py:79 .\gallery\models.py:210
+#: .\templates\pages\auction-detail.html:37
+#: .\templates\pages\catalog-detail.html:48 .\templates\pages\sell.html:47
+msgid "Размер"
+msgstr "Size"
+
+#: .\gallery\models.py:81 .\gallery\models.py:212
+msgid "Система Исчесления"
+msgstr "Scale of notation"
+
+#: .\gallery\models.py:87 .\templates\pages\auction-detail.html:38
+#: .\templates\pages\catalog-detail.html:51
+msgid "Подпись (положение подписи)"
+msgstr "Sign (signature position)"
+
+#: .\gallery\models.py:88 .\gallery\models.py:234
+msgid "Контент 16+"
+msgstr "16+ content"
+
+#: .\gallery\models.py:91 .\gallery\models.py:221 .\general\models.py:15
+#: .\general\models.py:29 .\templates\base.html:137 .\templates\base.html:138
+#: .\templates\pages\basket.html:118 .\templates\pages\catalog-detail.html:60
+#: .\templates\pages\filter.html:8 .\templates\pages\profile.html:91
+msgid "Страна"
+msgstr "Country"
+
+#: .\gallery\models.py:99 .\gallery\models.py:227 .\general\models.py:37
+msgid "Регионы"
+msgstr "Regions"
+
+#: .\gallery\models.py:100 .\gallery\models.py:217 .\general\models.py:206
+#: .\templates\pages\auction-detail.html:50
+#: .\templates\pages\catalog-detail.html:96
+#: .\templates\pages\catalog-detail.html:99 .\templates\pages\priklad.html:64
+#: .\templates\pages\sell.html:57
+msgid "Цена"
+msgstr "Price"
+
+#: .\gallery\models.py:101 .\gallery\models.py:235
+msgid "Количество"
+msgstr "Quantity"
+
+#: .\gallery\models.py:104 .\gallery\models.py:238 .\gallery\models.py:448
+#: .\gallery\models.py:459
+msgid "Скидка"
+msgstr "Discount"
+
+#: .\gallery\models.py:110 .\gallery\models.py:248
+msgid "Доступно для продажи"
+msgstr "Available for sale"
+
+#: .\gallery\models.py:111 .\gallery\models.py:249
+msgid "Популярный"
+msgstr "Popular"
+
+#: .\gallery\models.py:112 .\gallery\models.py:194
+msgid "Изображение"
+msgstr "Image"
+
+#: .\gallery\models.py:113 .\gallery\models.py:195
+msgid "Иконка (генерируется автоматически)"
+msgstr "Icon (generated automatically)"
+
+#: .\gallery\models.py:116 .\gallery\models.py:209
+#: .\templates\pages\auction-detail.html:41
+#: .\templates\pages\catalog-detail.html:57
+msgid "Mатериал"
+msgstr "Material"
+
+#: .\gallery\models.py:118
+msgid "Год исполнения"
+msgstr "Year of fulfillment"
+
+#: .\gallery\models.py:120 .\gallery\models.py:218 .\general\models.py:240
+msgid "Теги"
+msgstr "Tags"
+
+#: .\gallery\models.py:121
+msgid "прайс ап"
+msgstr "price up"
+
+#: .\gallery\models.py:123 .\gallery\models.py:229 .\general\models.py:193
+msgid "продавец"
+msgstr "seller"
+
+#: .\gallery\models.py:126 .\gallery\models.py:232
+msgid "для интерьера"
+msgstr "for interior"
+
+#: .\gallery\models.py:128 .\gallery\models.py:244 .\gallery\models.py:373
+#: .\gallery\models.py:432
+msgid "Cтатус"
+msgstr "Status"
+
+#: .\gallery\models.py:130 .\gallery\models.py:247 .\gallery\models.py:312
+msgid "Дата публикации"
+msgstr "Date of publication"
+
+#: .\gallery\models.py:132 .\gallery\models.py:245
+msgid "Дата начала продажи"
+msgstr "Sales start date"
+
+#: .\gallery\models.py:134 .\gallery\models.py:246
+msgid "Дата окончания продажи"
+msgstr "Sales end date"
+
+#: .\gallery\models.py:135 .\gallery\models.py:250
+msgid "Добавить логотип"
+msgstr "Add watermark"
+
+#: .\gallery\models.py:171 .\gallery\models.py:302 .\gallery\models.py:358
+#: .\gallery\models.py:417 .\gallery\models.py:425 .\gallery\models.py:466
+#: .\gallery\models.py:502 .\gallery\models.py:521
+msgid "Произведение"
+msgstr "Artwork"
+
+#: .\gallery\models.py:172 .\gallery\models.py:342 .\gallery\models.py:403
+msgid "Произведения"
+msgstr "Artworks"
+
+#: .\gallery\models.py:190 .\general\models.py:151
+#: .\templates\pages\priklad.html:75
+msgid "Тип"
+msgstr "Type"
+
+#: .\gallery\models.py:192 .\general\models.py:161
+msgid "Центр/школа"
+msgstr "Centers/schools"
+
+#: .\gallery\models.py:205 .\templates\pages\filter-result.html:19
+msgid "Год создания"
+msgstr "Year of creation"
+
+#: .\gallery\models.py:206 .\general\models.py:183
+#: .\templates\pages\auction-detail.html:39
+#: .\templates\pages\catalog-detail.html:54 .\templates\pages\sell.html:41
+msgid "Период"
+msgstr "Period"
+
+#: .\gallery\models.py:228 .\gallery\models.py:601 .\gallery\models.py:602
+#: .\gallery\models.py:638 .\gallery\models.py:639
+msgid "Прайс ап"
+msgstr "Price up"
+
+#: .\gallery\models.py:286 .\gallery\models.py:366
+#: .\templates\pages\home.html:65
+msgid "Прикладное искусство"
+msgstr "Applied art"
+
+#: .\gallery\models.py:287 .\gallery\models.py:609
+msgid "Прикладные искусства"
+msgstr "Applied art"
+
+#: .\gallery\models.py:291
+msgid "Заголовок"
+msgstr "Title"
+
+#: .\gallery\models.py:299 .\general\models.py:116 .\general\models.py:199
+msgid "Текст"
+msgstr "Text"
+
+#: .\gallery\models.py:308 .\general\models.py:110
+#: .\templates\pages\auction-detail.html:43
+#: .\templates\pages\catalog-detail.html:69 .\templates\pages\sell.html:25
+msgid "Жанр"
+msgstr "Genre"
+
+#: .\gallery\models.py:330
+msgid "Статья"
+msgstr "Article"
+
+#: .\gallery\models.py:331
+msgid "Статьи"
+msgstr "Articles"
+
+#: .\gallery\models.py:351 .\templates\pages\basket.html:18
+msgid "Корзина"
+msgstr "Cart"
+
+#: .\gallery\models.py:352
+msgid "Корзины"
+msgstr "Carts"
+
+#: .\gallery\models.py:384
+msgid "Продукт в корзине"
+msgstr "Product in cart"
+
+#: .\gallery\models.py:385
+msgid "Продукты в корзине"
+msgstr "Products in cart"
+
+#: .\gallery\models.py:396
+msgid "Статус"
+msgstr "Status"
+
+#: .\gallery\models.py:397
+msgid "Под итог"
+msgstr "Subtotal"
+
+#: .\gallery\models.py:398 .\gallery\models.py:460
+msgid "Скидки"
+msgstr "Discounts"
+
+#: .\gallery\models.py:399 .\templates\pages\basket.html:91
+#: .\templates\pages\basket.html:94 .\templates\pages\favorite.html:107
+#: .\templates\pages\favorite.html:110
+msgid "Итого"
+msgstr "Total"
+
+#: .\gallery\models.py:400
+msgid "Оформлено"
+msgstr "Formed"
+
+#: .\gallery\models.py:401
+msgid "Обновлено"
+msgstr "Updated"
+
+#: .\gallery\models.py:410
+msgid "Заказ"
+msgstr "Order"
+
+#: .\gallery\models.py:411
+msgid "Заказы"
+msgstr "Orders"
+
+#: .\gallery\models.py:443
+msgid "Продукт в заказе"
+msgstr "Product in the order"
+
+#: .\gallery\models.py:444
+msgid "Продукты в заказе"
+msgstr "Products in the order"
+
+#: .\gallery\models.py:450
+msgid "Дата начала скидки"
+msgstr "Discount start date"
+
+#: .\gallery\models.py:453
+msgid "Дата окончания скидки"
+msgstr "Discount end date"
+
+#: .\gallery\models.py:472
+msgid "Родительский обзор"
+msgstr "Parental Review"
+
+#: .\gallery\models.py:480 .\templates\header.html:128
+msgid "Оценка"
+msgstr "Mark"
+
+#: .\gallery\models.py:481 .\gallery\models.py:489
+msgid "Обзор"
+msgstr "Review"
+
+#: .\gallery\models.py:482
+msgid "Виден"
+msgstr "Visible"
+
+#: .\gallery\models.py:483
+msgid "Дата обзора"
+msgstr "Review date"
+
+#: .\gallery\models.py:490
+msgid "Обзоры"
+msgstr "Reviews"
+
+#: .\gallery\models.py:506
+msgid "Дата создания"
+msgstr "Creation date"
+
+#: .\gallery\models.py:507
+msgid "Дата изменения"
+msgstr "Update date"
+
+#: .\gallery\models.py:513
+msgid "Лайк"
+msgstr "Like"
+
+#: .\gallery\models.py:514
+msgid "Лайки"
+msgstr "Likes"
+
+#: .\gallery\models.py:528
+msgid "Галереи"
+msgstr "Galleries"
+
+#: .\gallery\models.py:535 .\gallery\models.py:572
+msgid "Предмет Искусства"
+msgstr "Subject of Art"
+
+#: .\gallery\models.py:547
+msgid "Победитель аукциона"
+msgstr "Winner of auction"
+
+#: .\gallery\models.py:551
+msgid "Участники аукциона"
+msgstr "Auction participants"
+
+#: .\gallery\models.py:552 .\gallery\models.py:589 .\gallery\models.py:626
+#: .\templates\pages\auctions.html:30
+msgid "Дата начала"
+msgstr "Start date"
+
+#: .\gallery\models.py:553 .\gallery\models.py:590 .\gallery\models.py:627
+msgid "Дата окончания"
+msgstr "End date"
+
+#: .\gallery\models.py:564 .\templates\pages\auction-detail.html:17
+msgid "Аукцион"
+msgstr "Auction"
+
+#: .\gallery\models.py:565 .\templates\header.html:121
+msgid "Аукционы"
+msgstr "Auctions"
+
+#: .\gallery\models.py:584 .\gallery\models.py:621
+msgid "Победитель прайс ап"
+msgstr "Winner of price up"
+
+#: .\gallery\models.py:588 .\gallery\models.py:625
+msgid "Участники прайс ап"
+msgstr "Participants of price up"
+
+#: .\gallery\models.py:661 .\gallery\models.py:662
+#, fuzzy
+#| msgid "Количество"
+msgid "Количество просмотров"
+msgstr "Quantity"
+
+#: .\general\apps.py:7
+msgid "Главный"
+msgstr "Main"
+
+#: .\general\models.py:9
+msgid "Код страны"
+msgstr "Country code"
+
+#: .\general\models.py:10
+msgid "Название страны"
+msgstr "Country name"
+
+#: .\general\models.py:16
+msgid "Страны"
+msgstr "Countries"
+
+#: .\general\models.py:27
+msgid "Название региона"
+msgstr "Region name"
+
+#: .\general\models.py:36 .\templates\pages\catalog-detail.html:63
+msgid "Регион"
+msgstr "Region"
+
+#: .\general\models.py:42
+msgid "Путь к значку"
+msgstr "Path to icon"
+
+#: .\general\models.py:43 .\general\models.py:65 .\general\models.py:124
+#: .\general\models.py:207
+msgid "Порядок"
+msgstr "Order"
+
+#: .\general\models.py:48 .\general\models.py:63 .\templates\pages\sell.html:18
+msgid "Раздел"
+msgstr "Section"
+
+#: .\general\models.py:49
+msgid "Разделы"
+msgstr "Sections"
+
+#: .\general\models.py:56
+msgid "Родительская категория"
+msgstr "Parental category"
+
+#: .\general\models.py:80 .\general\models.py:168
+msgid "Категория"
+msgstr "Category"
+
+#: .\general\models.py:81
+msgid "Категории"
+msgstr "Categories"
+
+#: .\general\models.py:85
+msgid "Название жанра"
+msgstr "Genre name"
+
+#: .\general\models.py:86
+msgid "Описание жанра"
+msgstr "Genre description"
+
+#: .\general\models.py:89
+msgid "Родительский жанр"
+msgstr "Parental genre"
+
+#: .\general\models.py:111 .\templates\pages\main_filter.html:16
+msgid "Жанры"
+msgstr "Genres"
+
+#: .\general\models.py:129 .\general\models.py:130 .\templates\header.html:148
+msgid "О нас"
+msgstr "About us"
+
+#: .\general\models.py:141 .\templates\pages\main_filter.html:41
+msgid "Вид"
+msgstr "Vid"
+
+#: .\general\models.py:142
+msgid "Виды"
+msgstr "Vidy"
+
+#: .\general\models.py:152
+msgid "Типы"
+msgstr "Types"
+
+#: .\general\models.py:162
+msgid "Центр/школы"
+msgstr "Centers/schools"
+
+#: .\general\models.py:174
+msgid "Течении"
+msgstr "Flows"
+
+#: .\general\models.py:184
+msgid "Периоды"
+msgstr "Periods"
+
+#: .\general\models.py:194
+msgid "продавцы"
+msgstr "sellers"
+
+#: .\general\models.py:208
+msgid "Показать картины"
+msgstr "Show images"
+
+#: .\general\models.py:218
+msgid "Услуга"
+msgstr "Service"
+
+#: .\general\models.py:219 .\templates\header.html:161
+msgid "Услуги"
+msgstr "Services"
+
+#: .\general\models.py:229
+msgid "Картинка в сервисах"
+msgstr "Image in Service"
+
+#: .\general\models.py:230
+msgid "Картинки в сервисах"
+msgstr "Images in Service"
+
+#: .\general\models.py:239
+msgid "Тег"
+msgstr "Tag"
+
+#: .\general\models.py:265
+msgid "Запрос на продажу"
+msgstr "Request for Sale"
+
+#: .\general\models.py:266
+msgid "Запросы на продажу"
+msgstr "Requests for Sale"
+
+#: .\general\models.py:272
+msgid "Описание члена команды"
+msgstr "Description of team member"
+
+#: .\general\models.py:273
+msgid "Эксперт"
+msgstr "Expert"
+
+#: .\general\models.py:278
+msgid "Член команды"
+msgstr "Team member"
+
+#: .\general\models.py:279
+msgid "Члены команды"
+msgstr "Team members"
+
+#: .\general\models.py:283 .\general\models.py:288
+msgid "Система измерения"
+msgstr "Measurement system"
+
+#: .\general\models.py:289
+msgid "Системы измерения"
+msgstr "Measurement system"
+
+#: .\general\views.py:876
+msgid "Error in your profile"
+msgstr ""
+
+#: .\public\artists.html:315 .\templates\pages\catalog.html:85
+#: .\templates\pages\catalog.html:218 .\templates\pages\catalog.html:262
+msgid "Размер:"
+msgstr "Size"
+
+#: .\public\artists.html:315 .\templates\pages\catalog-detail.html:92
+#: .\templates\pages\catalog.html:85 .\templates\pages\catalog.html:218
+#: .\templates\pages\catalog.html:262
+msgid "Материал:"
+msgstr "Material"
+
+#: .\public\artists.html:329 .\templates\pages\catalog.html:100
+#: .\templates\pages\catalog.html:232 .\templates\pages\catalog.html:276
+msgid "KУПИТЬ"
+msgstr "Buy"
+
+#: .\templates\base.html:108 .\templates\base.html:164
+msgid "Регистрация"
+msgstr "Country regions"
+
+#: .\templates\base.html:109
+msgid "Вход"
+msgstr "Login"
+
+#: .\templates\base.html:112 .\templates\base.html:168
+msgid "Зарегистрироваться по SMS"
+msgstr "Register via SMS"
+
+#: .\templates\base.html:117 .\templates\base.html:121
+#: .\templates\base.html:125 .\templates\base.html:129
+#: .\templates\base.html:133 .\templates\base.html:141
+#: .\templates\base.html:147 .\templates\base.html:153
+#: .\templates\base.html:162 .\templates\pages\registration.html:39
+#: .\templates\pages\registration.html:63
+#: .\templates\pages\registration.html:86
+#: .\templates\pages\registration.html:92
+#: .\templates\pages\registration.html:96
+#: .\templates\pages\registration.html:100
+msgid "обязательно для заполнения"
+msgstr "required"
+
+#: .\templates\base.html:128 .\templates\pages\basket.html:136
+msgid "Почтовый индекс"
+msgstr "postal code"
+
+#: .\templates\base.html:134 .\templates\pages\registration.html:40
+msgid "Введите корректный Email"
+msgstr "Enter valid Email"
+
+#: .\templates\base.html:139 .\templates\pages\basket.html:124
+#: .\templates\pages\profile.html:97
+msgid "Город"
+msgstr "City"
+
+#: .\templates\base.html:151
+msgid "Повторить пароль"
+msgstr "Repeat password"
+
+#: .\templates\base.html:154
+msgid "Пароль не совпадает"
+msgstr "Passwords did not match"
+
+#: .\templates\base.html:160
+msgid "Регистрируясь или авторизуясь вы соглашаетесь с "
+msgstr "By registering or logging in you agree with"
+
+#: .\templates\base.html:160
+msgid "Пользовательским соглашением"
+msgstr "User Agreement"
+
+#: .\templates\base.html:160
+msgid "Политикой конфеденциальности"
+msgstr "Privacy Policy"
+
+#: .\templates\base.html:175 .\templates\pages\login.html:29
+#: .\templates\pages\registration.html:43
+msgid "Пароль"
+msgstr "Password"
+
+#: .\templates\base.html:188
+msgid "Авторизация"
+msgstr "Authorization"
+
+#: .\templates\base.html:197
+msgid "Получить код заново"
+msgstr "Request SMS with code again"
+
+#: .\templates\base.html:201
+msgid "Подтвердить код"
+msgstr "Confirm password"
+
+#: .\templates\base.html:203
+msgid "Получить код"
+msgstr "Get the code"
+
+#: .\templates\footer.html:6
+msgid "Подписывайтесь на нас"
+msgstr "Subscribe to us"
+
+#: .\templates\footer.html:7
+msgid "и следите последними новостями"
+msgstr "and stay tuned for the latest news"
+
+#: .\templates\footer.html:50
+msgid "Каталог"
+msgstr "Catalog"
+
+#: .\templates\footer.html:51
+msgid "Художники"
+msgstr "Artists"
+
+#: .\templates\footer.html:52
+msgid "Блог"
+msgstr "Blog"
+
+#: .\templates\footer.html:55
+msgid "Жанры изобразительного искусства"
+msgstr "Genres of fine art"
+
+#: .\templates\footer.html:56 .\templates\pages\appliedart-types.html:15
+msgid "Виды прикладного искусства"
+msgstr "Applied art types"
+
+#: .\templates\footer.html:57 .\templates\header.html:155
+msgid "Эксперты"
+msgstr "Experts"
+
+#: .\templates\footer.html:86
+msgid "Адресс"
+msgstr "Address"
+
+#: .\templates\footer.html:87
+msgid "г. Ташкент, ул. Садыка"
+msgstr "Tashkent city, Sadik Azimov st."
+
+#: .\templates\footer.html:87
+msgid "Азимова, 35"
+msgstr "Sadik Azimov, 35"
+
+#: .\templates\footer.html:87
+msgid "Индекс: 100000"
+msgstr "Postal Code: 100000"
+
+#: .\templates\header.html:87
+msgid "Доставить в"
+msgstr "Deliver to"
+
+#: .\templates\header.html:123 .\templates\pages\auctions.html:17
+#: .\templates\pages\priklad.html:18
+msgid "Календарь"
+msgstr "Calendar"
+
+#: .\templates\header.html:124
+msgid "Результаты"
+msgstr "Results"
+
+#: .\templates\header.html:130
+msgid "Совершение сделок с предметами искусства"
+msgstr "Transactions with art objects"
+
+#: .\templates\header.html:131
+msgid "Пополнение музейных коллекций"
+msgstr "Additions to museum collections"
+
+#: .\templates\header.html:132
+msgid "Оценка стоимости коллекций"
+msgstr "Assessing the value of collections"
+
+#: .\templates\header.html:133
+msgid "Экспертиза"
+msgstr "Expertise"
+
+#: .\templates\header.html:134
+msgid "Оценка залоговой стоимости"
+msgstr "Estimated collateral value"
+
+#: .\templates\header.html:135
+msgid "Страхование и оценка ущерба"
+msgstr "Insurance and damage assessment"
+
+#: .\templates\header.html:143
+msgid "Продать"
+msgstr "Sell"
+
+#: .\templates\header.html:156 .\templates\pages\team.html:15
+msgid "Наша команда"
+msgstr "Our team"
+
+#: .\templates\header.html:174
+msgid "Проекты"
+msgstr "Projects"
+
+#: .\templates\header.html:176
+msgid "Журнал"
+msgstr "Magazine"
+
+#: .\templates\header.html:177
+msgid "Арт- лекторий"
+msgstr "Art lecture hall"
+
+#: .\templates\header.html:185
+msgid "Введите больше 3х символов для корректного поиска"
+msgstr "Please enter more than 3 characters for correct search"
+
+#: .\templates\header.html:189
+msgid "Искать на art-v"
+msgstr "Search in art-v"
+
+#: .\templates\header.html:262
+msgid "Курсы валют ЦБ с"
+msgstr "Exchange rates of the Republic of Uzbekistan CB against 1 sum"
+
+#: .\templates\header.html:300
+msgid "Сайт работает в тестовом режиме"
+msgstr "Site is working in test mode"
+
+#: .\templates\pages\about-detail.html:5 .\templates\pages\priklad.html:6
+msgid "About Detail"
+msgstr "ABout Detail"
+
+#: .\templates\pages\about.html:5
+msgid "About"
+msgstr ""
+
+#: .\templates\pages\appliedart-types-detail.html:5
+#: .\templates\pages\gallery-detail.html:5
+#: .\templates\pages\genres-detail.html:5
+msgid "Gallery"
+msgstr ""
+
+#: .\templates\pages\appliedart-types.html:5 .\templates\pages\genres.html:5
+msgid "Genres"
+msgstr ""
+
+#: .\templates\pages\appliedart-types.html:26 .\templates\pages\genres.html:26
+msgid "images"
+msgstr ""
+
+#: .\templates\pages\artists-detail.html:5
+msgid "Artist Detail"
+msgstr ""
+
+#: .\templates\pages\artists-detail.html:22
+msgid "Год рождения"
+msgstr "Year of birth"
+
+#: .\templates\pages\artists-detail.html:35
+msgid "Стиль художника"
+msgstr "Artist Style"
+
+#: .\templates\pages\artists-detail.html:47
+msgid "Работы"
+msgstr "Works"
+
+#: .\templates\pages\artists-detail.html:73
+#: .\templates\pages\artists-detail.html:101 .\templates\pages\artists.html:43
+#: .\templates\pages\craftmanship.html:45
+msgid "ПОДРОБНЕЕ"
+msgstr "Read more"
+
+#: .\templates\pages\artists-detail.html:108
+msgid "Схожие Авторы"
+msgstr "Similar artists"
+
+#: .\templates\pages\artists-detail.html:127
+msgid "Узбекистан"
+msgstr "Uzbekistan"
+
+#: .\templates\pages\artists-detail.html:133
+#: .\templates\pages\auction-detail.html:94
+#: .\templates\pages\catalog-detail.html:255
+#: .\templates\pages\filter-result.html:30
+#: .\templates\pages\gallery-detail.html:129 .\templates\pages\home.html:51
+#: .\templates\pages\home.html:94 .\templates\pages\home.html:139
+#: .\templates\pages\priklad.html:117
+msgid "Подробнее"
+msgstr "Read more"
+
+#: .\templates\pages\artists-detail.html:137 .\templates\pages\artists.html:47
+#: .\templates\pages\craftmanship.html:50
+#: .\templates\pages\gallery-detail.html:36
+#: .\templates\pages\gallery-detail.html:38
+msgid "Показать ещё"
+msgstr "See more"
+
+#: .\templates\pages\artists.html:5
+msgid "Artists"
+msgstr ""
+
+#: .\templates\pages\auction-detail.html:5
+msgid "Auction Detail"
+msgstr "Детали 'Аукциона'"
+
+#: .\templates\pages\auction-detail.html:16
+#: .\templates\pages\catalog-detail.html:20
+msgid "Назад"
+msgstr "Back"
+
+#: .\templates\pages\auction-detail.html:17
+#: .\templates\pages\catalog-detail.html:22
+msgid "Название работы"
+msgstr "Name of work"
+
+#: .\templates\pages\auction-detail.html:31
+#: .\templates\pages\catalog-detail.html:42
+msgid "Детали"
+msgstr "Details"
+
+#: .\templates\pages\auction-detail.html:40
+msgid "Происхождение"
+msgstr "Origin"
+
+#: .\templates\pages\auction-detail.html:48
+#: .\templates\pages\auction-detail.html:82 .\templates\pages\priklad.html:29
+msgid "Название картин"
+msgstr "Name of paintings"
+
+#: .\templates\pages\auction-detail.html:49
+msgid "Имя художника, описание картины"
+msgstr "Artist's name, description of the painting"
+
+#: .\templates\pages\auction-detail.html:52
+msgid "Закрытие регистрации"
+msgstr "Closing Registration"
+
+#: .\templates\pages\auction-detail.html:52
+#: .\templates\pages\auction-detail.html:53
+msgid "дней"
+msgstr "days"
+
+#: .\templates\pages\auction-detail.html:53
+msgid "Аукцион начнется"
+msgstr "Auction starts"
+
+#: .\templates\pages\auction-detail.html:54
+msgid "Зарегистрироваться на аукцион"
+msgstr "Register for the auction"
+
+#: .\templates\pages\auction-detail.html:56
+#: .\templates\pages\catalog-detail.html:106
+#: .\templates\pages\catalog-detail.html:118
+#: .\templates\pages\catalog-detail.html:168
+#: .\templates\pages\catalog-detail.html:180 .\templates\pages\profile.html:140
+msgid "Сохранить"
+msgstr "Save"
+
+#: .\templates\pages\auction-detail.html:62
+#: .\templates\pages\catalog-detail.html:157
+#: .\templates\pages\catalog-detail.html:216
+msgid "Локальная доставка"
+msgstr "Local delivery"
+
+#: .\templates\pages\auction-detail.html:63
+#: .\templates\pages\catalog-detail.html:158
+#: .\templates\pages\catalog-detail.html:217
+msgid "Международная доставка"
+msgstr "International delivery"
+
+#: .\templates\pages\auction-detail.html:72
+#: .\templates\pages\catalog-detail.html:222
+msgid "Похожие"
+msgstr "Related"
+
+#: .\templates\pages\auction-detail.html:73
+#: .\templates\pages\catalog-detail.html:223 .\templates\pages\home.html:20
+#: .\templates\pages\home.html:66 .\templates\pages\home.html:110
+msgid "Смотреть все работы"
+msgstr "View all works"
+
+#: .\templates\pages\auction-detail.html:88 .\templates\pages\priklad.html:35
+#: .\templates\pages\priklad.html:115
+msgid "Узбекистан, Самарканд"
+msgstr "Uzbekistan, Samarkand"
+
+#: .\templates\pages\auctions.html:5
+msgid "Auctions"
+msgstr ""
+
+#: .\templates\pages\auctions.html:14
+msgid "Раздел на стадии разработки"
+msgstr "Section is under development"
+
+#: .\templates\pages\auctions.html:18 .\templates\pages\priklad.html:19
+msgid "Результаты аукционов"
+msgstr "Auction results"
+
+#: .\templates\pages\auctions.html:49 .\templates\pages\gallery-detail.html:22
+#: .\templates\pages\priklad.html:45
+msgid "Фильтровать по"
+msgstr "Filter by"
+
+#: .\templates\pages\auctions.html:50 .\templates\pages\gallery-detail.html:24
+#: .\templates\pages\priklad.html:46
+msgid "Очистить все"
+msgstr "Clear all"
+
+#: .\templates\pages\basket.html:8
+msgid "Cart"
+msgstr ""
+
+#: .\templates\pages\basket.html:30 .\templates\pages\favorite.html:23
+msgid "Товар"
+msgstr "Product"
+
+#: .\templates\pages\basket.html:31 .\templates\pages\favorite.html:24
+msgid "Автор и название картин"
+msgstr "Author and name of painting"
+
+#: .\templates\pages\basket.html:32 .\templates\pages\favorite.html:26
+msgid "Артикул"
+msgstr "Article"
+
+#: .\templates\pages\basket.html:89
+msgid "в вашей корзине"
+msgstr "in your cart"
+
+#: .\templates\pages\basket.html:89
+msgid "товар"
+msgstr "product"
+
+#: .\templates\pages\basket.html:96
+msgid "Товаров"
+msgstr "Products"
+
+#: .\templates\pages\basket.html:98
+msgid "Очистить корзину"
+msgstr "Clear cart"
+
+#: .\templates\pages\basket.html:101 .\templates\pages\order.html:22
+msgid "Оформление заказа"
+msgstr "Checkout"
+
+#: .\templates\pages\basket.html:106
+msgid "E-mail"
+msgstr ""
+
+#: .\templates\pages\basket.html:112 .\templates\pages\profile.html:110
+msgid "Телефон"
+msgstr "Phone number"
+
+#: .\templates\pages\basket.html:130
+msgid "Улица/Дом/Квартира"
+msgstr "Street/Building/Appartment"
+
+#: .\templates\pages\basket.html:142
+msgid "Если все данные верны, нажмите 'Оформить':"
+msgstr "If all the information is correct, click 'Checkout':"
+
+#: .\templates\pages\basket.html:144
+msgid "Оформить"
+msgstr "Check out"
+
+#: .\templates\pages\blog-detail.html:5
+msgid "Blog Detail"
+msgstr "Blog Detail"
+
+#: .\templates\pages\blog.html:6
+msgid "Blog"
+msgstr "Blog"
+
+#: .\templates\pages\blog.html:16 .\templates\pages\blog.html:64
+#: .\templates\pages\blog.html:65 .\templates\pages\home.html:153
+msgid "Интересные статьи"
+msgstr "Interesting articles"
+
+#: .\templates\pages\blog.html:25 .\templates\pages\blog.html:37
+#: .\templates\pages\blog.html:49
+msgid "Заголовок статьи"
+msgstr "Article Title"
+
+#: .\templates\pages\blog.html:28 .\templates\pages\blog.html:39
+#: .\templates\pages\blog.html:51
+msgid "Текст текст"
+msgstr "Text text text text text text text text text ..."
+
+#: .\templates\pages\catalog-detail.html:8
+msgid "Catalog Detail"
+msgstr "Catalog Detail"
+
+#: .\templates\pages\catalog-detail.html:84
+msgid "Для интерьера"
+msgstr "For interior"
+
+#: .\templates\pages\catalog-detail.html:89
+msgid "Год создания:"
+msgstr "Year of creation"
+
+#: .\templates\pages\catalog-detail.html:138
+#: .\templates\pages\catalog-detail.html:148
+#: .\templates\pages\catalog-detail.html:198
+#: .\templates\pages\catalog-detail.html:208
+msgid "Добавить в корзину"
+msgstr "Add to cart"
+
+#: .\templates\pages\catalog-detail.html:236 .\templates\pages\home.html:122
+#: .\templates\pages\priklad.html:29
+msgid "год"
+msgstr "year"
+
+#: .\templates\pages\catalog.html:5
+msgid "Catalog"
+msgstr "Catalog"
+
+#: .\templates\pages\catalog.html:312
+msgid "По вашему запросу ничего не найдено"
+msgstr "No authors or works found for your request"
+
+#: .\templates\pages\contact.html:6
+msgid "Contacts"
+msgstr ""
+
+#: .\templates\pages\craftmanship.html:5
+msgid "Craftmanship"
+msgstr ""
+
+#: .\templates\pages\experts.html:5 .\templates\pages\team.html:5
+msgid "Team"
+msgstr ""
+
+#: .\templates\pages\experts.html:15
+msgid "Наши эксперты"
+msgstr "Our experts"
+
+#: .\templates\pages\favorite.html:8
+msgid "Favorite"
+msgstr ""
+
+#: .\templates\pages\favorite.html:18
+msgid "Избранное"
+msgstr "Favorites"
+
+#: .\templates\pages\favorite.html:25
+msgid "Кол-во"
+msgstr "Quantity"
+
+#: .\templates\pages\filter.html:44
+msgid "По возрастанию"
+msgstr "Ascending"
+
+#: .\templates\pages\filter.html:45
+msgid "По убыванию"
+msgstr "Descending"
+
+#: .\templates\pages\filter.html:49
+msgid "Поиск"
+msgstr "Search"
+
+#: .\templates\pages\gallery-detail.html:120 .\templates\pages\priklad.html:108
+msgid "Номер лота"
+msgstr "Lot Number"
+
+#: .\templates\pages\genres.html:15
+msgid "Жанры в изобразительном искусстве"
+msgstr "Genres of fine art"
+
+#: .\templates\pages\history.html:6
+msgid "History of Orders"
+msgstr ""
+
+#: .\templates\pages\history.html:17 .\templates\pages\profile.html:31
+msgid "Профиль пользователя"
+msgstr "User profile"
+
+#: .\templates\pages\history.html:19 .\templates\pages\profile.html:33
+msgid "Добро пожаловать в пользовательский центр!"
+msgstr "Welcome to user center"
+
+#: .\templates\pages\history.html:38 .\templates\pages\history.html:54
+#: .\templates\pages\profile.html:50
+msgid "История заказов"
+msgstr "Order history"
+
+#: .\templates\pages\history.html:43 .\templates\pages\profile.html:55
+msgid "Личные данные"
+msgstr "Personal details"
+
+#: .\templates\pages\history.html:49 .\templates\pages\history.html:94
+#: .\templates\pages\profile.html:61 .\templates\pages\profile.html:143
+msgid "Выйти"
+msgstr "Logout"
+
+#: .\templates\pages\history.html:59
+msgid "Detail Information"
+msgstr ""
+
+#: .\templates\pages\history.html:60
+msgid "Name:"
+msgstr ""
+
+#: .\templates\pages\history.html:61
+msgid "Email: "
+msgstr ""
+
+#: .\templates\pages\history.html:62
+msgid "Phone: "
+msgstr ""
+
+#: .\templates\pages\history.html:63
+msgid "Address: "
+msgstr ""
+
+#: .\templates\pages\history.html:66
+msgid "Previous orders"
+msgstr ""
+
+#: .\templates\pages\history.html:71
+msgid "SN"
+msgstr ""
+
+#: .\templates\pages\history.html:72
+msgid "Order ID"
+msgstr ""
+
+#: .\templates\pages\history.html:73
+msgid "Amount"
+msgstr ""
+
+#: .\templates\pages\history.html:74
+msgid "Ordered on"
+msgstr ""
+
+#: .\templates\pages\history.html:75
+msgid "Status"
+msgstr ""
+
+#: .\templates\pages\history.html:83
+msgid "ago"
+msgstr ""
+
+#: .\templates\pages\home.html:19
+msgid "Изобразительное искусство"
+msgstr "Fine Art"
+
+#: .\templates\pages\home.html:109
+msgid "Самые активные"
+msgstr "Most active"
+
+#: .\templates\pages\home.html:125
+msgid "просмотров"
+msgstr "views"
+
+#: .\templates\pages\login.html:5
+msgid "Login"
+msgstr ""
+
+#: .\templates\pages\login.html:14
+msgid "Войдите в свой личный кабинет"
+msgstr "Login to your personal cabinet"
+
+#: .\templates\pages\login.html:49
+msgid "Забыли пароль?"
+msgstr "Forgot your password?"
+
+#: .\templates\pages\login.html:50
+msgid "Авторизоваться"
+msgstr "Authorization"
+
+#: .\templates\pages\login.html:53
+msgid "Нет учетной записи?"
+msgstr "Don't have an account?"
+
+#: .\templates\pages\login.html:54 .\templates\pages\registration.html:104
+msgid "Зарегистрироваться"
+msgstr "Register"
+
+#: .\templates\pages\main_filter.html:4
+msgid "Художник/Мастер"
+msgstr "Artist/Master"
+
+#: .\templates\pages\main_filter.html:54
+msgid "Регионы страны"
+msgstr "Country regions"
+
+#: .\templates\pages\order.html:8 .\templates\pages\profile.html:6
+msgid "User Profile"
+msgstr ""
+
+#: .\templates\pages\order.html:29
+msgid "Улица, номер дома:"
+msgstr "Street, house number "
+
+#: .\templates\pages\order.html:30
+msgid "Город:"
+msgstr "City"
+
+#: .\templates\pages\order.html:31
+msgid "Страна:"
+msgstr "Country"
+
+#: .\templates\pages\order.html:32
+msgid "Почтовый индекс:"
+msgstr "Postal code"
+
+#: .\templates\pages\order.html:33
+msgid "Телефон:"
+msgstr "Phone number"
+
+#: .\templates\pages\order.html:46
+msgid "Всего"
+msgstr "In Total"
+
+#: .\templates\pages\order.html:46
+msgid "предмета"
+msgstr "items"
+
+#: .\templates\pages\priklad.html:50
+msgid "Мастер"
+msgstr "Master"
+
+#: .\templates\pages\priklad.html:69 .\templates\pages\priklad.html:70
+msgid "млн"
+msgstr "mln"
+
+#: .\templates\pages\priklad.html:74
+msgid "Частные коллекции"
+msgstr "Private collections"
+
+#: .\templates\pages\priklad.html:76
+msgid "Традиционный"
+msgstr "Traditional"
+
+#: .\templates\pages\priklad.html:77
+msgid "Современный"
+msgstr "Modern"
+
+#: .\templates\pages\priklad.html:78
+msgid "Центры"
+msgstr "Centers"
+
+#: .\templates\pages\priklad.html:79
+msgid "Ташкент"
+msgstr "Tashkent"
+
+#: .\templates\pages\priklad.html:80
+msgid "Бухара"
+msgstr "Bukhara"
+
+#: .\templates\pages\priklad.html:81
+msgid "Вид изделия"
+msgstr "Product type"
+
+#: .\templates\pages\priklad.html:82
+msgid "Кольца"
+msgstr "Rings"
+
+#: .\templates\pages\priklad.html:83
+msgid "Серьги"
+msgstr "Earrings"
+
+#: .\templates\pages\priklad.html:89
+msgid "Все"
+msgstr "All"
+
+#: .\templates\pages\priklad.html:90
+msgid "Сегодня"
+msgstr "Today"
+
+#: .\templates\pages\priklad.html:91
+msgid "Этот месяц"
+msgstr "This month"
+
+#: .\templates\pages\priklad.html:92 .\templates\pages\priklad.html:99
+msgid "Январь"
+msgstr "January"
+
+#: .\templates\pages\priklad.html:93
+msgid "Февраль"
+msgstr "February"
+
+#: .\templates\pages\priklad.html:94
+msgid "Март"
+msgstr "March"
+
+#: .\templates\pages\priklad.html:106
+msgid "Описание картины"
+msgstr "Description of painting"
+
+#: .\templates\pages\profile.html:68
+msgid "Логин"
+msgstr "Users name"
+
+#: .\templates\pages\profile.html:77
+msgid "Электронная почта"
+msgstr "International delivery"
+
+#: .\templates\pages\registration.html:5
+msgid "Registration"
+msgstr ""
+
+#: .\templates\pages\registration.html:16
+msgid "Создать учетную запись"
+msgstr "Create an account"
+
+#: .\templates\pages\registration.html:38
+msgid "Адрес электронной почты"
+msgstr "Email"
+
+#: .\templates\pages\registration.html:44
+msgid ""
+"Должен содержать не менее одной цифры и одной прописной и строчной буквы, а "
+"также не менее 8 символов."
+msgstr ""
+"Must contain at least one number and one uppercase and lowercase letter, and "
+"at least 8 characters."
+
+#: .\templates\pages\registration.html:67
+msgid "Подтвердить пароль"
+msgstr "Confirm password"
+
+#: .\templates\pages\registration.html:87
+msgid "пароль не совпадает"
+msgstr "password does not match"
+
+#: .\templates\pages\registration.html:99
+msgid "ДД/ММ/ГГГГ"
+msgstr "DD/MM/YYYY"
+
+#: .\templates\pages\registration.html:105
+msgid "Уже есть аккаунт?"
+msgstr "Already have an account?"
+
+#: .\templates\pages\section-cards.html:26
+msgid "Все Виды"
+msgstr "Аll Types"
+
+#: .\templates\pages\section-cards.html:28
+msgid "Все Жанры"
+msgstr "Аll Genres"
+
+#: .\templates\pages\sell.html:5
+msgid "Sell"
+msgstr ""
+
+#: .\templates\pages\sell.html:13
+msgid "Запрос на продажу картины"
+msgstr "Request to sell a painting"
+
+#: .\templates\pages\sell.html:22
+msgid "Выберите файл"
+msgstr "Choose file"
+
+#: .\templates\pages\sell.html:28
+msgid "Стиль/течение"
+msgstr "Style/flow"
+
+#: .\templates\pages\sell.html:36 .\templates\pages\sell.html:38
+msgid "Дата"
+msgstr "Date"
+
+#: .\templates\pages\sell.html:44
+msgid "Материалы"
+msgstr "Materials"
+
+#: .\templates\pages\sell.html:50
+msgid "Оформление"
+msgstr "Design"
+
+#: .\templates\pages\sell.html:53
+msgid "Состояние"
+msgstr "Condition"
+
+#: .\templates\pages\sell.html:65
+msgid "ФИО"
+msgstr "Full name"
+
+#: .\templates\pages\sell.html:68
+msgid "Контактный номер"
+msgstr "Contact number"
+
+#: .\templates\pages\sell.html:71
+msgid "Почтовый адрес"
+msgstr "Postal code"
+
+#: .\templates\pages\sell.html:73
+msgid "Отправить запрос"
+msgstr "Send request"
+
+#: .\templates\pages\service-detail.html:5
+msgid "Service Detail"
+msgstr "Сервис"
+
+#: .\templates\pages\service-detail.html:27
+msgid "Наши работы"
+msgstr "Our Works"
+
+#: .\templates\pages\services.html:5
+msgid "Services"
+msgstr "Сервисы"
+
+#~ msgid "Просмотры"
+#~ msgstr "Views"
+
+#~ msgid "сум"
+#~ msgstr "sum"
+
+#~ msgid "диаметр"
+#~ msgstr "diameter"
+
+#~ msgid "длина/ширина"
+#~ msgstr "length/width"
+
+#~ msgid "Измерение"
+#~ msgstr "Dimension"
+
+#~ msgid "Улица"
+#~ msgstr "Street"
+
+#~ msgid "Адресс 2"
+#~ msgstr "Address 2"
+
+#~ msgid "Адресс пользователья"
+#~ msgstr "User's address"
+
+#~ msgid "Адрессы пользователья"
+#~ msgstr "Users' addresses"
+
+#~ msgid "Id заказа"
+#~ msgstr "Order ID"
+
+#~ msgid "Соответсвующего артикла не существует"
+#~ msgstr "Regarding article doesn't exist"
+
+#~ msgid "Сумма"
+#~ msgstr "Sum"
+
+#~ msgid "Адрес доставки"
+#~ msgstr "Delivery address"
+
+#~ msgid "Подтвердить Пароль"
+#~ msgstr "Confirm password"
+
+#~ msgid "SO’M"
+#~ msgstr "SUM"
+
+#~ msgid "$"
+#~ msgstr "$"
+
+#~ msgid "RUB"
+#~ msgstr "RUB"
+
+#~ msgid "CNY"
+#~ msgstr "CNY"
+
+#~ msgid "Страна/Адрес"
+#~ msgstr "Country/Address"
+
+#~ msgid "Адрес"
+#~ msgstr "Address"
+
+#~ msgid "Детали Аукциона"
+#~ msgstr "Auction Detail"
+
+#~ msgid "$ / Американский доллар"
+#~ msgstr "$ / American Dollar"

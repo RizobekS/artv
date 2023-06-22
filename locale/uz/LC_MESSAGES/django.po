@@ -1,0 +1,1767 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-18 23:27+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\accounts\apps.py:7
+msgid "Пользователи аккаунта"
+msgstr "Akkaunt foydalanuvchiklari"
+
+#: .\accounts\models.py:46
+msgid "Доллар США"
+msgstr "A.Q.SH Dollari"
+
+#: .\accounts\models.py:47
+msgid "Китайский Юань"
+msgstr "CNY / Xitoy yuani"
+
+#: .\accounts\models.py:48
+msgid "Российский Рубль"
+msgstr "RUB / Rossiya Rubli"
+
+#: .\accounts\models.py:49
+msgid "Узбекский Сум"
+msgstr "SO’M / O'zbek So'mi"
+
+#: .\accounts\models.py:57
+msgid "Эл. адрес"
+msgstr "Email"
+
+#: .\accounts\models.py:58
+msgid "Ющер"
+msgstr "Foydalanuvchi"
+
+#: .\accounts\models.py:59 .\accounts\models.py:93 .\accounts\models.py:130
+#: .\general\models.py:53 .\general\models.py:270 .\templates\base.html:116
+#: .\templates\pages\registration.html:91
+msgid "Имя"
+msgstr "Ism"
+
+#: .\accounts\models.py:60 .\templates\base.html:120
+#: .\templates\pages\registration.html:95
+msgid "Фамилия"
+msgstr "Sharif"
+
+#: .\accounts\models.py:61 .\templates\base.html:194
+#: .\templates\pages\login.html:26 .\templates\pages\registration.html:35
+msgid "Номер телефона"
+msgstr "Telefon raqami"
+
+#: .\accounts\models.py:62 .\accounts\models.py:109
+#: .\templates\pages\profile.html:83
+msgid "Дата рождения"
+msgstr "Tug'ilgan sanasi"
+
+#: .\accounts\models.py:63 .\accounts\models.py:105
+msgid "Соц. сети"
+msgstr "Ijtimoiy tarmoqlar"
+
+#: .\accounts\models.py:65 .\templates\pages\profile.html:134
+#: .\templates\pages\sell.html:60
+msgid "Валюта"
+msgstr "Valyuta"
+
+#: .\accounts\models.py:66
+msgid "почтовый индекс"
+msgstr "pochta indeksi"
+
+#: .\accounts\models.py:69 .\templates\pages\profile.html:103
+msgid "Улица/дом/квартира"
+msgstr "Ko'cha/bino/honadon"
+
+#: .\accounts\models.py:88 .\gallery\models.py:337 .\gallery\models.py:391
+#: .\gallery\models.py:478 .\gallery\models.py:496
+msgid "Пользователь"
+msgstr "Foydalanuvchi"
+
+#: .\accounts\models.py:89
+msgid "Пользователи"
+msgstr "Foydalanuvchilar"
+
+#: .\accounts\models.py:94 .\gallery\models.py:298 .\gallery\models.py:518
+#: .\general\models.py:117 .\general\models.py:136 .\general\models.py:200
+msgid "Фото"
+msgstr "Rasm"
+
+#: .\accounts\models.py:95
+msgid "Иконка генерируется автоматически"
+msgstr "Belgi avtomatik ravishda yaratiladi"
+
+#: .\accounts\models.py:96
+msgid "Вид деятельности"
+msgstr "Ish turi"
+
+#: .\accounts\models.py:98 .\general\models.py:173
+#: .\templates\pages\auction-detail.html:42
+#: .\templates\pages\catalog-detail.html:66
+#: .\templates\pages\main_filter.html:28
+msgid "Течение"
+msgstr "Yo'nalish"
+
+#: .\accounts\models.py:100 .\accounts\models.py:132
+msgid "Занятие1"
+msgstr "Kategoriya"
+
+#: .\accounts\models.py:102
+msgid "Номер договора"
+msgstr "Shartnoma raqami"
+
+#: .\accounts\models.py:107 .\templates\pages\artists-detail.html:24
+msgid "Занятие"
+msgstr "Kasb"
+
+#: .\accounts\models.py:108
+msgid "Био"
+msgstr "Bio"
+
+#: .\accounts\models.py:110
+msgid "Дата смерти"
+msgstr "Vafot sanasi"
+
+#: .\accounts\models.py:111
+msgid "Организация"
+msgstr "Korxona"
+
+#: .\accounts\models.py:125 .\gallery\models.py:59 .\gallery\models.py:200
+#: .\gallery\models.py:315 .\templates\pages\filter.html:18
+#: .\templates\pages\sell.html:31
+msgid "Автор"
+msgstr "Muallif"
+
+#: .\accounts\models.py:126 .\templates\header.html:104
+msgid "Авторы"
+msgstr "Mualliflar"
+
+#: .\accounts\models.py:148
+msgid "Ремесло"
+msgstr "Hunarmandchilik"
+
+#: .\accounts\models.py:149
+msgid "Ремесла"
+msgstr "Hunarmandchiliklar"
+
+#: .\accounts\models.py:153
+msgid "Название соц. сети"
+msgstr "Ijtimoiy tarmoq nomi"
+
+#: .\accounts\models.py:155
+msgid "Ссылка на соц.сеть"
+msgstr "Ijtimoiy tarmoqqa havola"
+
+#: .\accounts\models.py:160
+msgid "Соц.сеть"
+msgstr "Ijtimoiy tarmoq"
+
+#: .\accounts\models.py:161
+msgid "Соц.сети"
+msgstr "Ijtimoiy tarmoqlar"
+
+#: .\accounts\translation.py:9 .\accounts\translation.py:14
+#: .\gallery\translation.py:8 .\gallery\translation.py:13
+#: .\gallery\translation.py:18 .\gallery\translation.py:23
+#: .\general\translation.py:24 .\general\translation.py:29
+#: .\general\translation.py:34 .\general\translation.py:39
+#: .\general\translation.py:44 .\general\translation.py:49
+#: .\general\translation.py:54
+msgid "-- sorry, no translation provided --"
+msgstr "-- kechirasiz, tarjima keltirilmagan --"
+
+#: .\accounts\views.py:91 .\general\views.py:874 .\general\views.py:1035
+msgid "Your profile has been saved successfully!"
+msgstr "Foydalanuvchi profili muvaffaqiyatli o'zgartirildi"
+
+#: .\art\settings.py:144
+msgid "Russian"
+msgstr "Russcha"
+
+#: .\art\settings.py:145
+msgid "Uzbek"
+msgstr "O'zbekcha"
+
+#: .\art\settings.py:146
+msgid "English"
+msgstr "Inglizcha"
+
+#: .\art\settings.py:147
+msgid "Chinese"
+msgstr "Xitoycha"
+
+#: .\billing\models.py:8
+msgid "Выполнен"
+msgstr "Amalga oshirilgan"
+
+#: .\billing\models.py:9
+msgid "Отменён"
+msgstr "Bekor etildi"
+
+#: .\gallery\apps.py:7 .\gallery\models.py:527 .\templates\header.html:94
+msgid "Галерея"
+msgstr "Galereya"
+
+#: .\gallery\models.py:16
+msgid "Заказан"
+msgstr "Buyurtma etildi"
+
+#: .\gallery\models.py:17 .\gallery\models.py:31 .\gallery\models.py:38
+#: .\templates\pages\catalog-detail.html:130
+#: .\templates\pages\catalog-detail.html:190
+msgid "Продано"
+msgstr "Sotildi"
+
+#: .\gallery\models.py:18
+msgid "Новый"
+msgstr "Yangi"
+
+#: .\gallery\models.py:22
+msgid "Оплачено"
+msgstr "To'landi"
+
+#: .\gallery\models.py:23 .\gallery\models.py:33 .\gallery\models.py:39
+msgid "Ожидается"
+msgstr "Kutilmoqda"
+
+#: .\gallery\models.py:24
+msgid "Завершено"
+msgstr "Tugallandi"
+
+#: .\gallery\models.py:25 .\gallery\models.py:40
+msgid "Отменено"
+msgstr "Bekor etildi"
+
+#: .\gallery\models.py:26
+msgid "Возврашено"
+msgstr "Qaytarildi"
+
+#: .\gallery\models.py:27
+msgid "Отклонено"
+msgstr "Rad etildi"
+
+#: .\gallery\models.py:32
+msgid "В корзине"
+msgstr "Savatchada"
+
+#: .\gallery\models.py:34
+msgid "В избранном"
+msgstr "Sevimlida"
+
+#: .\gallery\models.py:45 .\gallery\models.py:177
+msgid "Уникальный артикль (генерируется автоматически)"
+msgstr "Noyob maqola (avtomatik ravishda yaratilgan)"
+
+#: .\gallery\models.py:51
+msgid "Oтдел"
+msgstr "Bo'lim"
+
+#: .\gallery\models.py:64
+msgid "жанр"
+msgstr "janr"
+
+#: .\gallery\models.py:66 .\gallery\models.py:197 .\general\models.py:41
+#: .\general\models.py:134 .\general\models.py:146 .\general\models.py:156
+#: .\general\models.py:166 .\general\models.py:178 .\general\models.py:188
+#: .\general\models.py:234 .\templates\pages\sell.html:34
+msgid "Название"
+msgstr "Nomi"
+
+#: .\gallery\models.py:67 .\gallery\models.py:208 .\gallery\models.py:297
+#: .\general\models.py:135 .\templates\pages\priklad.html:105
+msgid "Описание"
+msgstr "Tavsifi"
+
+#: .\gallery\models.py:69 .\gallery\models.py:188
+msgid "Bид"
+msgstr "Turi"
+
+#: .\gallery\models.py:71
+msgid "период"
+msgstr "davr"
+
+#: .\gallery\models.py:74
+msgid "течение"
+msgstr "yo'nalish"
+
+#: .\gallery\models.py:76
+msgid "сервисы"
+msgstr "servislar"
+
+#: .\gallery\models.py:79 .\gallery\models.py:210
+#: .\templates\pages\auction-detail.html:37
+#: .\templates\pages\catalog-detail.html:48 .\templates\pages\sell.html:47
+msgid "Размер"
+msgstr "Hajmi"
+
+#: .\gallery\models.py:81 .\gallery\models.py:212
+msgid "Система Исчесления"
+msgstr "Sanoq sistemasi"
+
+#: .\gallery\models.py:87 .\templates\pages\auction-detail.html:38
+#: .\templates\pages\catalog-detail.html:51
+msgid "Подпись (положение подписи)"
+msgstr "Imzo (imzo joylashuvi)"
+
+#: .\gallery\models.py:88 .\gallery\models.py:234
+msgid "Контент 16+"
+msgstr "16+ lavha"
+
+#: .\gallery\models.py:91 .\gallery\models.py:221 .\general\models.py:15
+#: .\general\models.py:29 .\templates\base.html:137 .\templates\base.html:138
+#: .\templates\pages\basket.html:118 .\templates\pages\catalog-detail.html:60
+#: .\templates\pages\filter.html:8 .\templates\pages\profile.html:91
+msgid "Страна"
+msgstr "Ijtimoiy tarmoq"
+
+#: .\gallery\models.py:99 .\gallery\models.py:227 .\general\models.py:37
+msgid "Регионы"
+msgstr "Hududlar"
+
+#: .\gallery\models.py:100 .\gallery\models.py:217 .\general\models.py:206
+#: .\templates\pages\auction-detail.html:50
+#: .\templates\pages\catalog-detail.html:96
+#: .\templates\pages\catalog-detail.html:99 .\templates\pages\priklad.html:64
+#: .\templates\pages\sell.html:57
+msgid "Цена"
+msgstr "Narxi"
+
+#: .\gallery\models.py:101 .\gallery\models.py:235
+msgid "Количество"
+msgstr "Qiymat"
+
+#: .\gallery\models.py:104 .\gallery\models.py:238 .\gallery\models.py:448
+#: .\gallery\models.py:459
+msgid "Скидка"
+msgstr "Chegirma"
+
+#: .\gallery\models.py:110 .\gallery\models.py:248
+msgid "Доступно для продажи"
+msgstr "Sotuvga qo'yilgan"
+
+#: .\gallery\models.py:111 .\gallery\models.py:249
+msgid "Популярный"
+msgstr "Mashhur"
+
+#: .\gallery\models.py:112 .\gallery\models.py:194
+msgid "Изображение"
+msgstr "Rasm"
+
+#: .\gallery\models.py:113 .\gallery\models.py:195
+msgid "Иконка (генерируется автоматически)"
+msgstr "Belgi (avtomatik ravishda yaratiladi)"
+
+#: .\gallery\models.py:116 .\gallery\models.py:209
+#: .\templates\pages\auction-detail.html:41
+#: .\templates\pages\catalog-detail.html:57
+msgid "Mатериал"
+msgstr "Material"
+
+#: .\gallery\models.py:118
+msgid "Год исполнения"
+msgstr "Amalga oshirilgan yili"
+
+#: .\gallery\models.py:120 .\gallery\models.py:218 .\general\models.py:240
+msgid "Теги"
+msgstr "Teglar"
+
+#: .\gallery\models.py:121
+msgid "прайс ап"
+msgstr "narh ko'tarilishi"
+
+#: .\gallery\models.py:123 .\gallery\models.py:229 .\general\models.py:193
+msgid "продавец"
+msgstr "sotuvchi"
+
+#: .\gallery\models.py:126 .\gallery\models.py:232
+msgid "для интерьера"
+msgstr "interyer uchun"
+
+#: .\gallery\models.py:128 .\gallery\models.py:244 .\gallery\models.py:373
+#: .\gallery\models.py:432
+msgid "Cтатус"
+msgstr "Holat"
+
+#: .\gallery\models.py:130 .\gallery\models.py:247 .\gallery\models.py:312
+msgid "Дата публикации"
+msgstr "Chop etish sanasi"
+
+#: .\gallery\models.py:132 .\gallery\models.py:245
+msgid "Дата начала продажи"
+msgstr "Sotuv boshlanish sanasi"
+
+#: .\gallery\models.py:134 .\gallery\models.py:246
+msgid "Дата окончания продажи"
+msgstr "Sotuv tugash sanasi"
+
+#: .\gallery\models.py:135 .\gallery\models.py:250
+msgid "Добавить логотип"
+msgstr "Logotip qo'shish"
+
+#: .\gallery\models.py:171 .\gallery\models.py:302 .\gallery\models.py:358
+#: .\gallery\models.py:417 .\gallery\models.py:425 .\gallery\models.py:466
+#: .\gallery\models.py:502 .\gallery\models.py:521
+msgid "Произведение"
+msgstr "Asar"
+
+#: .\gallery\models.py:172 .\gallery\models.py:342 .\gallery\models.py:403
+msgid "Произведения"
+msgstr "Asarlar"
+
+#: .\gallery\models.py:190 .\general\models.py:151
+#: .\templates\pages\priklad.html:75
+msgid "Тип"
+msgstr "Tur"
+
+#: .\gallery\models.py:192 .\general\models.py:161
+msgid "Центр/школа"
+msgstr "Markaz/maktab"
+
+#: .\gallery\models.py:205 .\templates\pages\filter-result.html:19
+msgid "Год создания"
+msgstr "Yaratilgan yili"
+
+#: .\gallery\models.py:206 .\general\models.py:183
+#: .\templates\pages\auction-detail.html:39
+#: .\templates\pages\catalog-detail.html:54 .\templates\pages\sell.html:41
+msgid "Период"
+msgstr "Davr"
+
+#: .\gallery\models.py:228 .\gallery\models.py:601 .\gallery\models.py:602
+#: .\gallery\models.py:638 .\gallery\models.py:639
+msgid "Прайс ап"
+msgstr "Prays ap"
+
+#: .\gallery\models.py:286 .\gallery\models.py:366
+#: .\templates\pages\home.html:65
+msgid "Прикладное искусство"
+msgstr "Amaliy san'at"
+
+#: .\gallery\models.py:287 .\gallery\models.py:609
+msgid "Прикладные искусства"
+msgstr "Amaliy san'at"
+
+#: .\gallery\models.py:291
+msgid "Заголовок"
+msgstr "Sarlavha"
+
+#: .\gallery\models.py:299 .\general\models.py:116 .\general\models.py:199
+msgid "Текст"
+msgstr "Matn"
+
+#: .\gallery\models.py:308 .\general\models.py:110
+#: .\templates\pages\auction-detail.html:43
+#: .\templates\pages\catalog-detail.html:69 .\templates\pages\sell.html:25
+msgid "Жанр"
+msgstr "Janr"
+
+#: .\gallery\models.py:330
+msgid "Статья"
+msgstr "Maqola"
+
+#: .\gallery\models.py:331
+msgid "Статьи"
+msgstr "Maqolalar"
+
+#: .\gallery\models.py:351 .\templates\pages\basket.html:18
+msgid "Корзина"
+msgstr "Savatcha"
+
+#: .\gallery\models.py:352
+msgid "Корзины"
+msgstr "Savatchalar"
+
+#: .\gallery\models.py:384
+msgid "Продукт в корзине"
+msgstr "Savatchadagi mahsulot"
+
+#: .\gallery\models.py:385
+msgid "Продукты в корзине"
+msgstr "Savatchadagi mahsulotlar"
+
+#: .\gallery\models.py:396
+msgid "Статус"
+msgstr "Status"
+
+#: .\gallery\models.py:397
+msgid "Под итог"
+msgstr "Jami"
+
+#: .\gallery\models.py:398 .\gallery\models.py:460
+msgid "Скидки"
+msgstr "Chegirmalar"
+
+#: .\gallery\models.py:399 .\templates\pages\basket.html:91
+#: .\templates\pages\basket.html:94 .\templates\pages\favorite.html:107
+#: .\templates\pages\favorite.html:110
+msgid "Итого"
+msgstr "Jami"
+
+#: .\gallery\models.py:400
+msgid "Оформлено"
+msgstr "Tasdiqlandi"
+
+#: .\gallery\models.py:401
+msgid "Обновлено"
+msgstr "Yangiladi"
+
+#: .\gallery\models.py:410
+msgid "Заказ"
+msgstr "Buyurtma"
+
+#: .\gallery\models.py:411
+msgid "Заказы"
+msgstr "Buyurtmalar"
+
+#: .\gallery\models.py:443
+msgid "Продукт в заказе"
+msgstr "Buyurtmadagi mahsulot"
+
+#: .\gallery\models.py:444
+msgid "Продукты в заказе"
+msgstr "Buyurtmadagi mahsulotlar"
+
+#: .\gallery\models.py:450
+msgid "Дата начала скидки"
+msgstr "Chegirma boshlanish sanasi"
+
+#: .\gallery\models.py:453
+msgid "Дата окончания скидки"
+msgstr "Chegirma tugash sanasi"
+
+#: .\gallery\models.py:472
+msgid "Родительский обзор"
+msgstr "Ona sharh"
+
+#: .\gallery\models.py:480 .\templates\header.html:128
+msgid "Оценка"
+msgstr "Baho"
+
+#: .\gallery\models.py:481 .\gallery\models.py:489
+msgid "Обзор"
+msgstr "Sharh"
+
+#: .\gallery\models.py:482
+msgid "Виден"
+msgstr "Ko'rinadi"
+
+#: .\gallery\models.py:483
+msgid "Дата обзора"
+msgstr "Sharhlash sanasi"
+
+#: .\gallery\models.py:490
+msgid "Обзоры"
+msgstr "Sharhlar"
+
+#: .\gallery\models.py:506
+msgid "Дата создания"
+msgstr "Yaralish sanasi"
+
+#: .\gallery\models.py:507
+msgid "Дата изменения"
+msgstr "O'zgarish sanasi"
+
+#: .\gallery\models.py:513
+msgid "Лайк"
+msgstr "Layk"
+
+#: .\gallery\models.py:514
+msgid "Лайки"
+msgstr "Layklar"
+
+#: .\gallery\models.py:528
+msgid "Галереи"
+msgstr "Galereyalar"
+
+#: .\gallery\models.py:535 .\gallery\models.py:572
+msgid "Предмет Искусства"
+msgstr "Sa'nat asari"
+
+#: .\gallery\models.py:547
+msgid "Победитель аукциона"
+msgstr "Auksion g'olibi"
+
+#: .\gallery\models.py:551
+msgid "Участники аукциона"
+msgstr "Auksion ishtirokchilari"
+
+#: .\gallery\models.py:552 .\gallery\models.py:589 .\gallery\models.py:626
+#: .\templates\pages\auctions.html:30
+msgid "Дата начала"
+msgstr "Boshlanish sanasi"
+
+#: .\gallery\models.py:553 .\gallery\models.py:590 .\gallery\models.py:627
+msgid "Дата окончания"
+msgstr "Tugash sanasi"
+
+#: .\gallery\models.py:564 .\templates\pages\auction-detail.html:17
+msgid "Аукцион"
+msgstr "Auksion"
+
+#: .\gallery\models.py:565 .\templates\header.html:121
+msgid "Аукционы"
+msgstr "Auksionlar"
+
+#: .\gallery\models.py:584 .\gallery\models.py:621
+msgid "Победитель прайс ап"
+msgstr "Prays ap g'olibi"
+
+#: .\gallery\models.py:588 .\gallery\models.py:625
+msgid "Участники прайс ап"
+msgstr "Prays ap qatnashuvchilari"
+
+#: .\gallery\models.py:661 .\gallery\models.py:662
+#, fuzzy
+#| msgid "Количество"
+msgid "Количество просмотров"
+msgstr "Qiymat"
+
+#: .\general\apps.py:7
+msgid "Главный"
+msgstr "Asosiy"
+
+#: .\general\models.py:9
+msgid "Код страны"
+msgstr "Mamlakat kodi"
+
+#: .\general\models.py:10
+msgid "Название страны"
+msgstr "Mamlakat nomi"
+
+#: .\general\models.py:16
+msgid "Страны"
+msgstr "Mamlakatlar"
+
+#: .\general\models.py:27
+msgid "Название региона"
+msgstr "Hudud nomi"
+
+#: .\general\models.py:36 .\templates\pages\catalog-detail.html:63
+msgid "Регион"
+msgstr "Hudud"
+
+#: .\general\models.py:42
+msgid "Путь к значку"
+msgstr "Belgigacha yo'l"
+
+#: .\general\models.py:43 .\general\models.py:65 .\general\models.py:124
+#: .\general\models.py:207
+msgid "Порядок"
+msgstr "Tartib"
+
+#: .\general\models.py:48 .\general\models.py:63 .\templates\pages\sell.html:18
+msgid "Раздел"
+msgstr "Bo'lim"
+
+#: .\general\models.py:49
+msgid "Разделы"
+msgstr "Bo'limlar"
+
+#: .\general\models.py:56
+msgid "Родительская категория"
+msgstr "Ona kategoriya"
+
+#: .\general\models.py:80 .\general\models.py:168
+msgid "Категория"
+msgstr "Kategoriya"
+
+#: .\general\models.py:81
+msgid "Категории"
+msgstr "Kategoriyalar"
+
+#: .\general\models.py:85
+msgid "Название жанра"
+msgstr "Janr nomi"
+
+#: .\general\models.py:86
+msgid "Описание жанра"
+msgstr "Janr tavsifi"
+
+#: .\general\models.py:89
+msgid "Родительский жанр"
+msgstr "Ona janr"
+
+#: .\general\models.py:111 .\templates\pages\main_filter.html:16
+msgid "Жанры"
+msgstr "Janrlar"
+
+#: .\general\models.py:129 .\general\models.py:130 .\templates\header.html:148
+msgid "О нас"
+msgstr "Biz haqimizda"
+
+#: .\general\models.py:141 .\templates\pages\main_filter.html:41
+msgid "Вид"
+msgstr "Turi"
+
+#: .\general\models.py:142
+msgid "Виды"
+msgstr "Turlari"
+
+#: .\general\models.py:152
+msgid "Типы"
+msgstr "Tiplar"
+
+#: .\general\models.py:162
+msgid "Центр/школы"
+msgstr "Markaz/maktab"
+
+#: .\general\models.py:174
+msgid "Течении"
+msgstr "Yo'nalish"
+
+#: .\general\models.py:184
+msgid "Периоды"
+msgstr "Davrlar"
+
+#: .\general\models.py:194
+msgid "продавцы"
+msgstr "sotuvchilar"
+
+#: .\general\models.py:208
+msgid "Показать картины"
+msgstr "Rasmlarni ko'rsatish"
+
+#: .\general\models.py:218
+msgid "Услуга"
+msgstr "Xizmat"
+
+#: .\general\models.py:219 .\templates\header.html:161
+msgid "Услуги"
+msgstr "Xizmatlar"
+
+#: .\general\models.py:229
+msgid "Картинка в сервисах"
+msgstr "'Service'dagi rasm"
+
+#: .\general\models.py:230
+msgid "Картинки в сервисах"
+msgstr "'Service'dagi rasmlar"
+
+#: .\general\models.py:239
+msgid "Тег"
+msgstr "Teg"
+
+#: .\general\models.py:265
+msgid "Запрос на продажу"
+msgstr "Sotuvga so'rov"
+
+#: .\general\models.py:266
+msgid "Запросы на продажу"
+msgstr "Sotuvga so'rovlar"
+
+#: .\general\models.py:272
+msgid "Описание члена команды"
+msgstr "Jamoa a'zosi tavsifi"
+
+#: .\general\models.py:273
+msgid "Эксперт"
+msgstr "Ekspert"
+
+#: .\general\models.py:278
+msgid "Член команды"
+msgstr "Jamoa a'zosi"
+
+#: .\general\models.py:279
+msgid "Члены команды"
+msgstr "Jamoa a'zolari"
+
+#: .\general\models.py:283 .\general\models.py:288
+msgid "Система измерения"
+msgstr "Sanoq sistemasi"
+
+#: .\general\models.py:289
+msgid "Системы измерения"
+msgstr "Sanoq sistemasi"
+
+#: .\general\views.py:876
+msgid "Error in your profile"
+msgstr "Profilingizda hatolik yuzberdi"
+
+#: .\public\artists.html:315 .\templates\pages\catalog.html:85
+#: .\templates\pages\catalog.html:218 .\templates\pages\catalog.html:262
+msgid "Размер:"
+msgstr "Hajmi"
+
+#: .\public\artists.html:315 .\templates\pages\catalog-detail.html:92
+#: .\templates\pages\catalog.html:85 .\templates\pages\catalog.html:218
+#: .\templates\pages\catalog.html:262
+msgid "Материал:"
+msgstr "Material"
+
+#: .\public\artists.html:329 .\templates\pages\catalog.html:100
+#: .\templates\pages\catalog.html:232 .\templates\pages\catalog.html:276
+msgid "KУПИТЬ"
+msgstr "Sotib olish"
+
+#: .\templates\base.html:108 .\templates\base.html:164
+msgid "Регистрация"
+msgstr "Ro'yihatdan o'tish"
+
+#: .\templates\base.html:109
+msgid "Вход"
+msgstr "Kirish"
+
+#: .\templates\base.html:112 .\templates\base.html:168
+msgid "Зарегистрироваться по SMS"
+msgstr "Ro'yxatdan o'tish"
+
+#: .\templates\base.html:117 .\templates\base.html:121
+#: .\templates\base.html:125 .\templates\base.html:129
+#: .\templates\base.html:133 .\templates\base.html:141
+#: .\templates\base.html:147 .\templates\base.html:153
+#: .\templates\base.html:162 .\templates\pages\registration.html:39
+#: .\templates\pages\registration.html:63
+#: .\templates\pages\registration.html:86
+#: .\templates\pages\registration.html:92
+#: .\templates\pages\registration.html:96
+#: .\templates\pages\registration.html:100
+msgid "обязательно для заполнения"
+msgstr "to'ldirish talab qilinadi"
+
+#: .\templates\base.html:128 .\templates\pages\basket.html:136
+msgid "Почтовый индекс"
+msgstr "pochta indeksi"
+
+#: .\templates\base.html:134 .\templates\pages\registration.html:40
+msgid "Введите корректный Email"
+msgstr "Yaroqli email kiriting"
+
+#: .\templates\base.html:139 .\templates\pages\basket.html:124
+#: .\templates\pages\profile.html:97
+msgid "Город"
+msgstr "Shahar"
+
+#: .\templates\base.html:151
+msgid "Повторить пароль"
+msgstr "Parolni tasdiqlash"
+
+#: .\templates\base.html:154
+msgid "Пароль не совпадает"
+msgstr "Parollar mos kelmadi"
+
+#: .\templates\base.html:160
+msgid "Регистрируясь или авторизуясь вы соглашаетесь с "
+msgstr ""
+"Ro'yxatdan o'tish yoki tizimga kirish orqali siz quyidagilarga rozilik "
+"bildirasiz"
+
+#: .\templates\base.html:160
+msgid "Пользовательским соглашением"
+msgstr "'Foydalanuvchilik kelishuvi'"
+
+#: .\templates\base.html:160
+msgid "Политикой конфеденциальности"
+msgstr "'Maxfiylik siyosati'"
+
+#: .\templates\base.html:175 .\templates\pages\login.html:29
+#: .\templates\pages\registration.html:43
+msgid "Пароль"
+msgstr "Parol"
+
+#: .\templates\base.html:188
+msgid "Авторизация"
+msgstr "Tizimga kirish"
+
+#: .\templates\base.html:197
+msgid "Получить код заново"
+msgstr "Kodni takroran yuvorish"
+
+#: .\templates\base.html:201
+msgid "Подтвердить код"
+msgstr "Parolni tasdiqlash"
+
+#: .\templates\base.html:203
+msgid "Получить код"
+msgstr "Parolni tasdiqlash"
+
+#: .\templates\footer.html:6
+msgid "Подписывайтесь на нас"
+msgstr "Bizga obuna bo'ling"
+
+#: .\templates\footer.html:7
+msgid "и следите последними новостями"
+msgstr "yangiliklarni kuzatib boring"
+
+#: .\templates\footer.html:50
+msgid "Каталог"
+msgstr "Katalog"
+
+#: .\templates\footer.html:51
+msgid "Художники"
+msgstr "Rassomlar"
+
+#: .\templates\footer.html:52
+msgid "Блог"
+msgstr "Blog"
+
+#: .\templates\footer.html:55
+msgid "Жанры изобразительного искусства"
+msgstr "Tasviriy san'at janrlari"
+
+#: .\templates\footer.html:56 .\templates\pages\appliedart-types.html:15
+#, fuzzy
+#| msgid "Прикладное искусство"
+msgid "Виды прикладного искусства"
+msgstr "Amaliy san'at ko'rinishlari"
+
+#: .\templates\footer.html:57 .\templates\header.html:155
+msgid "Эксперты"
+msgstr "Ekspertlar"
+
+#: .\templates\footer.html:86
+msgid "Адресс"
+msgstr "Manzil"
+
+#: .\templates\footer.html:87
+msgid "г. Ташкент, ул. Садыка"
+msgstr "Toshkent sh., Sodiq Azimov ko'chasi"
+
+#: .\templates\footer.html:87
+msgid "Азимова, 35"
+msgstr "Sodiq Azimov, 35"
+
+#: .\templates\footer.html:87
+msgid "Индекс: 100000"
+msgstr "Pochta indeksi: 100000"
+
+#: .\templates\header.html:87
+msgid "Доставить в"
+msgstr "Yetkazib berish"
+
+#: .\templates\header.html:123 .\templates\pages\auctions.html:17
+#: .\templates\pages\priklad.html:18
+msgid "Календарь"
+msgstr "Kalendar"
+
+#: .\templates\header.html:124
+msgid "Результаты"
+msgstr "Natijalar"
+
+#: .\templates\header.html:130
+msgid "Совершение сделок с предметами искусства"
+msgstr "San'at ob'ektlari bilan ishlash"
+
+#: .\templates\header.html:131
+msgid "Пополнение музейных коллекций"
+msgstr "Muzey kolleksiyalarini to'ldirish"
+
+#: .\templates\header.html:132
+msgid "Оценка стоимости коллекций"
+msgstr "To'plamni baholash"
+
+#: .\templates\header.html:133
+msgid "Экспертиза"
+msgstr "Ekspertiza"
+
+#: .\templates\header.html:134
+msgid "Оценка залоговой стоимости"
+msgstr "Garov qiymatini baholash"
+
+#: .\templates\header.html:135
+msgid "Страхование и оценка ущерба"
+msgstr "Sug'urta va zararni baholash"
+
+#: .\templates\header.html:143
+msgid "Продать"
+msgstr "Sotish"
+
+#: .\templates\header.html:156 .\templates\pages\team.html:15
+msgid "Наша команда"
+msgstr "Bizning jamoa"
+
+#: .\templates\header.html:174
+msgid "Проекты"
+msgstr "Proyektlar"
+
+#: .\templates\header.html:176
+msgid "Журнал"
+msgstr "Jurnal"
+
+#: .\templates\header.html:177
+msgid "Арт- лекторий"
+msgstr "San'at ma'ruza zali"
+
+#: .\templates\header.html:185
+msgid "Введите больше 3х символов для корректного поиска"
+msgstr "To'g'ri qidirish uchun 3 dan ortiq belgi kiriting"
+
+#: .\templates\header.html:189
+msgid "Искать на art-v"
+msgstr "Qidirish art-v"
+
+#: .\templates\header.html:262
+msgid "Курсы валют ЦБ с"
+msgstr "O'zbekiston Respublikasi MB 1 sumga nisbatan valyutalar kursi"
+
+#: .\templates\header.html:300
+msgid "Сайт работает в тестовом режиме"
+msgstr "Sayt test rejimida"
+
+#: .\templates\pages\about-detail.html:5 .\templates\pages\priklad.html:6
+msgid "About Detail"
+msgstr "Biz Haqimizda Ma'lumoti"
+
+#: .\templates\pages\about.html:5
+msgid "About"
+msgstr "Biz haqimizda"
+
+#: .\templates\pages\appliedart-types-detail.html:5
+#: .\templates\pages\gallery-detail.html:5
+#: .\templates\pages\genres-detail.html:5
+msgid "Gallery"
+msgstr "Galereya"
+
+#: .\templates\pages\appliedart-types.html:5 .\templates\pages\genres.html:5
+msgid "Genres"
+msgstr "Janrlar"
+
+#: .\templates\pages\appliedart-types.html:26 .\templates\pages\genres.html:26
+msgid "images"
+msgstr "rasmlar"
+
+#: .\templates\pages\artists-detail.html:5
+msgid "Artist Detail"
+msgstr "Mualliflar tavsifi"
+
+#: .\templates\pages\artists-detail.html:22
+msgid "Год рождения"
+msgstr "Tug'ilgan yili"
+
+#: .\templates\pages\artists-detail.html:35
+msgid "Стиль художника"
+msgstr "Rassom uslubi"
+
+#: .\templates\pages\artists-detail.html:47
+msgid "Работы"
+msgstr "Asarlar"
+
+#: .\templates\pages\artists-detail.html:73
+#: .\templates\pages\artists-detail.html:101 .\templates\pages\artists.html:43
+#: .\templates\pages\craftmanship.html:45
+msgid "ПОДРОБНЕЕ"
+msgstr "Ko'proq"
+
+#: .\templates\pages\artists-detail.html:108
+msgid "Схожие Авторы"
+msgstr "Ox'shash mualliflar"
+
+#: .\templates\pages\artists-detail.html:127
+msgid "Узбекистан"
+msgstr "O'zbekiston"
+
+#: .\templates\pages\artists-detail.html:133
+#: .\templates\pages\auction-detail.html:94
+#: .\templates\pages\catalog-detail.html:255
+#: .\templates\pages\filter-result.html:30
+#: .\templates\pages\gallery-detail.html:129 .\templates\pages\home.html:51
+#: .\templates\pages\home.html:94 .\templates\pages\home.html:139
+#: .\templates\pages\priklad.html:117
+msgid "Подробнее"
+msgstr "Ko'proq"
+
+#: .\templates\pages\artists-detail.html:137 .\templates\pages\artists.html:47
+#: .\templates\pages\craftmanship.html:50
+#: .\templates\pages\gallery-detail.html:36
+#: .\templates\pages\gallery-detail.html:38
+msgid "Показать ещё"
+msgstr "Yana kor'satish"
+
+#: .\templates\pages\artists.html:5
+msgid "Artists"
+msgstr "Mualliflar"
+
+#: .\templates\pages\auction-detail.html:5
+msgid "Auction Detail"
+msgstr "Auksion Ma'lumoti"
+
+#: .\templates\pages\auction-detail.html:16
+#: .\templates\pages\catalog-detail.html:20
+msgid "Назад"
+msgstr "Ortga"
+
+#: .\templates\pages\auction-detail.html:17
+#: .\templates\pages\catalog-detail.html:22
+msgid "Название работы"
+msgstr "Asar nomi"
+
+#: .\templates\pages\auction-detail.html:31
+#: .\templates\pages\catalog-detail.html:42
+msgid "Детали"
+msgstr "Ma'lumotlar"
+
+#: .\templates\pages\auction-detail.html:40
+msgid "Происхождение"
+msgstr "Kelib chiqishi"
+
+#: .\templates\pages\auction-detail.html:48
+#: .\templates\pages\auction-detail.html:82 .\templates\pages\priklad.html:29
+msgid "Название картин"
+msgstr "Rasm nomi"
+
+#: .\templates\pages\auction-detail.html:49
+msgid "Имя художника, описание картины"
+msgstr "Rassomning ismi, rasmning tavsifi"
+
+#: .\templates\pages\auction-detail.html:52
+msgid "Закрытие регистрации"
+msgstr "Ro'yxatdan o'tishni tugashi"
+
+#: .\templates\pages\auction-detail.html:52
+#: .\templates\pages\auction-detail.html:53
+msgid "дней"
+msgstr "kun"
+
+#: .\templates\pages\auction-detail.html:53
+msgid "Аукцион начнется"
+msgstr "Auksion boshlanadi"
+
+#: .\templates\pages\auction-detail.html:54
+msgid "Зарегистрироваться на аукцион"
+msgstr "Auksionga ro'yxatdan o'tish"
+
+#: .\templates\pages\auction-detail.html:56
+#: .\templates\pages\catalog-detail.html:106
+#: .\templates\pages\catalog-detail.html:118
+#: .\templates\pages\catalog-detail.html:168
+#: .\templates\pages\catalog-detail.html:180 .\templates\pages\profile.html:140
+msgid "Сохранить"
+msgstr "Saqlash"
+
+#: .\templates\pages\auction-detail.html:62
+#: .\templates\pages\catalog-detail.html:157
+#: .\templates\pages\catalog-detail.html:216
+msgid "Локальная доставка"
+msgstr "Hududiy yetkazib berish"
+
+#: .\templates\pages\auction-detail.html:63
+#: .\templates\pages\catalog-detail.html:158
+#: .\templates\pages\catalog-detail.html:217
+msgid "Международная доставка"
+msgstr "Xalqaro yetkazib berish"
+
+#: .\templates\pages\auction-detail.html:72
+#: .\templates\pages\catalog-detail.html:222
+msgid "Похожие"
+msgstr "O'xshashlar"
+
+#: .\templates\pages\auction-detail.html:73
+#: .\templates\pages\catalog-detail.html:223 .\templates\pages\home.html:20
+#: .\templates\pages\home.html:66 .\templates\pages\home.html:110
+msgid "Смотреть все работы"
+msgstr "Hammasini ko'rish"
+
+#: .\templates\pages\auction-detail.html:88 .\templates\pages\priklad.html:35
+#: .\templates\pages\priklad.html:115
+msgid "Узбекистан, Самарканд"
+msgstr "O'zbekiston, Samarqand"
+
+#: .\templates\pages\auctions.html:5
+msgid "Auctions"
+msgstr "Auksionlar"
+
+#: .\templates\pages\auctions.html:14
+msgid "Раздел на стадии разработки"
+msgstr "Bo'lim loyihalashtirilyapti"
+
+#: .\templates\pages\auctions.html:18 .\templates\pages\priklad.html:19
+msgid "Результаты аукционов"
+msgstr "Auksion natijalari"
+
+#: .\templates\pages\auctions.html:49 .\templates\pages\gallery-detail.html:22
+#: .\templates\pages\priklad.html:45
+msgid "Фильтровать по"
+msgstr "Filtrlash"
+
+#: .\templates\pages\auctions.html:50 .\templates\pages\gallery-detail.html:24
+#: .\templates\pages\priklad.html:46
+msgid "Очистить все"
+msgstr "Hammasini tozalash"
+
+#: .\templates\pages\basket.html:8
+msgid "Cart"
+msgstr "Savat"
+
+#: .\templates\pages\basket.html:30 .\templates\pages\favorite.html:23
+msgid "Товар"
+msgstr "Mahsulot"
+
+#: .\templates\pages\basket.html:31 .\templates\pages\favorite.html:24
+msgid "Автор и название картин"
+msgstr "Rasmlar muallifi va nomi"
+
+#: .\templates\pages\basket.html:32 .\templates\pages\favorite.html:26
+msgid "Артикул"
+msgstr "Maqola"
+
+#: .\templates\pages\basket.html:89
+msgid "в вашей корзине"
+msgstr "sizning savatingizda"
+
+#: .\templates\pages\basket.html:89
+msgid "товар"
+msgstr "mahsulot"
+
+#: .\templates\pages\basket.html:96
+msgid "Товаров"
+msgstr "Mahsulotlar"
+
+#: .\templates\pages\basket.html:98
+msgid "Очистить корзину"
+msgstr "Savatni tozalash"
+
+#: .\templates\pages\basket.html:101 .\templates\pages\order.html:22
+msgid "Оформление заказа"
+msgstr "Buyurtma"
+
+#: .\templates\pages\basket.html:106
+msgid "E-mail"
+msgstr ""
+
+#: .\templates\pages\basket.html:112 .\templates\pages\profile.html:110
+msgid "Телефон"
+msgstr "Telefon raqami"
+
+#: .\templates\pages\basket.html:130
+msgid "Улица/Дом/Квартира"
+msgstr "Ko'cha/Bino/Honadon"
+
+#: .\templates\pages\basket.html:142
+msgid "Если все данные верны, нажмите 'Оформить':"
+msgstr ""
+"Agar barcha ma'lumotlar to'g'ri bo'lsa, \"Buyurtma berish\" tugmasini bosing:"
+
+#: .\templates\pages\basket.html:144
+msgid "Оформить"
+msgstr "Buyurtma berish"
+
+#: .\templates\pages\blog-detail.html:5
+msgid "Blog Detail"
+msgstr "Blog Ma'lumoti"
+
+#: .\templates\pages\blog.html:6
+msgid "Blog"
+msgstr "Blog"
+
+#: .\templates\pages\blog.html:16 .\templates\pages\blog.html:64
+#: .\templates\pages\blog.html:65 .\templates\pages\home.html:153
+msgid "Интересные статьи"
+msgstr "Qiziqarli maqolalar"
+
+#: .\templates\pages\blog.html:25 .\templates\pages\blog.html:37
+#: .\templates\pages\blog.html:49
+msgid "Заголовок статьи"
+msgstr "Maqola sarlavhasi"
+
+#: .\templates\pages\blog.html:28 .\templates\pages\blog.html:39
+#: .\templates\pages\blog.html:51
+msgid "Текст текст"
+msgstr "Matn matn matn matn matn matn matn matn ..."
+
+#: .\templates\pages\catalog-detail.html:8
+msgid "Catalog Detail"
+msgstr "Katalog Ma'lumoti"
+
+#: .\templates\pages\catalog-detail.html:84
+msgid "Для интерьера"
+msgstr "Interyer uchun"
+
+#: .\templates\pages\catalog-detail.html:89
+msgid "Год создания:"
+msgstr "Yaratilgan sana"
+
+#: .\templates\pages\catalog-detail.html:138
+#: .\templates\pages\catalog-detail.html:148
+#: .\templates\pages\catalog-detail.html:198
+#: .\templates\pages\catalog-detail.html:208
+msgid "Добавить в корзину"
+msgstr "Savatga qo'shish"
+
+#: .\templates\pages\catalog-detail.html:236 .\templates\pages\home.html:122
+#: .\templates\pages\priklad.html:29
+msgid "год"
+msgstr "yil"
+
+#: .\templates\pages\catalog.html:5
+msgid "Catalog"
+msgstr "Katalog"
+
+#: .\templates\pages\catalog.html:312
+msgid "По вашему запросу ничего не найдено"
+msgstr "Sizning so'rovingiz bo'yicha hech narsa topilmadi"
+
+#: .\templates\pages\contact.html:6
+msgid "Contacts"
+msgstr "Kontaktlar"
+
+#: .\templates\pages\craftmanship.html:5
+msgid "Craftmanship"
+msgstr "Hunarmandchilik"
+
+#: .\templates\pages\experts.html:5 .\templates\pages\team.html:5
+msgid "Team"
+msgstr "Jamoa"
+
+#: .\templates\pages\experts.html:15
+msgid "Наши эксперты"
+msgstr "Bizning ekspertlar"
+
+#: .\templates\pages\favorite.html:8
+msgid "Favorite"
+msgstr "Sevimlilar"
+
+#: .\templates\pages\favorite.html:18
+msgid "Избранное"
+msgstr "Sevimlilar"
+
+#: .\templates\pages\favorite.html:25
+msgid "Кол-во"
+msgstr "Miqdori"
+
+#: .\templates\pages\filter.html:44
+msgid "По возрастанию"
+msgstr "O'sishi bo'yicha"
+
+#: .\templates\pages\filter.html:45
+msgid "По убыванию"
+msgstr "Pasayishi bo'yicha"
+
+#: .\templates\pages\filter.html:49
+msgid "Поиск"
+msgstr "Qidirish"
+
+#: .\templates\pages\gallery-detail.html:120 .\templates\pages\priklad.html:108
+msgid "Номер лота"
+msgstr "Lot raqami"
+
+#: .\templates\pages\genres.html:15
+msgid "Жанры в изобразительном искусстве"
+msgstr "Tasviriy san'at janrlari"
+
+#: .\templates\pages\history.html:6
+msgid "History of Orders"
+msgstr "Buyurtmalar tarixi"
+
+#: .\templates\pages\history.html:17 .\templates\pages\profile.html:31
+msgid "Профиль пользователя"
+msgstr "Foydalanuvchi profili"
+
+#: .\templates\pages\history.html:19 .\templates\pages\profile.html:33
+msgid "Добро пожаловать в пользовательский центр!"
+msgstr "Foydalanuvchi markaziga xush kelibsiz"
+
+#: .\templates\pages\history.html:38 .\templates\pages\history.html:54
+#: .\templates\pages\profile.html:50
+msgid "История заказов"
+msgstr "Buyurtmalar tarixi"
+
+#: .\templates\pages\history.html:43 .\templates\pages\profile.html:55
+msgid "Личные данные"
+msgstr "Shaxsiy ma'lumotlar"
+
+#: .\templates\pages\history.html:49 .\templates\pages\history.html:94
+#: .\templates\pages\profile.html:61 .\templates\pages\profile.html:143
+msgid "Выйти"
+msgstr "Chiqish"
+
+#: .\templates\pages\history.html:59
+msgid "Detail Information"
+msgstr "To'liq ma'lumot"
+
+#: .\templates\pages\history.html:60
+msgid "Name:"
+msgstr "Имя:"
+
+#: .\templates\pages\history.html:61
+msgid "Email: "
+msgstr ""
+
+#: .\templates\pages\history.html:62
+msgid "Phone: "
+msgstr "Телефон: "
+
+#: .\templates\pages\history.html:63
+msgid "Address: "
+msgstr "Адрес: "
+
+#: .\templates\pages\history.html:66
+msgid "Previous orders"
+msgstr "Прошлые заказы"
+
+#: .\templates\pages\history.html:71
+msgid "SN"
+msgstr ""
+
+#: .\templates\pages\history.html:72
+msgid "Order ID"
+msgstr "ID заказа"
+
+#: .\templates\pages\history.html:73
+msgid "Amount"
+msgstr "Итого"
+
+#: .\templates\pages\history.html:74
+msgid "Ordered on"
+msgstr "Заказано в"
+
+#: .\templates\pages\history.html:75
+msgid "Status"
+msgstr "Статус"
+
+#: .\templates\pages\history.html:83
+msgid "ago"
+msgstr "назад"
+
+#: .\templates\pages\home.html:19
+msgid "Изобразительное искусство"
+msgstr "Tasviriy san'at"
+
+#: .\templates\pages\home.html:109
+msgid "Самые активные"
+msgstr "Eng faol"
+
+#: .\templates\pages\home.html:125
+msgid "просмотров"
+msgstr "ko'rishlar"
+
+#: .\templates\pages\login.html:5
+msgid "Login"
+msgstr "Login"
+
+#: .\templates\pages\login.html:14
+msgid "Войдите в свой личный кабинет"
+msgstr "Shaxsiy kabinetga kirish"
+
+#: .\templates\pages\login.html:49
+msgid "Забыли пароль?"
+msgstr "Parolni unutdingizmi?"
+
+#: .\templates\pages\login.html:50
+msgid "Авторизоваться"
+msgstr "Tizimga kirish"
+
+#: .\templates\pages\login.html:53
+msgid "Нет учетной записи?"
+msgstr "Akkauntingiz yo'qmi?"
+
+#: .\templates\pages\login.html:54 .\templates\pages\registration.html:104
+msgid "Зарегистрироваться"
+msgstr "Ro'yxatdan o'tish"
+
+#: .\templates\pages\main_filter.html:4
+msgid "Художник/Мастер"
+msgstr "Rassom/Usta"
+
+#: .\templates\pages\main_filter.html:54
+msgid "Регионы страны"
+msgstr "Mamlakat hududlari"
+
+#: .\templates\pages\order.html:8 .\templates\pages\profile.html:6
+msgid "User Profile"
+msgstr "Foydalanuvchi Profili"
+
+#: .\templates\pages\order.html:29
+msgid "Улица, номер дома:"
+msgstr "Ko'cha, uy raqami:"
+
+#: .\templates\pages\order.html:30
+msgid "Город:"
+msgstr "Shahar:"
+
+#: .\templates\pages\order.html:31
+msgid "Страна:"
+msgstr "Davlat:"
+
+#: .\templates\pages\order.html:32
+msgid "Почтовый индекс:"
+msgstr "Pochta indeksi"
+
+#: .\templates\pages\order.html:33
+msgid "Телефон:"
+msgstr "Telefon raqami"
+
+#: .\templates\pages\order.html:46
+msgid "Всего"
+msgstr "Jami"
+
+#: .\templates\pages\order.html:46
+msgid "предмета"
+msgstr "mahsulotlar"
+
+#: .\templates\pages\priklad.html:50
+msgid "Мастер"
+msgstr "Usta"
+
+#: .\templates\pages\priklad.html:69 .\templates\pages\priklad.html:70
+msgid "млн"
+msgstr "mln"
+
+#: .\templates\pages\priklad.html:74
+msgid "Частные коллекции"
+msgstr "Shaxsiy kolleksiyalar"
+
+#: .\templates\pages\priklad.html:76
+msgid "Традиционный"
+msgstr "An'anaviy"
+
+#: .\templates\pages\priklad.html:77
+msgid "Современный"
+msgstr "Zamonaviy"
+
+#: .\templates\pages\priklad.html:78
+msgid "Центры"
+msgstr "Markazlar"
+
+#: .\templates\pages\priklad.html:79
+msgid "Ташкент"
+msgstr "Toshkent"
+
+#: .\templates\pages\priklad.html:80
+msgid "Бухара"
+msgstr "Buxoro"
+
+#: .\templates\pages\priklad.html:81
+msgid "Вид изделия"
+msgstr "Mahsulot turi"
+
+#: .\templates\pages\priklad.html:82
+msgid "Кольца"
+msgstr "Uzuklar"
+
+#: .\templates\pages\priklad.html:83
+msgid "Серьги"
+msgstr "Sirg'alar"
+
+#: .\templates\pages\priklad.html:89
+msgid "Все"
+msgstr "Hammasi"
+
+#: .\templates\pages\priklad.html:90
+msgid "Сегодня"
+msgstr "Bugun"
+
+#: .\templates\pages\priklad.html:91
+msgid "Этот месяц"
+msgstr "Shu oy"
+
+#: .\templates\pages\priklad.html:92 .\templates\pages\priklad.html:99
+msgid "Январь"
+msgstr "Yanvar"
+
+#: .\templates\pages\priklad.html:93
+msgid "Февраль"
+msgstr "Fevral"
+
+#: .\templates\pages\priklad.html:94
+msgid "Март"
+msgstr "Mart"
+
+#: .\templates\pages\priklad.html:106
+msgid "Описание картины"
+msgstr "Rasm tavsifi"
+
+#: .\templates\pages\profile.html:68
+msgid "Логин"
+msgstr "Foydalanuvchi ismi"
+
+#: .\templates\pages\profile.html:77
+msgid "Электронная почта"
+msgstr "Xalqaro yetkazib berish"
+
+#: .\templates\pages\registration.html:5
+msgid "Registration"
+msgstr "Ro'yxatdan o'tish"
+
+#: .\templates\pages\registration.html:16
+msgid "Создать учетную запись"
+msgstr "Akkaunt yaratish"
+
+#: .\templates\pages\registration.html:38
+msgid "Адрес электронной почты"
+msgstr "E-mail manzili"
+
+#: .\templates\pages\registration.html:44
+msgid ""
+"Должен содержать не менее одной цифры и одной прописной и строчной буквы, а "
+"также не менее 8 символов."
+msgstr ""
+"Kamida bitta raqam va bitta katta va kichik harf va kamida 8 ta belgidan "
+"iborat bo'lishi kerak."
+
+#: .\templates\pages\registration.html:67
+msgid "Подтвердить пароль"
+msgstr "Parolni tasdiqlash"
+
+#: .\templates\pages\registration.html:87
+msgid "пароль не совпадает"
+msgstr "Parollar mos kelmadi"
+
+#: .\templates\pages\registration.html:99
+msgid "ДД/ММ/ГГГГ"
+msgstr "KK/OO/YYYY"
+
+#: .\templates\pages\registration.html:105
+msgid "Уже есть аккаунт?"
+msgstr "Ro'yihatdan o'tganmisiz?"
+
+#: .\templates\pages\section-cards.html:26
+msgid "Все Виды"
+msgstr "Barcha Turlar"
+
+#: .\templates\pages\section-cards.html:28
+msgid "Все Жанры"
+msgstr "Barcha Janrlar"
+
+#: .\templates\pages\sell.html:5
+msgid "Sell"
+msgstr "Sotish"
+
+#: .\templates\pages\sell.html:13
+msgid "Запрос на продажу картины"
+msgstr "Rasm sotuviga so'rov"
+
+#: .\templates\pages\sell.html:22
+msgid "Выберите файл"
+msgstr "Faylni tanlang"
+
+#: .\templates\pages\sell.html:28
+msgid "Стиль/течение"
+msgstr "Uslub/yo'nalish"
+
+#: .\templates\pages\sell.html:36 .\templates\pages\sell.html:38
+msgid "Дата"
+msgstr "Sana"
+
+#: .\templates\pages\sell.html:44
+msgid "Материалы"
+msgstr "Materiallar"
+
+#: .\templates\pages\sell.html:50
+msgid "Оформление"
+msgstr "Bezagi"
+
+#: .\templates\pages\sell.html:53
+msgid "Состояние"
+msgstr "Holati"
+
+#: .\templates\pages\sell.html:65
+msgid "ФИО"
+msgstr "Ism sharif"
+
+#: .\templates\pages\sell.html:68
+msgid "Контактный номер"
+msgstr "Kontakt raqami"
+
+#: .\templates\pages\sell.html:71
+msgid "Почтовый адрес"
+msgstr "Pochta manzili"
+
+#: .\templates\pages\sell.html:73
+msgid "Отправить запрос"
+msgstr "So'rov yuborish"
+
+#: .\templates\pages\service-detail.html:5
+msgid "Service Detail"
+msgstr "Xizmat tasnifi"
+
+#: .\templates\pages\service-detail.html:27
+msgid "Наши работы"
+msgstr "Bizning asarlar"
+
+#: .\templates\pages\services.html:5
+msgid "Services"
+msgstr "Xizmatlar"
+
+#~ msgid "Просмотры"
+#~ msgstr "Kor'ishlar soni"
+
+#~ msgid "сум"
+#~ msgstr "so'm"
+
+#~ msgid "диаметр"
+#~ msgstr "diametri"
+
+#~ msgid "длина/ширина"
+#~ msgstr "uzunlik/kenglik"
+
+#~ msgid "Измерение"
+#~ msgstr "O'lcham"
+
+#~ msgid "Vid"
+#~ msgstr "Ko'rinishi"
+
+#~ msgid "Vidy"
+#~ msgstr "Korinishi"
+
+#~ msgid "Type"
+#~ msgstr "Turi"
+
+#~ msgid "Types"
+#~ msgstr "Turi"
+
+#~ msgid "Улица"
+#~ msgstr "Ko'cha"
+
+#~ msgid "Адресс 2"
+#~ msgstr "Manzil 2"
+
+#~ msgid "Адресс пользователья"
+#~ msgstr "Foydalanuvchi manzili"
+
+#~ msgid "Адрессы пользователья"
+#~ msgstr "Foydalanuvchi manzillari"
+
+#~ msgid "Passwords do not match"
+#~ msgstr "Parollar bir xil emas"
+
+#~ msgid "Password must be longer than 6 characters"
+#~ msgstr "Parol 6 belgidan ortiq bo'lishi kerak"
+
+#~ msgid "Some error occured"
+#~ msgstr "Xato yuz berdi"
+
+#~ msgid "Id заказа"
+#~ msgstr "Buyurtma ID"
+
+#~ msgid "Соответсвующего артикла не существует"
+#~ msgstr "Tegishli maq'ola mavjud emas"
+
+#~ msgid "Сумма"
+#~ msgstr "Umumiy"
+
+#~ msgid "Адрес доставки"
+#~ msgstr "Yetkazib berish manzili"
+
+#~ msgid "Подтвердить Пароль"
+#~ msgstr "Parolni tasdiqlash"
+
+#~ msgid "SO’M"
+#~ msgstr "SO'M"
+
+#~ msgid "$"
+#~ msgstr "$"
+
+#~ msgid "RUB"
+#~ msgstr "RUB"
+
+#~ msgid "CNY"
+#~ msgstr "CNY"
+
+#~ msgid "Страна/Адрес"
+#~ msgstr "Mamlakat/Manzil"
+
+#~ msgid "Адрес"
+#~ msgstr "Manzil"
+
+#~ msgid "$ / Американский доллар"
+#~ msgstr "$ / Amerika Dollari"

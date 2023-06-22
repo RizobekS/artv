@@ -1,0 +1,63 @@
+{% load i18n %}
+<li>
+    <a href="#" class="title">
+    {% trans 'Художник/Мастер' %}
+    <span></span>
+    </a>
+    <ul>
+    {% for author in authors%}
+        <li><a href="#" data-url="{% url 'general:gallery_ajax_page' %}" data-filterBtn data-type="events" data-value="author-{{author.id}}">{{author.name}}</a> </li>
+    {% endfor %}
+    </ul>
+</li>
+
+<li>
+    <a href="#" class="title">
+    {% trans 'Жанры' %}
+    <span></span>
+    </a>
+    <ul>
+    {% for genre in genres %}    
+        <li><a href="#" data-url="{% url 'general:gallery_ajax_page' %}" data-filterBtn data-type="events" data-value="genre-{{genre.id}}">{{genre}}</a> </li>    
+    {% endfor %}
+    </ul>
+</li>
+{% if flows %}
+<li>
+    <a href="#" class="title">
+    {% trans 'Течение' %}
+    <span></span>
+    </a>
+    <ul>
+    {% for flow in flows %}
+        <li><a href="#" data-url="{% url 'general:gallery_ajax_page' %}" data-filterBtn data-type="events" data-value="flow-{{flow.id}}">{{flow.name}}</a> </li>
+    {% endfor %}
+    </ul>
+</li>
+{% endif %}
+{% if types %}
+<li>
+    <a href="#" class="title">
+    {% trans "Вид" %}
+    <span></span>
+    </a>
+    <ul>
+    {% for type in types %}
+        <li><a href="#" data-url="{% url 'general:gallery_ajax_page' %}" data-filterBtn data-type="events" data-value="type-{{type.id}}">{{type.name}}</a> </li>
+    {% endfor %}
+    </ul>
+</li>
+{% endif %}
+{% if regions %}
+<li>
+    <a href="#" class="title">
+    {% trans 'Регионы страны' %}
+    <span></span>
+    </a>
+    <ul>
+    {% for region in regions %}
+            <li><a href="#" data-url="{% url 'general:gallery_ajax_page' %}" data-filterBtn data-type="events" data-value="region-{{region.id}}">{{region.name}}</a> </li>
+    {% endfor %}
+    </ul>
+</li>
+{% endif%}

@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{#{% load humanize %}#}
+{% load intspace from sexify %}
+{% load intcomma from sexify %}
+{% block title %}
+    {% trans "Cart" %}
+{% endblock title %}
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
+            <main class="content">
+                <div class="basket-page">
+                    <div class="center">
+                        <h1>{% trans "Корзина" %}</h1>
+                        {% if messages %}
+                            {% for message in messages%}
+                            <div class="alert success">
+                                {{message}}
+                            </div>
+                            {% endfor %}
+                        {% endif %}
+                        <div class="basket-flex">
+                            <table class="table center basket">
+                                <thead>
+                                <tr>
+                                    <th class="title">{% trans "Товар" %}</th>
+                                    <th class="title">{% trans "Автор и название картин" %}</th>
+                                    <th class="title">{% trans "Артикул" %}</th>
+                                    <th class="title"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for cart_item in items_in_cart %}
+                                    {% if cart_item.is_applied_art %}
+                                        <tr>
+                                            <td class="table-body">
+                                                <div class="img">
+                                                    <img src="{{ cart_item.applied_art.photo.url }}" alt=""/>
+                                                </div>
+                                            </td>
+                                            <td class="table-body">
+                                                <a href="/catalog/{{ cart_item.applied_art.slug }}"><strong>“{{ cart_item.applied_art.name }}”</strong></a>
+                                                <p>{{ cart_item.applied_art.price | intspace}} {{ currency }}</p>
+                                            </td>
+
+                                            <td class="table-body">
+                                                <a href="{% url "general:blog_detail_page" cart_item.applied_art.slug %}">
+                                                {{ cart_item.applied_art.u_id }}
+                                                </a>
+                                            </td>
+                                            <td class="table-body">
+                                                <a href="{% url "gallery:remove_from_cart" cart_item.applied_art.slug %}"
+                                                class="basket__remove-icon remove-item">x</a>
+                                            </td>
+                                        </tr>
+                                    {% else %}
+                                        <tr>
+                                            <td class="table-body">
+                                                <div class="img">
+                                                    <img src="{{ cart_item.art_work.photo.url }}" alt=""/>
+                                                </div>
+                                            </td>
+                                            <td class="table-body">
+                                                <a href="/catalog/{{ cart_item.art_work.slug }}"><strong>“{{ cart_item.art_work.name }}”</strong></a>
+                                                <p>{{ cart_item.art_work.price | intspace}} {{ currency }}</p>
+                                            </td>
+
+                                            <td class="table-body">
+                                                <a href="{% url "general:blog_detail_page" cart_item.art_work.slug %}">
+                                                {{ cart_item.art_work.u_id }}
+                                                </a>
+                                            </td>
+                                            <td class="table-body">
+                                                <a href="{% url "gallery:remove_from_cart" cart_item.art_work.slug %}"
+                                                class="basket__remove-icon remove-item">x</a>
+                                            </td>
+                                        </tr>
+                                    {% endif %}
+                                {% endfor %}
+
+                                </tbody>
+                            </table>
+                            <div class="right-side">
+                                <div class="order-panel">
+                                    <h3>{% trans "в вашей корзине" %} {{ cart_items.count }} {% trans "товар" %}</h3>
+                                    {% if currency %}
+                                        <strong><span>{% trans "Итого" %}:</span> {{ cart_total | floatformat:-2 | intspace }} {{ currency }}</strong>
+                                        {#                                <a href="{% url "gallery:make_order" %}" class="order-btn">{% trans "Оформить" %}</a>#}
+                                    {% else %}
+                                        <strong><span>{% trans "Итого" %}:</span>0.00</strong>
+                                    {% endif %}
+                                        <strong><span>{% trans "Товаров" %}:</span>{{ products_number }}</strong>
+
+                                    <a href="{% url "gallery:clear_cart" %}" class="basket__clear-btn">{% trans "Очистить корзину" %}</a>
+                                </div>
+
+                                <h3>{% trans "Оформление заказа" %}</h3>
+                                <div class="profile-page">
+                                    <form method="post">
+                                        {% csrf_token %}
+                                        <label>
+                                            {% trans "E-mail" %}
+                                            <div class="email">
+                                                {{ form.email }}
+                                            </div>
+                                        </label>
+                                        <label>
+                                            {% trans "Телефон" %}
+                                            <div class="user-phone">
+                                                {{ form.phone }}
+                                            </div>
+                                        </label>
+                                        <label>
+                                            {% trans "Страна" %}
+                                            <div class="region">
+                                                {{ form.country }}
+                                            </div>
+                                        </label>
+                                        <label>
+                                            {% trans "Город" %}
+                                            <div class="build">
+                                                {{ form.city }}
+                                            </div>
+                                        </label>
+                                        <label>
+                                            {% trans "Улица/Дом/Квартира" %}
+                                            <div class="address">
+                                                {{ form.street }}
+                                            </div>
+                                        </label>
+                                        <label>
+                                            {% trans "Почтовый индекс" %}
+                                            <div class="mail">
+                                                {{ form.postcode }}
+                                            </div>
+                                        </label>
+                                        <label>
+                                            <p>{% trans "Если все данные верны, нажмите 'Оформить':" %}</p>
+                                        </label>
+                                        <button {% if products_number == 0 %} disabled {% endif %} type="submit">{% trans "Оформить" %}</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+        {% include 'footer.html' %}
+    </div>
+{% endblock main %}
+{% block js_partials %}
+    <script type="text/javascript" src="{% static 'js/cart.page.js' %}"></script>
+{% endblock js_partials %}

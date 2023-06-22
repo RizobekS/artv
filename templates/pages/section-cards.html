@@ -1,0 +1,38 @@
+{% load i18n %}
+<div class="category-panel">
+    <ul>
+        {% for section in sections %}
+                        {% if section.valid %}
+            <li>
+                <a href="{% url 'general:gallery_detail_page' section.id %}" class="title">
+                    <svg width="44" height="48" viewBox="0 0 53 48" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="{{ section.icon|safe }}"
+                              fill="#102D6A"/>
+                    </svg>
+                    <span>{{ section.name }}</span>
+                </a>
+                {% if section.section_category.exists %}
+                    <ul>
+                        {% for category in section.section_category.all %}
+                            <li>
+                                <a href="{% url 'general:gallery_detail_page' section.id %}">{{ category.name | title}}</a>
+                            </li>
+                        {% endfor %}
+
+                            <li>
+                                {% if section.name_en == "Applied art" %}
+                                    <a href="{% url 'general:applied_types_page'%}">{% trans "Все Виды" %}</a>
+                                {% else %}
+                                    <a href="{% url 'general:genres_page'%}">{% trans "Все Жанры" %}</a>
+                                {% endif %}
+
+                            </li>
+                    </ul>
+                {% endif %}
+            </li>
+                        {% endif %}
+        {% endfor %}
+    </ul>
+</div>

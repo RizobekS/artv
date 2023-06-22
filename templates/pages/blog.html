@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+{% trans "Blog"%}
+{% endblock title %}
+
+{% block main %}
+<div class="wrapper">
+    <div class="container">
+        {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
+        <main class="content">
+      <div class="blog-page center">
+        <div class="header-title">
+          <h3>{% trans "Интересные статьи" %}</h3>
+        </div>
+        <div class="poster-panel">
+        {% for main in mains %}
+          <div class="poster">
+                    <a href="{{ main.slug }}" class="img">
+                    {% if main.image %}
+                      <img src="{{ main.image.url }}" alt=""/>
+                    {% else %}
+                        <img src="{{ main.work.photo.url }}" alt=""/>
+                    {% endif %}
+                    </a>
+
+                <div class="caption">
+                  <div class="header">
+                    <strong><a href="{{ main.slug }}">{{ main.title }}</a> </strong>
+                    <span>{{ main.pub_date }}</span>
+                  </div>
+                  {{ main.description }}
+                </div>
+          </div>
+        {% endfor %}
+        </div>
+        <div class="blog-list">
+          <div class="cards ">
+              {% for article in articles %}
+                    <div class="card">
+                      <a href="{{ article.slug }}" class="img h360">
+                        {% if main.image %}
+                          <img src="{{ article.image.url }}" alt=""/>
+                        {% else %}
+                            <img src="{{ article.work.photo.url }}" alt=""/>
+                        {% endif %}
+                        </a>
+                      <div class="caption">
+                        <span class="date">{{ article.pub_date }}</span>
+                        <strong><a href="{{ article.slug }}">{{ article.title }}</a> </strong>
+                        <p>{{ article.description }}</p>
+                        <a href="{{ article.slug }}" class="more">Подробнее</a>
+                      </div>
+                    </div>
+              {% endfor %}
+          </div>
+        </div>
+      </div>
+    </main>
+    </div>
+    {% include 'footer.html' %}
+</div>
+{% endblock main %}

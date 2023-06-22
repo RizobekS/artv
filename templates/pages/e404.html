@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    404
+{% endblock title %}
+
+{% block main %}
+    <div class="e404">
+        <h1>Oops...</h1>
+        <p>Страница не найдена</p>
+        <span>что то пошло не так</span>
+        <a href="{% url "home_page" %}">Вернуться на главную</a>
+    </div>
+{% endblock main %}

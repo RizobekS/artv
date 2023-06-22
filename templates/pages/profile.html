@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+    {% trans "User Profile" %}
+{% endblock title %}
+
+{% block main %}
+
+
+
+    <div class="wrapper">
+        <div class="alert-wrapper">
+            <div class="alert-content">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }} show" id="msg" role="alert">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
+            <main class="content">
+                <div class="profile-page">
+                    <div class="profile">
+                        <div class="center flex">
+                            <h1>{% trans "Профиль пользователя" %}</h1>
+                            <div class="username">
+                                {% trans "Добро пожаловать в пользовательский центр!" %} <span>{{ auth_user.first_name }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="profile-info">
+                            <aside>
+                                <div>
+                                    <div class="user">
+                                        <img src="img/profile.svg" alt=""/>
+                                            <strong>
+                                                {{ auth_user.first_name }} {{ auth_user.last_name }}
+                                            </strong>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="{% url "general:history_page" %}">
+                                                {% trans "История заказов" %}
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url "general:profile_page" %}" class="active">
+                                                {% trans "Личные данные" %}
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="logout desktop">
+                                    <a href="{% url "accounts:logout" %}">{% trans "Выйти" %}</a>
+                                </div>
+                            </aside>
+                            <div class="content">
+                                <form name="profileForm" action="{% url 'general:profile_page' %}" method="post">
+                                    {% csrf_token %}
+                                    <label>
+                                        {% trans "Логин" %}:
+                                        <div class="first_name">
+                                            {{ form.first_name }}
+                                        </div>
+                                        <div class="last_name">
+                                            {{ form.last_name }}
+                                        </div>
+                                    </label>
+                                    <label>
+                                        {% trans "Электронная почта" %}:
+                                        <div class="mail">
+                                            {{ form.email }}
+                                        </div>
+                                    </label>
+                                    <label>
+                                        {% trans "Дата рождения" %}:
+                                        <div class="date">
+                                            {{ form.birth_date }}
+<!--                                            -->
+<!--                                            <input type="tel" value="" id="id_birth_date" required/>-->
+                                        </div>
+                                    </label>
+                                    <label>
+                                        {% trans "Страна" %}:
+                                        <div class="country">
+                                            {{ form.country }}
+                                        </div>
+                                    </label>
+                                    <label>
+                                        {% trans "Город" %}:
+                                        <div class="city">
+                                            {{ form.city }}
+                                        </div>
+                                    </label>
+                                    <label>
+                                        {% trans "Улица/дом/квартира" %}:
+                                        <div class="street">
+                                            {{ form.street }}
+                                        </div>
+                                    </label>
+
+                                    <label>
+                                        {% trans "Телефон" %}:
+                                        <div class="user-phone">
+                                            {{ form.phone }}
+                                        </div>
+                                    </label>
+                                    <label>
+                                        Почтовый индекс:
+                                        <div class="mail">
+                                            {{ form.postcode }}
+                                        </div>
+                                    </label>
+                                    <label>
+{#                                        {% trans "Пароль" %}:#}
+                                        <div class="password">
+{#                                            {{ form.password1 }}#}
+                                        </div>
+                                    </label>
+                                    <label>
+{#                                        {% trans "Подтвердить Пароль" %}:#}
+                                        <div class="password">
+{#                                            {{ form.password2 }}#}
+                                        </div>
+                                    </label>
+                                    <ul class="currency-list">
+                                        <li>{% trans "Валюта" %}</li>
+                                                {{ form.currency }}
+                                    </ul>
+{#                                    <input type="hidden" class="currency" name="currency" value="">#}
+<!--                                    <input type="hidden" name="birth_date" value="">-->
+
+                                    <button type="submit">{% trans "Сохранить" %}</button>
+                                </form>
+                                <div class="logout mobile">
+                                    <a href="{% url "accounts:logout" %}">{% trans "Выйти" %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            {% include 'footer.html' %}
+        </div>
+    </div>
+{% endblock main %}
+{% block js_partials %}
+<!--    <script type="text/javascript" src="{% static 'js/home.page.js' %}"></script>-->
+    <script>
+        $(window).on('load',function () {
+
+            if(document.getElementById('id_birth_date').value !== ''){
+                document.getElementById('id_birth_date').value = document.getElementById('id_birth_date').value.split('-').reverse().join('.')
+            }
+            setTimeout(()=>{
+                $('#id_birth_date').click(function () {
+                    $(this).focus().val($(this).val())
+                }).mask("55.55.5555", {
+                    placeholder: "_",
+                    // completed : function (e) {
+                    //   const date = $('#id_birth_date').val().split('.').reverse().join('-');
+                    //   $('[name=birth_date]').val(date)
+                    // }
+                });
+            }, 1000)
+        })
+    </script>
+{% endblock js_partials %}

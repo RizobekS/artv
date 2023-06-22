@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+{% trans "Auction Rules" %}
+{% endblock title %}
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
+            <main class="content">
+                <div class="center ">
+                    <h2 class="titleAac">{% trans 'Правила проведения аукциона' %}</h2>
+                    {% for ar in auctionrules %}
+                        {{ ar.content|safe }}
+                    {% endfor %}
+                </div>
+            </main>
+        </div>
+
+        {% include 'footer.html' %}
+
+    </div>
+{% endblock main %}

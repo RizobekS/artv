@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+{% trans "About" %}
+{% endblock title %}
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
+            <main class="content">
+                <div class="center ">
+                    <div class="about-page">
+                        {% for a in abouty %}
+                            <div class="about">
+                                <div class="text">
+                                    <a href="{% url 'general:about_detail_page' a.id %}"><strong>{{ a.title }}</strong></a>
+                                    <p>{{ a.text|safe }}</p>
+                                </div>
+                                {% if a.photo %}
+                                    <div class="img">
+                                        <img src="{{ a.photo.url }}" alt=""/>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+        {% include 'footer.html' %}
+
+    </div>
+{% endblock main %}

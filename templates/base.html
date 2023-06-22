@@ -1,0 +1,253 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="jpyUSo3nlMDCOcs7aTm9YmlBzE7dH5w0bSwBv9r-yTo" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'favicon/apple-icon-57x57.png' %} ">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'favicon/apple-icon-60x60.png' %} ">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'favicon/apple-icon-72x72.png' %} ">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'favicon/apple-icon-76x76.png' %} ">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static ' favicon/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'favicon/apple-icon-120x120.png' %} ">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'favicon/apple-icon-144x144.png' %} ">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'favicon/apple-icon-152x152.png' %} ">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-icon-180x180.png' %} ">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'favicon/android-icon-192x192.png' %} ">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %} ">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'favicon/favicon-96x96.png' %} ">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %} ">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="manifest" href="{% static 'favicon/manifest.json' %}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Добро пожаловать на сайт Art Vernissage. Здесь Вы найдете много интересной информации о деятельности и направлениями нашей компании, а также познакомитесь с работами ведущих и молодых деятелей искусства Узбекистна. На нашем сайте представлены авторские работы представителей изобразительного и прикладного искусства нашей страны. Наша задача не только организовать продажи работ, но постараться ознакомить посетителей с сегодняшними тенденциями и направлениями деятельности представителей современного искусства Узбекистана, дать общие представления об искусстве в целом. Здесь Вы сможете ознакомиться не только с работами, но и авторами работ, их достижениях и творческой биографией.">
+    <meta name="keywords" content="Картины художников Узбекистана, Художники Узбекистана, Картины Узбекистан, Прикладное искусство Узбекистана, Прикладное искусство, Оценка предметов искусства, Оценка искусства, Миниатюра, Керамика, Куклы, Ювелирка, Частные коллекции, Портрет Узбекистана, Изобразительное искусство, Экспертиза предметов искусства">
+    <meta name="google-site-verification" content="XxL_ZmRJfUnmB8IBpa9XCoXLpLQNgcqpI0wNtGu3TSw" />
+    {% if work %}
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="{{ work.photo.url }}">
+        <meta property="og:title" content="{{ work.name }}">
+        <meta property="og:description" content="{{ work.material }}">
+        <meta property="og:site_name" content="Art Vernissage">
+        <meta property="og:locale" content="{{ LANGUAGE_CODE }}">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ work.name }}">
+        <meta name="twitter:description" content="{{ work.material }}">
+        <meta name="twitter:image:src" content="{{ work.photo.url }}">
+        <meta name="twitter:url" content="{{ work.url }}">
+        <meta name="twitter:domain" content="{{ LANGUAGE_CODE }}">
+    {% else %}
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="{% static 'favicon/android-icon-192x192.png' %}">
+        <meta property="og:title" content="Картины художников Узбекистана">
+        <meta property="og:description" content="История искусства в Узбекистане и в мире">
+        <meta property="og:site_name" content="Art Vernissage">
+        <meta property="og:locale" content="{{ LANGUAGE_CODE }}">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Картины художников Узбекистана">
+        <meta name="twitter:description" content="История искусства в Узбекистане и в мире">
+        <meta name="twitter:image:src" content="{% static 'favicon/android-icon-192x192.png' %}">
+        <meta name="twitter:url" content="{{ work.url }}">
+        <meta name="twitter:domain" content="{{ LANGUAGE_CODE }}">
+    {% endif %}
+
+    <link rel="preload" href="{% static 'fonts/ProximaNova-Regular.ttf' %}" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="{% static 'fonts/ProximaNova-Bold.ttf' %}" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="{% static 'css/fonts/slick.woff' %}" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-select-country.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick-theme.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/select2.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/intlTelInput.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/fancybox.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/datepicker.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/media.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/justifiedGallery.css' %}"/>
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8N8FH517NE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8N8FH517NE');
+    </script>
+</head>
+
+<body
+        {#        style="position: relative;"#}
+>
+
+{% block main %}
+{% endblock main %}
+
+
+
+
+
+<!-- <script type="text/javascript" src="{% static 'js/jquery-migrate-1.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/intlTelInput.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/intlTelInput-jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-latest.min.js' %}"></script> -->
+
+<script src="{% static 'js/jquery.justifiedGallery.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/datepicker.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap-select.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap-select-country.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery-migrate-1.2.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/select2.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.maskedinput.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/fancybox.umd.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/intlTelInput.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/slick.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/fancybox/jquery.fancybox.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/fancybox/jquery.fancybox.pack.js' %}"></script>
+{% block js_partials %}
+{% endblock js_partials %}
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+<div class="popup popup-search">
+    <div class="overlay"></div>
+    <div class="popup-content">
+        <h3>Поиск</h3>
+        <form class="search-form">
+            <span class="helper">введите больше 3х символов для корректного поиска</span>
+            <label>
+                <input class="searchHandler" placeholder="Искать на art-v" type="text" value="" name="search"/>
+            </label>
+            <button type="submit" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20.969" viewBox="0 0 21 20.969">
+                    <path d="M1522.43,153.986a9.624,9.624,0,1,0,6.08,17.077l3.85,3.9,1.44-1.426-3.87-3.911A9.624,9.624,0,0,0,1522.43,153.986Zm-7.59,9.624a7.585,7.585,0,1,1,7.59,7.6A7.6,7.6,0,0,1,1514.84,163.61Z" transform="translate(-1512.81 -154)"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+</div>
+<!--<div class="popup">-->
+<!--    <div class="overlay"></div>-->
+<!--    <div class="popup-content">-->
+<!--        <div class="tabs">-->
+<!--            <ul class="tabs-link-panel">-->
+<!--                <li><a href="#" data-index="1" class="active tabs-link">{% trans "Регистрация" %}</a> </li>-->
+<!--                <li><a href="#" data-index="2" class="tabs-link">{% trans "Вход" %}</a> </li>-->
+<!--            </ul>-->
+<!--            <div class="tabs tab-1 active">-->
+<!--                <a href="#" data-index="3" class="link-reg tabs-link">{% trans "Зарегистрироваться по SMS" %}</a>-->
+<!--                <form action="" novalidate method="post" class="registration-form">-->
+<!--                    {% csrf_token %}-->
+<!--                    <label>-->
+<!--                        <input type="text" value="" name="first_name" placeholder="{% trans "Имя"%}"  required/>-->
+<!--                        <div class="helper-text">{% trans "обязательно для заполнения" %}</div>-->
+<!--                    </label>-->
+<!--                    <label>-->
+<!--                        <input type="text" value="" name="last_name" placeholder="{% trans "Фамилия" %}" required/>-->
+<!--                        <div class="helper-text">{% trans "обязательно для заполнения" %}</div>-->
+<!--                    </label>-->
+<!--                    <label>-->
+<!--                        <input type="tel" autocomplete="off" class="phone" required>-->
+<!--                        <div class="helper-text">{% trans "обязательно для заполнения" %}</div>-->
+<!--                    </label>-->
+<!--                    <label>-->
+<!--                        <input type="tel" value="" name="mail_index" placeholder="{% trans "Почтовый индекс"%}" required/>-->
+<!--                        <div class="helper-text"> {% trans "обязательно для заполнения" %}</div>-->
+<!--                    </label>-->
+<!--                    <label>-->
+<!--                        <input type="email" value="" name="" placeholder="Email" required id="id_email"/>-->
+<!--                        <div class="helper-text">{% trans "обязательно для заполнения" %}</div>-->
+<!--                        <div class="helper-text2">{% trans "Введите корректный Email"%}</div>-->
+<!--                    </label>-->
+<!--                    <label>-->
+<!--                        <select name="country" placeholder="{% trans "Страна" %}" class="filter" required>-->
+<!--                            <option value="">{% trans "Страна" %}</option>-->
+<!--                            <option value="1">{% trans "Город" %}</option>-->
+<!--                        </select>-->
+<!--                        <div class="helper-text">{% trans "обязательно для заполнения" %}</div>-->
+<!--                    </label>-->
+<!--                    <label>-->
+<!--                        <div class="password">-->
+<!--                            <input type="password" value="" name="" placeholder="Пароль" required id="id_password1"/>-->
+<!--                        </div>-->
+<!--                        <div class="helper-text">{% trans "обязательно для заполнения" %}</div>-->
+<!--                    </label>-->
+<!--                    <label>-->
+<!--                        <div class="password">-->
+<!--                            <input type="password" value="" name="" placeholder="{% trans "Повторить пароль" %}" required id="id_password2"/>-->
+<!--                        </div>-->
+<!--                        <div class="helper-text">{% trans "обязательно для заполнения" %}</div>-->
+<!--                        <div class="helper-text2">{% trans "Пароль не совпадает" %}</div>-->
+<!--                    </label>-->
+<!--                    <label>-->
+<!--                        <div class="checkbox-wrapper">-->
+<!--                            <input type="checkbox" id="id_checkbox" value="1" name="agreement" required />-->
+<!--                            <span></span>-->
+<!--                            <p>{% trans "Регистрируясь или авторизуясь вы соглашаетесь с " %}<a href="#">{% trans "Пользовательским соглашением"%}</a> и <a href="#">{% trans "Политикой конфеденциальности" %}</a></p>-->
+<!--                        </div>-->
+<!--                        <div class="helper-text">{% trans "обязательно для заполнения" %}</div>-->
+<!--                    </label>-->
+<!--                    <button type="submit">{% trans "Регистрация" %}</button>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--            <div class="tabs tab-2 ">-->
+<!--                <a href="#" class="link-reg tabs-link" data-index="3">{% trans "Зарегистрироваться по SMS"%}</a>-->
+<!--                <form action="" method="post">-->
+<!--                    <label>-->
+<!--                        <input type="email" value="" name="" placeholder="Email"/>-->
+<!--                    </label>-->
+<!--                    <label>-->
+<!--                        <div class="password">-->
+<!--                            <input type="password" value="" name="" placeholder="{% trans "Пароль" %}"/>-->
+<!--                            <a href="#" class="toggle-password">-->
+<!--                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                    <path d="M5.13697 3.86257C5.05329 3.77889 4.95395 3.71251 4.84462 3.66723C4.73529 3.62194 4.61811 3.59863 4.49977 3.59863C4.38143 3.59863 4.26425 3.62194 4.15492 3.66723C4.04559 3.71251 3.94625 3.77889 3.86257 3.86257C3.77889 3.94625 3.71251 4.04559 3.66723 4.15492C3.62194 4.26425 3.59863 4.38143 3.59863 4.49977C3.59863 4.61811 3.62194 4.73529 3.66723 4.84462C3.71251 4.95395 3.77889 5.05329 3.86257 5.13697L10.1626 11.4334C7.0424 13.5616 4.87022 16.8179 4.10377 20.5162C4.07966 20.632 4.0786 20.7514 4.10065 20.8677C4.1227 20.9839 4.16742 21.0947 4.23228 21.1936C4.29713 21.2926 4.38084 21.3778 4.47862 21.4444C4.5764 21.511 4.68634 21.5577 4.80217 21.5818C4.918 21.6059 5.03744 21.6069 5.15367 21.5849C5.26991 21.5628 5.38066 21.5181 5.47961 21.4533C5.57856 21.3884 5.66377 21.3047 5.73037 21.2069C5.79697 21.1091 5.84366 20.9992 5.86777 20.8834C6.21115 19.2212 6.88264 17.6442 7.84293 16.2447C8.80323 14.8452 10.033 13.6514 11.4604 12.733L14.3152 15.5878C13.575 16.1215 12.9595 16.8097 12.5115 17.6047C12.0634 18.3998 11.7935 19.2826 11.7202 20.1923C11.647 21.1019 11.7723 22.0166 12.0874 22.8731C12.4025 23.7295 12.8998 24.5073 13.5451 25.1526C14.1904 25.7979 14.9682 26.2953 15.8247 26.6104C16.6811 26.9255 17.5958 27.0507 18.5055 26.9775C19.4151 26.9043 20.298 26.6343 21.093 26.1862C21.888 25.7382 22.5762 25.1228 23.11 24.3826L30.8626 32.137C31.0316 32.306 31.2608 32.4009 31.4998 32.4009C31.7388 32.4009 31.968 32.306 32.137 32.137C32.306 31.968 32.4009 31.7388 32.4009 31.4998C32.4009 31.2608 32.306 31.0316 32.137 30.8626L5.13697 3.86257ZM21.814 23.0866C21.4547 23.6598 20.9709 24.1446 20.3984 24.505C19.8259 24.8653 19.1795 25.092 18.5074 25.1681C17.8352 25.2443 17.1545 25.1679 16.516 24.9446C15.8774 24.7214 15.2974 24.357 14.819 23.8787C14.3407 23.4004 13.9764 22.8204 13.7531 22.1818C13.5299 21.5432 13.4535 20.8625 13.5296 20.1904C13.6057 19.5182 13.8324 18.8718 14.1928 18.2994C14.5532 17.7269 15.038 17.243 15.6112 16.8838L21.814 23.0884V23.0866Z" fill="#929292"></path>-->
+<!--                                    <path d="M18.2217 14.4036L24.2967 20.4768C24.2403 18.8841 23.5824 17.3719 22.4554 16.2449C21.3284 15.118 19.8162 14.46 18.2235 14.4036H18.2217Z" fill="#929292"></path>-->
+<!--                                    <path d="M17.9994 10.8C16.9734 10.8 15.9672 10.9332 15.0006 11.1834L13.5552 9.738C14.986 9.24963 16.4875 9.00029 17.9994 9C24.6468 9 30.495 13.8114 31.8954 20.5164C31.9441 20.7503 31.8978 20.994 31.7669 21.1938C31.6359 21.3937 31.4309 21.5333 31.197 21.582C30.9631 21.6307 30.7194 21.5845 30.5195 21.4535C30.3197 21.3225 30.1801 21.1175 30.1314 20.8836C28.9038 14.9886 23.772 10.8 17.9994 10.8Z" fill="#929292"></path>-->
+<!--                                </svg>-->
+<!--                                <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                    <path d="M14.9998 5.5075C16.5911 5.5075 18.1172 6.13964 19.2424 7.26486C20.3676 8.39008 20.9998 9.9162 20.9998 11.5075C20.9998 13.0988 20.3676 14.6249 19.2424 15.7501C18.1172 16.8754 16.5911 17.5075 14.9998 17.5075C13.4085 17.5075 11.8823 16.8754 10.7571 15.7501C9.6319 14.6249 8.99976 13.0988 8.99976 11.5075C8.99976 9.9162 9.6319 8.39008 10.7571 7.26486C11.8823 6.13964 13.4085 5.5075 14.9998 5.5075ZM14.9998 0.25C21.9193 0.25 27.8938 4.975 29.5513 11.596C29.6239 11.8854 29.5785 12.1918 29.4252 12.4478C29.2719 12.7038 29.0232 12.8884 28.7338 12.961C28.4443 13.0336 28.1379 12.9883 27.8819 12.835C27.626 12.6816 27.4414 12.4329 27.3688 12.1435C26.6754 9.38771 25.0816 6.9424 22.8402 5.19556C20.5989 3.44873 17.8383 2.50042 14.9967 2.50111C12.155 2.5018 9.39493 3.45144 7.15442 5.19937C4.91392 6.94729 3.32129 9.39338 2.62926 12.1495C2.55155 12.4329 2.36603 12.6746 2.11239 12.823C1.85874 12.9714 1.55711 13.0147 1.27199 12.9435C0.986873 12.8724 0.740904 12.6925 0.586687 12.4424C0.43247 12.1922 0.382248 11.8917 0.44676 11.605C1.26017 8.36119 3.13395 5.48209 5.77057 3.42486C8.40719 1.36763 11.6555 0.250202 14.9998 0.25Z" fill="#929292"></path>-->
+<!--                                </svg>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </label>-->
+<!--                    <button type="submit">{% trans "Авторизация" %}</button>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--            <div class="tabs tab-3 ">-->
+<!--                <form action="" method="post">-->
+<!--                    <label>-->
+<!--                        <input type="text" value="+" autofocus name="" placeholder="{% trans "Номер телефона"%}"/>-->
+<!--                    </label>-->
+<!--                    <div class="timer">-->
+<!--                        <button disabled class="retry-code" type="button">{% trans "Получить код заново" %}</button>-->
+<!--                        <span class="timer-text">00:00</span>-->
+<!--                    </div>-->
+<!--                    <label class="code">-->
+<!--                        <input type="text" value="" name="" placeholder="{% trans "Подтвердить код" %}"/>-->
+<!--                    </label>-->
+<!--                    <button type="submit" class="small">{% trans "Получить код" %}</button>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+</body>
+
+</html>

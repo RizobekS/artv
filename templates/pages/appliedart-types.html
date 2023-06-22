@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+    {% trans "Genres" %}
+{% endblock title %}
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
+            <main class="content">
+                <div class="center genres-page">
+                    <div class="header-title">
+                        <h1>{% trans "Виды прикладного искусства" %} </h1>
+                    </div>
+                    {% for genre in genres %}
+                        <div class="item">
+                            <a class="img">
+                                <img src="{{ genre.image.url }}" alt=""/>
+                            </a>
+                            <div class="caption">
+                                <a href="{% url "general:applied_types_detail_page" genre.id %}"
+                                   class="title">{{ genre.name }} </a>
+                                <p>{{ genre.description }}</p>
+                                <a href="{% url "general:applied_types_detail_page" genre.id %}" class="btn">{{ genre.name }} {% trans "images" %}</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </main>
+        </div>
+        {% include 'footer.html' %}
+    </div>
+{% endblock main %}

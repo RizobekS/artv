@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+    {% trans "Sell" %}
+{% endblock title %}
+
+{% block main %}
+<div class="wrapper">
+    <div class="container">
+        {% include 'header.html' with cart_items=cart_items country_name=country_name%}
+        <div class="auth-wrapper">
+            <h1>{% trans "Запрос на продажу культурных ценностей" %}</h1>
+            <form action="{% url 'general:sell_page' %}" method="post" enctype="multipart/form-data" class="sell_form">
+                {% csrf_token %}
+
+                <label>
+                    <select name="section" id="chapter_select" list="chapter" required aria-placeholder="{% trans 'Искуство' %}" >
+                        <option disabled selected hidden></option>
+                        <option>Изобразительное искуство</option>
+                        <option>Прикладное искуство</option>
+                    </select>
+                </label>
+                <div class="flex file">
+                    <input id="img" type="file" name="view" accept="image/*" required/>
+                    <button>{% trans "Выберите файл" %}</button>
+                </div>
+                <label>
+                    <input type="text" name="genre" id="genre_input" disabled list="genre" placeholder="{% trans 'Вид / Жанр' %}" required/>
+                    <datalist id="genre" class="datalist_sell"></datalist>
+                </label>
+                <label>
+                    <input type="text" list="stylez" id="style_input" placeholder="{% trans 'Тип / Стиль' %}" disabled name="style" required/>
+                    <datalist id="stylez" class="datalist_sell"></datalist>
+                </label>
+                <label>
+                    <input type="text" disabled name="author" placeholder="{% trans "Автор" %}" required/>
+                </label>
+                <label>
+                    <input type="text" disabled name="name" placeholder="{% trans "Название" %}" required/>
+                </label>
+                <span class="label">{% trans "Дата создания произведения" %}</span>
+                <label>
+                    <input type="date" disabled name="date" placeholder="{% trans "Дата" %}"/>
+                </label>
+                <label>
+                    <input type="text" disabled name="period" placeholder="{% trans "Период" %}"/>
+                </label>
+                <label>
+                    <input type="text" disabled name="materials" placeholder="{% trans "Материал" %}"/>
+                </label>
+                <label>
+                    <input type="text" disabled name="size" placeholder="{% trans "Размер" %}" required/>
+                </label>
+                <label>
+                    <input type="text" disabled name="design" placeholder="{% trans "Оформление" %}"/>
+                </label>
+                <label>
+                    <input type="text" disabled name="condition" placeholder="{% trans "Состояние" %}" required/>
+                </label>
+                <div class="flex">
+                    <label>
+                        <input type="number" disabled step=0.01 name="price" placeholder="{% trans "Цена" %}" required/>
+                    </label>
+                    <label>
+                        <input type="text" class="valuta" list='valuta' disabled name="currency" placeholder="{% trans "Валюта" %}" required/>
+                        <datalist id="valuta">
+                            <option>$</option>
+                            <option>€</option>
+                            <option>¥</option>
+                            <option>₽</option>
+                            <option>soʻm</option>
+                        </datalist>
+                    </label>
+                </div>
+
+                <label>
+                    <input type="text" disabled name="seller" placeholder="{% trans "ФИО" %}" required/>
+                </label>
+                <label>
+                    <input type="text" disabled name="phone" placeholder="{% trans "Контактный номер" %}" required/>
+                </label>
+                <label>
+                    <input type="email" disabled name="email" placeholder="{% trans "Почтовый адрес" %}" required/>
+                </label>
+                <button type="submit">{% trans "Отправить запрос" %}</button>
+            </form>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+    <script>
+        $(document).ready(function () {
+            
+            $('#chapter_select').on('input', function(){
+                $('label input').css({
+                    'color': 'black'
+                })
+                $(".select2").addClass('none')
+                $('.valuta').removeClass('select2-hidden-accessible')
+                $('label input').removeAttr('disabled')
+                if($('#chapter_select').val() == 'Изобразительное искуство'){
+                    $('#genre').children().remove()
+                    $('#genre_input').val('')
+                    $('#stylez').children().remove()
+                    $('#style_input').val('')
+                    {% for el in categories %}
+                    $('#genre').append('<option>{{el.name}}</option>')
+                    {% endfor %}
+                    {% for el in flow %}
+                    $('#stylez').append('<option>{{el.name}}</option>')
+                    {% endfor %}
+                    $('#genre_input').attr('placeholder','{% trans "Жанр"%}')
+                    $('#style_input').attr('placeholder','{% trans "Стиль/течение" %}')
+                }else if($('#chapter_select').val() == 'Прикладное искуство'){
+                    $('#genre').children().remove()
+                    $('#genre_input').val('')
+                    $('#stylez').children().remove()
+                    $('#style_input').val('')
+                    {% for el in worktype %}
+                    $('#genre').append('<option>{{el.name}}</option>')
+                    {% endfor %}
+                    {% for el in type %}
+                    $('#stylez').append('<option>{{el.name}}</option>')
+                    {% endfor %}
+                    $('#genre_input').attr('placeholder','{% trans "Вид"%}')
+                    $('#style_input').attr('placeholder','{% trans "Тип"%}')
+                }
+            })
+        });
+    </script>
+</div>
+{% endblock main %}

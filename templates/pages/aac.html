@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+Art Appraisal center
+{% endblock title %}
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
+            <main class="content">
+                <div class="center ">
+                    {% for aac_comp in aac %}
+                    <h2 class="titleAac">{{ aac_comp.title }}</h2>
+                    <div class="accpage">
+                        <div class="row_aac">
+                            <div class="blockLogoAac">
+                                <img src="{{ aac_comp.logo.url }}" alt="{{ aac_comp.title }}" class="logoAac">
+                            </div>
+                            <div class="infoAac">
+                                <p class="pAac">{{ aac_comp.description }}</p>
+                            </div>
+                            <div class="blockCharterAac">
+                                <img src="{{ aac_comp.certificate.url }}" alt="{{ aac_comp.title }} {% trans 'сертификат' %}" class="charterAac">
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% for aac_member in aac_member %}
+                        <div class="hr"></div>
+                        <div class="row_aac1">
+                            <div class="row_aac2">
+                                <div class="blockLogoUserAac">
+                                    <img src="{{ aac_member.photo.url }}" alt="{{ aac_member.name }}" class="logoUserAac">
+                                </div>
+                                <div class="infoAac">
+                                    <h2 class="h2User">{{ aac_member.name }}</h2>
+                                    <p class="pUser">{{ aac_member.description }}</p>
+                                </div>
+                            </div>
+                            <div class="blockCharterAac">
+                                <img src="{{ aac_member.certificate.url }}" alt="{% trans 'сертификат' %}" class="charterAac">
+                            </div>
+                        </div>
+                        {% endfor %}
+                        <div class="exit"></div>
+{#                        {% for aac_comp in aac %}#}
+{#                            <p class="aacTextBlock mt-5">{{ aac_comp.bottom_text }}</p>#}
+{#                        {% endfor %}#}
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+        {% include 'footer.html' %}
+
+    </div>
+{% endblock main %}

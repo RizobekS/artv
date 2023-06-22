@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+    {% trans "Наши партнеры" %}
+{% endblock title %}
+
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items country_name=country_name%}
+            <main class="content">
+                <div class="center">
+                    <div class="about-page">
+                        <div class="about" style="display:block;">
+                            <strong>{% trans 'Наши партнеры' %}</strong>
+                            <div class="row partner-mb" style="display: flex; justify-content: space-between; flex-wrap: wrap; flex:50%">
+                                {% for partner in partners %}
+                                <div class="col-lg-6" style="margin-top:20px; text-align: center;">
+                                    <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" style="height: 150px;">
+                                    <strong>{{ partner.name }}</strong>
+                                    <p>{{ partner.description }}</p>
+                                </div>
+                                {% endfor %}
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+        {% include 'footer.html' %}
+        <style>
+            @media(min-width:780px ) {
+                .parnter-mb{
+                    justify-content: center;
+                }
+            }
+        </style>
+    </div>
+{% endblock main %}

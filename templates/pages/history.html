@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "History of Orders" %}
+{% endblock title %}
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
+            <main class="content">
+                <div class="profile-page">
+                    <div class="profile">
+                        <div class="center flex">
+                            <h1>{% trans "Профиль пользователя" %}</h1>
+                            <div class="username">
+                                {% trans "Добро пожаловать в пользовательский центр!" %} <span>{{ uname }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="profile-info">
+                            <aside>
+                                <div>
+                                    <div class="user">
+                                        <img src="img/profile.svg" alt=""/>
+                                        {% if user.auth_user.first_name or user.auth_user.last_name %}
+                                            <strong>
+                                                {{ user.auth_user.first_name }} {{ user.auth_user.last_name }}
+                                            </strong>
+                                        {% endif %}
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="{% url "general:history_page" %}" class="active">
+                                                {% trans "История заказов" %}
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url "general:profile_page" %}">
+                                                {% trans "Личные данные" %}
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="logout desktop">
+                                    <a href="{% url "accounts:logout" %}">{% trans "Выйти" %}</a>
+                                </div>
+                            </aside>
+                            <div class="content">
+                                <div class="history-list">
+                                    <h2>{% trans "История заказов" %}</h2>
+                                <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+
+                                                        <h3>{% trans "Detail Information"%}</h3>
+                                                        <p><span class="font-weight-bold"> {% trans "Name:" %}</span> {{ customer.first_name }} {{ customer.last_name }}</p>
+                                                        <p><span class="font-weight-bold"> {% trans "Email: " %}</span> {{ customer.email }}</p>
+                                                        <p><span class="font-weight-bold"> {% trans "Phone: " %} </span> {{ customer.phone }}</p>
+                                                        <p><span class="font-weight-bold"> {% trans "Address: " %} </span> {{ customer.country }}, {{ customer.city }}, {{ customer.postcode }}</p>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h3> {% trans "Previous orders" %}</h3>
+                                                        <hr>
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>{% trans "SN" %}</th>
+                                                                    <th>{% trans "Order ID" %}</th>
+                                                                    <th>{% trans "Amount" %}</th>
+                                                                    <th>{% trans "Ordered on" %}</th>
+                                                                    <th>{% trans "Status" %}</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                {% for ord in orders %}
+                                                                    <tr>
+                                                                        <td>{{ forloop.counter }}</td>
+                                                                        <td>{{ ord.total }}</td>
+                                                                        <td>{{ ord.created_at|timesince }} {% trans "ago" %}</td>
+                                                                        <td>{{ ord.status }}</td>
+                                                                    </tr>
+                                                                {% endfor %}
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="logout mobile">
+                                    <a href="{% url "accounts:logout" %}">{% trans "Выйти" %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        {% include 'footer.html' %}
+    </div>
+{% endblock main %}

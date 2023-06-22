@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+    {% trans "Service Detail" %}
+{% endblock title %}
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items country_name=country_name%}
+            <main class="content">
+                <div class="center gallery-page">
+                    <div class="header-title bordered">
+                        <h1>{{ service.name }}</h1>
+                    </div>
+                    <div class="hot">
+                        {% if service.image %}
+                            <a class="img fancybox">
+                                <img src="{{ service.image.url }}" alt=""/>
+                            </a>
+                        {% endif %}
+                        <div class="caption">
+                            <p>{{ service.content|safe }}</p>
+                        </div>
+                    </div>
+                    <h2>{% trans "Наши работы" %}</h2>
+                    {% if service.show_images %}
+                        <div class="container cards mobile-slider">
+                            {% if slider_images %}
+                                {% for image in slider_images %}
+                                    <div class="card">
+                                        <a href="{{ image.images.url }}"  data-fancybox>
+                                            <img src="{{ image.images.url }}" alt="" />
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                </div>
+
+            </main>
+        </div>
+
+        {% include 'footer.html' %}
+
+    </div>
+{% endblock main %}

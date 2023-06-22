@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+    {% trans "About Detail" %}
+{% endblock title %}
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items country_name=country_name%}
+            <main class="content">
+                <div class="center ">
+                    <div class="about-page">
+                        <div class="about">
+                            <div class="text">
+                                <strong>{{ about_detail.title }}</strong>
+                                <p>{{ about_detail.text|safe }}</p>
+                            </div>
+                            {% if about_detail.photo %}
+                                <div class="img">
+                                    <img src="{{ about_detail.photo.url }}" alt=""/>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+        {% include 'footer.html' %}
+
+    </div>
+{% endblock main %}

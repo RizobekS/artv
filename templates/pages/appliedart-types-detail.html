@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+    {% trans "Gallery" %}
+{% endblock title %}
+
+{% block main %}
+    <div class="wrapper">
+        <div class="container">
+            {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
+            <main class="content">
+                <div class="center gallery-page">
+                    <div class="banner">
+                        <div class="container" id="mygallery">
+                            {% for work in works %}
+                                <a href="{% url 'general:catalog_detail_page' work.slug %}">
+                                    <img loading="lazy" src="{{ work.thumbnail.url }}" alt=""/>
+                                    <div class="description">
+                                        <div>
+                                            <strong>{{ work.name }}</strong>
+                                            {% if work.year_of_creation %}
+                                                <span>{{ work.year_of_creation }}</span>
+                                            {% endif %}
+                                        </div>
+                                        <strong>{{ work.author.name }}</strong>
+                                    </div>
+                                </a>
+
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        {% include 'footer.html' %}
+    </div>
+{% endblock main %}
