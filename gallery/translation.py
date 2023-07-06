@@ -1,5 +1,5 @@
 from modeltranslation.translator import translator, TranslationOptions
-from .models import Works, Article, Order, Auction, AppliedArt
+from .models import Works, Article, Order, Auctions, AppliedArt
 from django.utils.translation import gettext_lazy as _
 
 
@@ -30,5 +30,5 @@ class AuctionOptions(TranslationOptions):
 translator.register(Order, OrderOptions)
 translator.register(Works, WorksOptions)
 translator.register(Article, ArticleOptions)
-translator.register(Auction, AuctionOptions)
+translator.register(Auctions, AuctionOptions)
 translator.register(AppliedArt, AppliedArtOptions)

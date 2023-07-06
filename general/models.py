@@ -387,3 +387,29 @@ class AuctionRules(models.Model):
     class Meta:
         verbose_name = _('Правила аукциона')
         verbose_name_plural = _('Правила аукциона')
+
+
+class Auction(models.Model):
+    name = models.CharField(_('Название аукциона'), max_length=512)
+    photo = models.ImageField(_('Фотография'), upload_to='auctions/')
+    date = models.DateField(_('Дата'))
+    adress = models.TextField(_('Адрес проведения'))
+    count_lots = models.IntegerField(_('Количество лотов'))
+    map = models.CharField(_('Карта'), max_length=9000, blank=True)
+    content = RichTextUploadingField(_('Контент'), blank=True)
+    slug = models.SlugField(
+        "Дополнение к названию ссылки (генерируется автоматически)",
+        default="no-slug",
+        blank=True,
+    )
+
+    def __str__(self): return self.name
+
+    def save(self, *args, **kwargs):
+        if self.slug is None or self.slug == "no-slug" or self.slug == '':
+            self.slug = slugify(self.name)
+        return super().save()
+
+    class Meta:
+        verbose_name = _('Аукцион')
+        verbose_name_plural = _('Аукционы')

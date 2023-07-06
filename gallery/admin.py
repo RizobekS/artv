@@ -5,7 +5,7 @@ from .models import (
     AppliedArt,
     AppliedArtPriceUp,
     Article,
-    Auction,
+    Auctions,
     Cart,
     CartItem,
     Discounts,
@@ -108,7 +108,7 @@ admin.site.register(Works, WorksAdmin)
 admin.site.register(Order, OrderAdmin)
 admin.site.register(Likes, LikesAdmin)
 admin.site.register(Article, ArticleAdmin)
-admin.site.register(Auction, AuctionAdmin)
+admin.site.register(Auctions, AuctionAdmin)
 admin.site.register(Gallery, GalleryAdmin)
 admin.site.register(CartItem, CartItemAdmin)
 admin.site.register(Discounts, DiscountsAdmin)

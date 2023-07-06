@@ -27,7 +27,8 @@ from .models import (
 	AacMember,
 	Aocv,
 	AocvMember,
-	AuctionRules
+	AuctionRules,
+	Auction
 )
 
 
@@ -128,6 +129,10 @@ class AuctionRulesAdmin(TranslationAdmin):
 	pass
 
 
+class AuctionAdmin(TranslationAdmin):
+	pass
+
+
 @admin.register(Services)
 class ServicesAdmin(admin.ModelAdmin):
 	inlines = [ServicesImageAdmin]
@@ -164,3 +169,4 @@ admin.site.register(Aocv, AocvAdmin)
 admin.site.register(AocvMember, AocvMembersAdmin)
 admin.site.register(TeamMemberExtra, TeamMembersExtraAdmin)
 admin.site.register(AuctionRules, AuctionRulesAdmin)
+admin.site.register(Auction, AuctionAdmin)

@@ -510,7 +510,7 @@ class Gallery(models.Model):
         verbose_name_plural = _("Галереи")
 
 
-class Auction(models.Model):
+class Auctions(models.Model):
     name = models.CharField("Имя", max_length=255)
     product = models.OneToOneField(
         Works,

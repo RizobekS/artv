@@ -2,6 +2,7 @@ from functools import reduce
 from itertools import chain
 import operator
 import random
+import datetime
 
 from django.urls import reverse
 from django.db.models import Q
@@ -24,10 +25,10 @@ from utils.network_utils import client_country, get_ip
 from accounts.models import Authors, AuthUsers, Craftmanship
 from utils import currency_change_utils, age_restriction_utils
 from accounts.forms import UpdateCheckoutProfileForm, UpdateProfileForm
-from gallery.models import Article, Auction, Works, Gallery, CartItem, CartItemChoices, Order, Cart, \
+from gallery.models import Article, Auctions, Works, Gallery, CartItem, CartItemChoices, Order, Cart, \
     StatusChoices, AppliedArt, Views
 from .models import Country, Categories, About, Flow, Region, Services, Sections, WorkType, Sell, TeamMember, \
-    ServicesImage, ExpertMember, Partner, Aac, AacMember, Aocv, AocvMember, TeamMemberExtra, AuctionRules
+    ServicesImage, ExpertMember, Partner, Aac, AacMember, Aocv, AocvMember, TeamMemberExtra, AuctionRules, Auction
 
 
 def error_404_view(request, exception):
@@ -234,7 +235,7 @@ class BlogDetail(DetailView):
 
 class Auctions(TemplateView):
     template_name = "pages/auctions.html"
-    model = Auction
+    model = Auctions
 
     def get_context_data(self):
         auctions = Auction.objects.all()
@@ -246,19 +247,19 @@ class Auctions(TemplateView):
         return context
 
 
-class AuctionDetail(TemplateView):
-    template_name = "pages/auction-detail.html"
-
-    def get_context_data(self):
-        obj = super().get_object()
-        auction = Auction.objects.get(id=obj)
-
-        common_context = get_common_context(self.request)
-        context = {
-            **common_context,
-            "auction": auction,
-        }
-        return context
+# class AuctionDetail(TemplateView):
+#     template_name = "pages/auction-detail.html"
+#
+#     def get_context_data(self):
+#         obj = super().get_object()
+#         auction = Auction.objects.get(id=obj)
+#
+#         common_context = get_common_context(self.request)
+#         context = {
+#             **common_context,
+#             "auction": auction,
+#         }
+#         return context
 
 
 def gallery_details(request, pk=None):
@@ -1752,6 +1753,37 @@ class AuctionRulesView(TemplateView):
             'auctionrules': auctionrules,
             **common_context
         }
+        return context
+
+
+class AuctionView(TemplateView):
+    template_name = 'pages/auctions.html'
+
+    def get_context_data(self):
+        common_context = get_common_context(self.request)
+        auction = Auction.objects.all()
+        date_now = datetime.datetime.now()
+
+        context = {
+            'auction': auction,
+            'date_now': date_now,
+            **common_context
+        }
+        return context
+
+
+class AuctionDetail(TemplateView):
+    template_name = 'pages/auction-detail.html'
+
+    def get_context_data(self, slug=None, **kwargs):
+        auction = Auction.objects.filter(slug=slug)
+        common_context = get_common_context(self.request)
+
+        context = {
+            'auction': auction,
+            **common_context
+        }
+
         return context
 
 

@@ -23,7 +23,8 @@ from .models import (
     Aac,
     Aocv,
     AocvMember,
-    AuctionRules
+    AuctionRules,
+    Auction
 )
 
 
@@ -134,6 +135,10 @@ class AuctionRulesOptions(TranslationOptions):
     fallback_values = _("-- sorry, no translation provided --")
 
 
+class AuctionOptions(TranslationOptions):
+    fields = ['name', 'adress', 'content']
+
+
 translator.register(About, AboutOptions)
 translator.register(Country, CountryOptions)
 translator.register(Categories, CategoriesOptions)
@@ -156,3 +161,4 @@ translator.register(Aocv, AocvOptions)
 translator.register(AocvMember, AocvMembersOptions)
 translator.register(TeamMemberExtra, TeamMemberExtraOptions)
 translator.register(AuctionRules, AuctionRulesOptions)
+translator.register(Auction, AuctionOptions)
