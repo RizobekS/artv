@@ -396,7 +396,8 @@ class Auction(models.Model):
     adress = models.TextField(_('Адрес проведения'))
     count_lots = models.IntegerField(_('Количество лотов'))
     assessed_value = models.FloatField(_('Оценочная стоимость'), null=True, blank=True)
-    lot_current_price = models.FloatField(_('Текущая цена лота'), null=True, blank=True)
+    start_price_lot = models.FloatField(_('Стартовая стоимость'), null=True, blank=True)
+    lot_selling_price = models.FloatField(_('Цена продажи'), null=True, blank=True)
     map = models.CharField(_('Карта'), max_length=9000, blank=True)
     content = RichTextUploadingField(_('Контент'), blank=True)
     slug = models.SlugField(
