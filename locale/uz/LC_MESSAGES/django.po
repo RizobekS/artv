@@ -1682,6 +1682,18 @@ msgstr "Bizning asarlar"
 msgid "Services"
 msgstr "Xizmatlar"
 
+msgid "Номер аукциона:"
+msgstr "Auktsion raqami:"
+
+msgid "Дата:"
+msgstr "Sana:"
+
+msgid "Адрес проведения:"
+msgstr "Manzil:"
+
+msgid "Количество лотов:"
+msgstr "Lotlar soni:"
+
 #~ msgid "Просмотры"
 #~ msgstr "Kor'ishlar soni"
 
