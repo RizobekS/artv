@@ -10,32 +10,45 @@
         <div class="container">
             {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
             <main class="content">
-              {% for auct in auction %}
                 <div class="center gallery-page">
-                    <h1 style="text-align: center;">{{ auct.name }}</h1>
+                    <h1 style="text-align: center;">{{ auction.name }}</h1>
                     <div class="main_action_item">
                         <div class="action_item_img">
-                            <img src="{{ auct.photo.url }}" class="img_item_action" alt="">
+                            <img src="{{ auction.photo.url }}" class="img_item_action" alt="">
                         </div>
                         <div class="action_item_info">
-                            <p class="action_item_text">Дата проведения: {{ auct.date }}</p>
-                            <p class="action_item_text">Адрес проведения: {{ auct.adress }}</p>
-                            <p class="action_item_text">Количество лотов: {{ auct.count_lots }}</p>
-                            <p class="action_item_text">Оценочная стоимость: {{ auct.assessed_value }}</p>
-                            <p class="action_item_text">Стартовая стоимость: {{ auct.start_price_lot }}</p>
-                            <p class="action_item_text">Цена продажи: {{ auct.lot_selling_price }}</p>
-<!--                            <p class="action_item_text">Карта:</p>-->
-<!--                            <iframe src="{{ auct.map }}" frameborder="0"></iframe>-->
+                            <p class="action_item_text">{% trans 'Дата:' %} {{ auction.date }}</p>
+                            <p class="action_item_text">{% trans 'Адрес проведения:' %} {{ auction.adress }}</p>
+                            <p class="action_item_text">{% trans 'Количество лотов:' %} {{ auction.count_lots }}</p>
+                            <p class="action_item_text">{{ auction.content|default_if_none:""|safe }}</p>
+
                         </div>
                     </div>
-                  {{ auct.content|safe }}
                 </div>
-              {% endfor %}
+                {% for lot in lots %}
+                    <div class="center gallery-page">
+                        <h2 style="text-align: center;">{{ lot.title }}</h2>
+                        <div class="main_action_item">
+                            <div class="action_item_img">
+                                <img src="{{ lot.img.url }}" class="img_item_action" alt="">
+                            </div>
+                            <div class="action_item_info">
+                                <p class="action_item_text">{% trans 'Номер лота №' %} {{ lot.number_lot }}</p>
+                                <p class="action_item_text">{% trans 'Автор:' %} {{ lot.author }}</p>
+                                <p class="action_item_text">{% trans 'Оценочная стоимость:' %} {{ lot.assessed_value }}</p>
+                                <p class="action_item_text">{% trans 'Стартовая стоимость:' %} {{ lot.start_price_lot }}</p>
+                                <p class="action_item_text">{% trans 'Цена продажи:' %} {{ lot.lot_selling_price }}</p>
+                                <p class="action_item_text">{{ lot.description|safe }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
             </main>
             {% include 'footer.html' %}
         </div>
     </div>
 {% endblock main %}
+
 {% block js_partials %}
     <script type="text/javascript" src="{% static 'js/home.page.js' %}"></script>
 {% endblock js_partials %}

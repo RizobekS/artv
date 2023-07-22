@@ -2,56 +2,94 @@
 {% load i18n %}
 {% load static %}
 {% block title %}
-    {% trans "Auctions" %}
+{% trans "Auctions" %}
 {% endblock title %}
 
 {% block main %}
-    <div class="wrapper">
-        <div class="container">
-            {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
-            <main class="content">
-                <div class="center gallery-page">
-                    <h1 style="margin-bottom: 20px;">{% trans "Календарь проведения аукционов" %}</h1>
-                    <div class="filter-content">
-                        <ul class="filters">
-                            <li class="title">
-                                <span>{% trans "Фильтровать по" %}:</span>
-                                <a href="{% url 'general:blog_page' %}">{% trans "Очистить все" %}</a>
-                            </li>
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+rel="stylesheet"
+/>
+<div class="wrapper">
+    {% include 'header.html' with cart_items=cart_items craftmanship=craftmanship country_name=country_name%}
+    <div class="container">
+        <main class="content">
+            <div class="gallery-page">
+                <h1 style="margin-bottom: 20px;">{% trans "Календарь проведения аукционов" %}</h1>
+                <div class="filter-content">
+                    <ul class="filters">
+                        <li class="title">
+                            <span>{% trans "Фильтровать по" %}:</span>
+                            <a href="{% url 'general:blog_page' %}">{% trans "Очистить все" %}</a>
+                        </li>
 
-                            {% include "pages/main_filter.html" %}
-                        </ul>
-                        {% for auct in auction %}
-                        <div class="cards-panel">
-                            <div class="cards-content auctions"  id="cards-main">
-                                <div class="card_action_block" style="display: flex;">
-                                    <a href="{% url 'general:auctions_detail_page' auct.slug %}" class="mobile link_action_info ">{{ auct.name }}</a>
-                                    <div class="card_action_img_block">
-                                        <img src="{{ auct.photo.url }}" alt="" width="200px">
-                                    </div>
-                                    <div class="card_action_info_block">
-                                        <a href="{% url 'general:auctions_detail_page' auct.slug %}" class="link_action_info">{{ auct.name }}</a>
-                                        <p class="text_action_info martop10">
-                                            <span class="span_text_action_info">Дата проведения:</span> {{ auct.date }}
-                                        </p>
-                                        <p class="text_action_info marbot20">
-                                            <span class="span_text_action_info">Количество произведений:</span> {{ auct.count_lots }}
-                                        </p>
-                                        {% if date_now > auct.date %}
-                                            <p class="text_action_info marbot20">Аукцион завершен</p>
-                                        {% endif %}
-                                    </div>
+                        {% include "pages/main_filter.html" %}
+                    </ul>
+
+                </div>
+            </div>
+            {% for auct in auction %}
+                    <div class="card mb-3 mt-3" data-aos="fade-up">
+                        <div class="row g-0">
+                            <div class="card_img ripple col-md-4">
+                                <a href="{% url 'general:auctions_detail_page' auct.slug %}" class="">
+                                    <img src="{{ auct.photo.url }}" class="h-100 card_news_img img-fluid rounded-start"
+                                         alt="news">
+
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="{% url 'general:auctions_detail_page' auct.slug %}" class="link_action_info">
+                                        {{ auct.name }}
+                                    </a></h5>
+                                    <p class="card-text">
+                                        <span class="span_text_action_info">{% trans 'Номер аукциона:' %}</span>
+                                        {{ auct.number_auction }}
+                                    </p>
+                                    <p class="card-text">
+                                        <span class="span_text_action_info">{% trans 'Дата:' %}</span>
+                                        {{ auct.date }}
+                                    </p>
+                                    <p class="text_action_info marbot20">
+                                        <span class="span_text_action_info">{% trans 'Адрес проведения:' %}</span>
+                                        {{ auct.adress }}
+                                    </p>
+                                    <p class="text_action_info marbot20">
+                                        <span class="span_text_action_info">{% trans 'Количество лотов:' %}</span>
+                                        {{ auct.count_lots }}
+                                    </p>
+                                    <p class="card-text">
+                                        {{ auct.content|default_if_none:""|safe|truncatechars:500 }}
+                                    </p>
+                                    {% if date_now > auct.date %}
+                                    <p class="text_action_info marbot20">Аукцион завершен</p>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
-                        {% endfor %}
                     </div>
-                </div>
-            </main>
-            {% include 'footer.html' %}
-        </div>
+                    {% endfor %}
+        </main>
     </div>
+    {% include 'footer.html' %}
+</div>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
 {% endblock main %}
 {% block js_partials %}
-    <script type="text/javascript" src="{% static 'js/home.page.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/home.page.js' %}"></script>
 {% endblock js_partials %}

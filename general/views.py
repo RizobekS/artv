@@ -9,7 +9,7 @@ from django.db.models import Q
 from django.contrib import messages
 from django.http import JsonResponse
 from django.core.paginator import Paginator
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect, render, get_object_or_404
 from django.utils.translation import get_language
 from django.utils.translation import gettext_lazy as _
 from django.views.generic import TemplateView, DetailView
@@ -28,7 +28,8 @@ from accounts.forms import UpdateCheckoutProfileForm, UpdateProfileForm
 from gallery.models import Article, Auctions, Works, Gallery, CartItem, CartItemChoices, Order, Cart, \
     StatusChoices, AppliedArt, Views
 from .models import Country, Categories, About, Flow, Region, Services, Sections, WorkType, Sell, TeamMember, \
-    ServicesImage, ExpertMember, Partner, Aac, AacMember, Aocv, AocvMember, TeamMemberExtra, AuctionRules, Auction
+    ServicesImage, ExpertMember, Partner, Aac, AacMember, Aocv, AocvMember, TeamMemberExtra, AuctionRules, Auction, \
+    Lots
 
 
 def error_404_view(request, exception):
@@ -1776,11 +1777,13 @@ class AuctionDetail(TemplateView):
     template_name = 'pages/auction-detail.html'
 
     def get_context_data(self, slug=None, **kwargs):
-        auction = Auction.objects.filter(slug=slug)
+        auction = get_object_or_404(Auction, slug=slug)
+        lots = Lots.objects.filter(auction=auction)
         common_context = get_common_context(self.request)
 
         context = {
             'auction': auction,
+            'lots': lots,
             **common_context
         }
 

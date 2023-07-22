@@ -24,7 +24,8 @@ from .models import (
     Aocv,
     AocvMember,
     AuctionRules,
-    Auction
+    Auction,
+    Lots
 )
 
 
@@ -139,6 +140,10 @@ class AuctionOptions(TranslationOptions):
     fields = ['name', 'adress', 'content']
 
 
+class LotsOptions(TranslationOptions):
+    fields = ['title', 'author', 'description']
+
+
 translator.register(About, AboutOptions)
 translator.register(Country, CountryOptions)
 translator.register(Categories, CategoriesOptions)
@@ -162,3 +167,4 @@ translator.register(AocvMember, AocvMembersOptions)
 translator.register(TeamMemberExtra, TeamMemberExtraOptions)
 translator.register(AuctionRules, AuctionRulesOptions)
 translator.register(Auction, AuctionOptions)
+translator.register(Lots, LotsOptions)

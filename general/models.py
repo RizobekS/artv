@@ -392,12 +392,10 @@ class AuctionRules(models.Model):
 class Auction(models.Model):
     name = models.CharField(_('Название аукциона'), max_length=512)
     photo = models.ImageField(_('Фотография'), upload_to='auctions/')
+    number_auction = models.IntegerField(_('Номер аукциона'), null=True, blank=True)
     date = models.DateField(_('Дата'))
     adress = models.TextField(_('Адрес проведения'))
     count_lots = models.IntegerField(_('Количество лотов'))
-    assessed_value = models.FloatField(_('Оценочная стоимость'), null=True, blank=True)
-    start_price_lot = models.FloatField(_('Стартовая стоимость'), null=True, blank=True)
-    lot_selling_price = models.FloatField(_('Цена продажи'), null=True, blank=True)
     map = models.CharField(_('Карта'), max_length=9000, blank=True)
     content = RichTextUploadingField(_('Контент'), blank=True)
     slug = models.SlugField(
@@ -416,3 +414,31 @@ class Auction(models.Model):
     class Meta:
         verbose_name = _('Аукцион')
         verbose_name_plural = _('Аукционы')
+
+
+class Lots(models.Model):
+    auction = models.ForeignKey(Auction, on_delete=models.CASCADE)
+    title = models.CharField(_('Наименование произведения'), max_length=512)
+    img = models.ImageField(_('Фотография'), upload_to='auctions/lots/')
+    number_lot = models.IntegerField(_('Номер лота'))
+    author = models.CharField(_('Автор'), max_length=512)
+    description = RichTextUploadingField(_('Контент'), blank=True)
+    assessed_value = models.FloatField(_('Оценочная стоимость'), null=True, blank=True)
+    start_price_lot = models.FloatField(_('Стартовая стоимость'), null=True, blank=True)
+    lot_selling_price = models.FloatField(_('Цена продажи'), null=True, blank=True)
+    slug = models.SlugField(
+        "Дополнение к названию ссылки (генерируется автоматически)",
+        default="no-slug",
+        blank=True,
+    )
+
+    def __str__(self): return self.title
+
+    def save(self, *args, **kwargs):
+        if self.slug is None or self.slug == "no-slug" or self.slug == '':
+            self.slug = slugify(self.title)
+        return super().save()
+
+    class Meta:
+        verbose_name = _('Лот')
+        verbose_name_plural = _('Лоты')
