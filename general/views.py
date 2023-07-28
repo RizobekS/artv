@@ -1778,7 +1778,7 @@ class AuctionDetail(TemplateView):
 
     def get_context_data(self, slug=None, **kwargs):
         auction = get_object_or_404(Auction, slug=slug)
-        lots = Lots.objects.filter(auction=auction)
+        lots = Lots.objects.filter(auction=auction).order_by('number_lot')
         common_context = get_common_context(self.request)
 
         context = {
