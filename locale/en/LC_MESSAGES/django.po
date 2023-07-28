@@ -1686,6 +1686,21 @@ msgstr "Date:"
 msgid "Адрес проведения:"
 msgstr "Address:"
 
+msgid "Номер лота №"
+msgstr "Lot number №"
+
+msgid "Автор:"
+msgstr "Author:"
+
+msgid "Оценочная стоимость:"
+msgstr "Estimated price:"
+
+msgid "Стартовая стоимость:"
+msgstr "Starting price:"
+
+msgid "Цена продажи:"
+msgstr "Sale price:"
+
 msgid "Количество лотов:"
 msgstr "Number of lots:"
 

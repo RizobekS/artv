@@ -1694,6 +1694,21 @@ msgstr "Manzil:"
 msgid "Количество лотов:"
 msgstr "Lotlar soni:"
 
+msgid "Номер лота №"
+msgstr "Lot raqami №"
+
+msgid "Автор:"
+msgstr "Muallif:"
+
+msgid "Оценочная стоимость:"
+msgstr "Baholangan narxi:"
+
+msgid "Стартовая стоимость:"
+msgstr "Boshlang'ich narxi:"
+
+msgid "Цена продажи:"
+msgstr "Sotilgan narxi:"
+
 #~ msgid "Просмотры"
 #~ msgstr "Kor'ishlar soni"
 

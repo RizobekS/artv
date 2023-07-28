@@ -17,9 +17,9 @@
                             <img src="{{ auction.photo.url }}" class="img_item_action" alt="">
                         </div>
                         <div class="action_item_info">
-                            <p class="action_item_text">{% trans 'Дата:' %} {{ auction.date }}</p>
-                            <p class="action_item_text">{% trans 'Адрес проведения:' %} {{ auction.adress }}</p>
-                            <p class="action_item_text">{% trans 'Количество лотов:' %} {{ auction.count_lots }}</p>
+                            <p class="action_item_text">{% trans 'Дата:' %} <b>{{ auction.date }}</b></p>
+                            <p class="action_item_text">{% trans 'Адрес проведения:' %} <b>{{ auction.adress }}</b></p>
+                            <p class="action_item_text">{% trans 'Количество лотов:' %} <b>{{ auction.count_lots }}</b></p>
                             <p class="action_item_text">{{ auction.content|default_if_none:""|safe }}</p>
 
                         </div>
@@ -33,11 +33,11 @@
                                 <img src="{{ lot.img.url }}" class="img_item_action" alt="">
                             </div>
                             <div class="action_item_info">
-                                <p class="action_item_text">{% trans 'Номер лота №' %} {{ lot.number_lot }}</p>
-                                <p class="action_item_text">{% trans 'Автор:' %} {{ lot.author }}</p>
-                                <p class="action_item_text">{% trans 'Оценочная стоимость:' %} {{ lot.assessed_value }}</p>
-                                <p class="action_item_text">{% trans 'Стартовая стоимость:' %} {{ lot.start_price_lot }}</p>
-                                <p class="action_item_text">{% trans 'Цена продажи:' %} {{ lot.lot_selling_price }}</p>
+                                <p class="action_item_text">{% trans 'Номер лота №' %} <b>{{ lot.number_lot }}</b></p>
+                                <p class="action_item_text">{% trans 'Автор:' %} <b>{{ lot.author }}</b></p>
+                                <p class="action_item_text">{% trans 'Оценочная стоимость:' %} <b>{{ lot.assessed_value }}</b></p>
+                                <p class="action_item_text">{% trans 'Стартовая стоимость:' %} <b>{{ lot.start_price_lot }}</b></p>
+                                <p class="action_item_text">{% trans 'Цена продажи:' %} <b>{{ lot.lot_selling_price }}</b></p>
                                 <p class="action_item_text">{{ lot.description|safe }}</p>
                             </div>
                         </div>
