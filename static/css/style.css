@@ -7116,21 +7116,21 @@ order: 1 !important;
 }
 .main_action_item{
     display: flex;
-    height: 80vh;
     margin-top: 20px;
     flex-direction: row;
     margin-bottom: 20px;
 }
 .action_item_img{
     height: 100%;
+    width: 50%;
 }
 .action_item_info{
-    width: 70%;
+    width: 50%;
     height: 100%;
     margin-left: 20px;
 }
 .img_item_action{
-    height: 100%;
+    width: 100%;
 }
 .action_item_text{
     font-size: 18px;
