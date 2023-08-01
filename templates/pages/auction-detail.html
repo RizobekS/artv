@@ -35,6 +35,7 @@
                             <div class="action_item_info">
                                 <p class="action_item_text"><b>{% trans 'Номер лота №' %}</b> {{ lot.number_lot }}</p>
                                 <p class="action_item_text"><b>{% trans 'Автор:' %}</b> {{ lot.author }}</p>
+                                <p class="action_item_text">{{ lot.description|safe }}</p>
                                 <p class="action_item_text"><b>{% trans 'Оценочная стоимость:' %}</b> {{ lot.assessed_value }}
                                     {% if LANGUAGE_CODE == 'ru' %}
                                     сум
@@ -62,7 +63,6 @@
                                     sum
                                     {% endif %}
                                 </p>
-                                <p class="action_item_text">{{ lot.description|safe }}</p>
                             </div>
                         </div>
                     </div>
