@@ -910,10 +910,8 @@ msgid "Жанры изобразительного искусства"
 msgstr "Tasviriy san'at janrlari"
 
 #: .\templates\footer.html:56 .\templates\pages\appliedart-types.html:15
-#, fuzzy
-#| msgid "Прикладное искусство"
 msgid "Виды прикладного искусства"
-msgstr "Amaliy san'at ko'rinishlari"
+msgstr "Amaliy san'at turlari"
 
 #: .\templates\footer.html:57 .\templates\header.html:155
 msgid "Эксперты"
