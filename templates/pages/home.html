@@ -25,7 +25,7 @@
                             <div class="card">
                                 <div class="info">
                                     <a href="{% url 'general:catalog_detail_page' catalog.slug %}" title="{{ catalog.name }}" class="img">
-                                        <img loading="lazy" width="336" height="270" src="{{ catalog.thumbnail.url }}" alt="{{ catalog.name }}"/>
+                                        <img loading="lazy" width="336" height="270" src="{{ catalog.photo.url }}" alt="{{ catalog.name }}"/>
                                     </a>
                                     <div class="caption">
                                         <strong><a href="{% url 'general:catalog_detail_page' catalog.slug %}" title="{{ catalog.name }}">{{ catalog.name }}
@@ -71,7 +71,7 @@
                             <div class="card">
                                 <div class="info">
                                     <a href="{% url 'general:catalog_detail_page' work.slug %}" title="{{ work.name }}" class="img ">
-                                        <img  width="336" height="270" loading="lazy" src="{{ work.thumbnail.url }}" alt="{{ work.name }}"/>
+                                        <img  width="336" height="270" loading="lazy" src="{{ work.photo.url }}" alt="{{ work.name }}"/>
                                     </a>
                                     <div class="caption">
                                         <strong>
@@ -115,7 +115,7 @@
                             <div class="card">
                                 <div class="info">
                                     <a href="{% url 'general:catalog_detail_page' mv.slug %}" title="{{ mv.name }}" class="img h418">
-                                        <img loading="lazy" width="336" height="418" src="{{ mv.thumbnail.url }}" alt="{{ mv.name }}"/>
+                                        <img loading="lazy" width="336" height="418" src="{{ mv.photo.url }}" alt="{{ mv.name }}"/>
                                     </a>
                                     <div class="caption">
                                         <strong class="active"><a href="{% url 'general:catalog_detail_page' mv.slug %}"  title="{{ mv.name }}">{{ mv.name }}
