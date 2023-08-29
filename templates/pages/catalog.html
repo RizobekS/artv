@@ -60,7 +60,7 @@
                             <div class="card">
                                 <div class="info">
                                     <a href="{% url 'general:catalog_detail_page' work.slug %}" class="img h360">
-                                        <img src="{{ work.thumbnail.url }}" alt=""/>
+                                        <img src="{{ work.photo.url }}" alt=""/>
                                     </a>
                                     <div class="caption">
                                         <div class="header">
@@ -170,7 +170,7 @@
                   <div class="card">
                         <div class="info">
                             <a href="https://${item.url}" class="img h360">
-                                <img src="${item.thumbnail}" alt="">
+                                <img src="${item.photo}" alt="">
                             </a>
                             <div class="caption">
                                 <strong><a href="https://${item.url}">${item.name}</a>
@@ -284,7 +284,7 @@
                   <div class="card">
                         <div class="info">
                             <a href="https://${item.url}" class="img h360">
-                                <img src="${item.thumbnail}" alt="">
+                                <img src="${item.photo}" alt="">
                             </a>
                             <div class="caption">
                                 <strong><a href="https://${item.url}">${item.name}</a>

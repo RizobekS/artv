@@ -16,7 +16,7 @@
                     <div class="card" >
                         <div class="info">
                             <a href="{% url 'general:artists_detail_page' artist.id %}" title="{{artist.name}}" class="img h360">
-                                <img width="300px" height="270px" src="{{artist.thumbnail.url}}" alt="{{artist.name}}" />
+                                <img width="300px" height="270px" src="{{artist.photo.url}}" alt="{{artist.name}}" />
                             </a>
                             <div class="caption">
                                 <strong><a href="{% url 'general:artists_detail_page' artist.id %}">{{artist.name}}</a>
