@@ -44,8 +44,9 @@ class WorksAdmin(TranslationAdmin, admin.ModelAdmin):
     list_display = ["name", "author", "uid_name", "status_ru", "pub_date"]
     search_fields = ('name', 'author__name', 'u_id',)
     inlines = (WorkPriceUpInline,)
-    fields = ('u_id', 'section', 'name', 'views', 'photo', 'add_watermark', 'author', 'second_author', 'type', 'genre',
-              'size', 'dimensions', 'year_of_creation', 'price', 'period', 'flow', 'show_in_service', 'signature',
+    fields = ('u_id', 'section', 'name', 'views', 'photo', 'add_watermark', 'author', 'owner_number_contract', 'type',
+              'genre', 'size', 'dimensions', 'year_of_creation', 'price', 'period', 'flow', 'show_in_service',
+              'signature',
               'description', 'age_restriction', 'country', 'regions', 'quantity', 'discount', 'shoppable', 'popular',
               'material', 'tags', 'price_up', 'seller', 'for_interier', 'status', 'starts_at', 'ends_at', 'slug')
     actions = [make_sold]
