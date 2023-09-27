@@ -1,6 +1,6 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
-from .models import AuthUsers, Authors, Socials, Craftmanship
+from .models import AuthUsers, Authors, Socials, Craftmanship, SecondAuthor
 
 
 class AuthUserAdmin(admin.ModelAdmin):
@@ -35,6 +35,10 @@ class AuthorAdmin(TranslationAdmin):
     pass
 
 
+class SecondAuthorAdmin(TranslationAdmin):
+    pass
+
+
 class SocialsAdmin(TranslationAdmin):
     pass
 
@@ -44,6 +48,7 @@ class CraftsmanshipAdmin(TranslationAdmin):
 
 
 admin.site.register(Authors, AuthorAdmin)
+admin.site.register(SecondAuthor, SecondAuthorAdmin)
 admin.site.register(Socials, SocialsAdmin)
 admin.site.register(AuthUsers, AuthUserAdmin)
 admin.site.register(Craftmanship, CraftsmanshipAdmin)

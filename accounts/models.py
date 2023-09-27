@@ -126,6 +126,43 @@ class Authors(models.Model):
         verbose_name_plural = _("Авторы")
 
 
+class SecondAuthor(models.Model):
+    name = models.CharField(_("Имя"), max_length=255)
+    photo = models.ImageField(_("Фото"), upload_to="authors/")
+    thumbnail = models.ImageField(_("Иконка генерируется автоматически"), upload_to="thumbnail/", blank=True, null=True)
+    craftmanship = models.ManyToManyField("Craftmanship", verbose_name=_("Вид деятельности"), related_name="second_authors")
+    flow = models.ForeignKey(Flow, verbose_name=_(
+        "Течение"), related_name="second_author_flow", null=True, on_delete=models.SET_NULL, blank=True)
+    occupation1 = models.ForeignKey(Categorization, verbose_name=_(
+        "Занятие1"), related_name="second_author_occupation", null=True, blank=True, on_delete=models.CASCADE)
+    contract_number = models.CharField(
+        _("Номер договора"), blank=True, null=True, max_length=255
+    )
+    socials = models.ManyToManyField(
+        "Socials", verbose_name=_("Соц. сети"), related_name="second_author"
+    )
+    occupation = models.CharField(_("Занятие"), max_length=255)
+    bio = RichTextUploadingField(_("Био"))
+    dob = models.IntegerField(_("Дата рождения"), null=True)
+    dod = models.IntegerField(_("Дата смерти"), null=True, blank=True)
+    is_organisation = models.BooleanField(_('Организация'), default=False)
+
+    def compress_image(self, uploaded_image): image_compress(self, uploaded_image, add_watermark=False)
+
+    def save(self, *args, **kwargs):
+        if not self.photo:
+            self.thumbnail = None
+        else:
+            self.compress_image(self.photo)
+        super().save()
+
+    def __str__(self) -> str: return self.name
+
+    class Meta:
+        verbose_name = _("Другой Автор")
+        verbose_name_plural = _("Другие Авторы")
+
+
 class Craftmanship(models.Model):
     name = models.CharField(_("Имя"), max_length=255)
     category = models.ForeignKey(Categorization, verbose_name=_(

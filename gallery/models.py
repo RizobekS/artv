@@ -6,7 +6,7 @@ from ckeditor_uploader.fields import RichTextUploadingField
 
 from general.models import Categories, Country, Sections, Tags, WorkType, Flow, \
     Seller, Period, Categorization, Region, Services, School, Type, Dimensions
-from accounts.models import AuthUsers, Authors
+from accounts.models import AuthUsers, Authors, SecondAuthor
 from utils.image_utils import image_compress, add_photo_logo, rotate_image
 from utils.slugger import slugify
 from .manager import WorksManager
@@ -59,6 +59,13 @@ class Works(models.Model):
         verbose_name=_("Автор"),
         related_name="work_author",
         on_delete=models.DO_NOTHING,
+    )
+    second_author = models.ForeignKey(
+        SecondAuthor,
+        verbose_name=_("Другой Автор"),
+        related_name="work_second_author",
+        on_delete=models.DO_NOTHING,
+        null=True, blank=True
     )
     genre = models.ManyToManyField(
         Categories, verbose_name=_("жанр"), related_name="art_works"
@@ -140,6 +147,10 @@ class Works(models.Model):
         return self.u_id
 
     def make_uid(self):
+        if self.u_id is None and self.second_author.contract_number:
+            self.u_id = "{}/{}/{}".format(
+                self.second_author.contract_number, str(self.second_author.id), str(self.id)
+            )
         if self.u_id is None:
             self.u_id = "{}/{}/{}".format(
                 self.author.contract_number, str(self.author.id), str(self.id)
