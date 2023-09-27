@@ -60,7 +60,7 @@ class Works(models.Model):
         related_name="work_author",
         on_delete=models.DO_NOTHING,
     )
-    owner_number_contract = models.IntegerField(verbose_name=_("Номер контракта с владельцем"), null=True, blank=True)
+    owner_number_contract = models.IntegerField(verbose_name=_("Номер договора с владельцем"), null=True, blank=True)
     genre = models.ManyToManyField(
         Categories, verbose_name=_("жанр"), related_name="art_works"
     )
