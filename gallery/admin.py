@@ -74,7 +74,7 @@ class CartAdmin(admin.ModelAdmin):
 
 class SizeArtsAdmin(admin.ModelAdmin):
     list_display = ["name"]
-    fields = ("name", "width", "height")
+    fields = ("name", "height", "width")
 
 
 class CartItemAdmin(admin.ModelAdmin):
