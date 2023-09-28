@@ -76,7 +76,8 @@ class Works(models.Model):
                              on_delete=models.DO_NOTHING)
     show_in_service = models.ManyToManyField(Services, verbose_name=_('сервисы'), related_name="artworks", blank=True)
 
-    size = models.CharField(_("Размер"), max_length=255, blank=True, null=True)
+    sizes = models.ForeignKey("SizeArts", verbose_name=_("Размер картины см"), related_name="size_arts",
+                              blank=True, null=True, on_delete=models.CASCADE)
     dimensions = models.ForeignKey(Dimensions,
                                    verbose_name=_("Система Исчесления"),
                                    related_name="work_dimension",
@@ -175,6 +176,19 @@ class Works(models.Model):
     class Meta:
         verbose_name = _("Изобразительное исскуство")
         verbose_name_plural = _("Изобразительное исскуства")
+
+
+class SizeArts(models.Model):
+    class Meta:
+        verbose_name = _('Размер картины')
+        verbose_name_plural = _('Размеры картин')
+
+    name = models.CharField(max_length=255, null=True)
+    width = models.IntegerField(_("Ширина см"), null=True)
+    height = models.IntegerField(_("Высота см"), null=True)
+
+    def __str__(self):
+        return self.name
 
 
 class AppliedArt(models.Model):

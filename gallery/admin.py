@@ -16,6 +16,7 @@ from .models import (
     Views,
     WorkPriceUp,
     Works,
+    SizeArts,
 )
 
 
@@ -45,7 +46,7 @@ class WorksAdmin(TranslationAdmin, admin.ModelAdmin):
     search_fields = ('name', 'author__name', 'u_id',)
     inlines = (WorkPriceUpInline,)
     fields = ('u_id', 'section', 'name', 'views', 'photo', 'add_watermark', 'author', 'owner_number_contract', 'type',
-              'genre', 'size', 'dimensions', 'year_of_creation', 'price', 'period', 'flow', 'show_in_service',
+              'genre', 'sizes', 'dimensions', 'year_of_creation', 'price', 'period', 'flow', 'show_in_service',
               'signature',
               'description', 'age_restriction', 'country', 'regions', 'quantity', 'discount', 'shoppable', 'popular',
               'material', 'tags', 'price_up', 'seller', 'for_interier', 'status', 'starts_at', 'ends_at', 'slug')
@@ -69,6 +70,11 @@ class AppliedArtAdmin(TranslationAdmin, admin.ModelAdmin):
 
 class CartAdmin(admin.ModelAdmin):
     pass
+
+
+class SizeArtsAdmin(admin.ModelAdmin):
+    list_display = ["name"]
+    fields = ("name", "width", "height")
 
 
 class CartItemAdmin(admin.ModelAdmin):
@@ -106,6 +112,7 @@ class ViewAdmin(admin.ModelAdmin):
 admin.site.register(Cart, CartAdmin)
 admin.site.register(Views, ViewAdmin)
 admin.site.register(Works, WorksAdmin)
+admin.site.register(SizeArts, SizeArtsAdmin)
 admin.site.register(Order, OrderAdmin)
 admin.site.register(Likes, LikesAdmin)
 admin.site.register(Article, ArticleAdmin)
