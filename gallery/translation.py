@@ -4,7 +4,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 class WorksOptions(TranslationOptions):
-    fields = ['name', 'material', 'status']
+    fields = ['name', 'material', 'status', 'signature']
     fallback_values = _('-- sorry, no translation provided --')
 
 
