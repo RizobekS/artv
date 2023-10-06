@@ -12,8 +12,6 @@ admin.site.site_header = 'Art Vernissage'
 admin.site.site_title = 'ArtV'
 
 urlpatterns = [
-                  path('jet/', include('jet.urls', 'jet')),
-                  path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
                   path("set_language/<str:user_language>/",
                        set_language_from_url, name="set_language_from_url"),
                   path('admin/', admin.site.urls),
