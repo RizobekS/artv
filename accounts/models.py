@@ -107,7 +107,9 @@ class Authors(models.Model):
     occupation = models.CharField(_("Занятие"), max_length=255)
     bio = RichTextUploadingField(_("Био"))
     dob = models.IntegerField(_("Дата рождения"), null=True)
+    date_birthday = models.DateField(_("Дата рождения"), null=True)
     dod = models.IntegerField(_("Дата смерти"), null=True, blank=True)
+    date_died = models.DateField(_("Дата смерти"), null=True, blank=True)
     is_organisation = models.BooleanField(_('Организация'), default=False)
 
     def compress_image(self, uploaded_image): image_compress(self, uploaded_image, add_watermark=False)
