@@ -32,7 +32,23 @@ class AuthUserAdmin(admin.ModelAdmin):
 
 
 class AuthorAdmin(TranslationAdmin):
-    pass
+    list_display = ('name', 'occupation', 'is_organisation', 'get_year_birthday', 'get_year_died')
+
+    def get_year_birthday(self, obj):
+        if obj.date_birthday:
+            return obj.date_birthday.year
+        else:
+            return None
+
+    get_year_birthday.short_description = 'Год рождения'
+
+    def get_year_died(self, obj):
+        if obj.date_died:
+            return obj.date_died.year
+        else:
+            return None
+
+    get_year_died.short_description = 'Год смерти'
 
 
 class SocialsAdmin(TranslationAdmin):
