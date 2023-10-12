@@ -10,6 +10,7 @@ from .models import (
     Seller,
     Sections,
     Services,
+    PublishHouseArt,
     Tags,
     TeamMember,
     TeamMemberExtra,
@@ -25,7 +26,7 @@ from .models import (
     AocvMember,
     AuctionRules,
     Auction,
-    Lots
+    Lots, PublishHouseWork
 )
 
 
@@ -71,6 +72,14 @@ class AboutOptions(TranslationOptions):
 
 class ServicesOptions(TranslationOptions):
     fields = ['name', 'content']
+
+
+class PublishHouseArtOptions(TranslationOptions):
+    fields = ['title', 'description']
+
+
+class PublishHouseWorkOptions(TranslationOptions):
+    fields = ['description']
 
 
 class CategorizationOptions(TranslationOptions):
@@ -152,6 +161,8 @@ translator.register(Dimensions, DimensionsOptions)
 translator.register(Seller, SellerOptions)
 translator.register(Sections, SectionOptions)
 translator.register(Services, ServicesOptions)
+translator.register(PublishHouseArt, PublishHouseArtOptions)
+translator.register(PublishHouseWork, PublishHouseWorkOptions)
 translator.register(Tags, TagsOptions)
 translator.register(TeamMember, TeamMemberOptions)
 translator.register(Type, TypeOptions)

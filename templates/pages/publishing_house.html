@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+{% trans "Service Detail" %}
+{% endblock title %}
+
+{% block main %}
+<div class="wrapper">
+    <div class="">
+        {% include 'header.html' with cart_items=cart_items country_name=country_name %}
+        <main class="content">
+            <div class="center gallery-page">
+                <div class="header-title bordered">
+                    <h1>{{ pub_house.title }}</h1>
+                </div>
+                <div class="hot">
+                    {% if pub_house.images %}
+                    <a class="img fancybox">
+                        <img src="{{ pub_house.images.url }}" alt="{{ pub_house.title }}"/>
+                    </a>
+                    {% endif %}
+                    <div class="caption">
+                        <p>{{ pub_house.description|safe }}</p>
+                    </div>
+                </div>
+                <h2>{% trans "Наши работы" %}</h2>
+                <div class="row">
+                    {% for pub_house_image in pub_house_images %}
+                    <div class="col-12 col-sm-6 col-md-4 mb-5">
+                        <div class="card mb-3 h-100" data-aos="fade-up">
+                            <div class="row g-0">
+                                <div class="bg-image hover-overlay rounded-9">
+                                    <img src="{{ pub_house_image.images.url }}"
+                                         class=" img-fluid lazy"
+                                         alt="" height="150px">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        {{ pub_house_image.description|default_if_none:""|safe }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+    </div>
+
+    </main>
+</div>
+
+{% include 'footer.html' %}
+
+</div>
+{% endblock main %}

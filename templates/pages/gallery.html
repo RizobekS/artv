@@ -1,4 +1,4 @@
-<div class="container" id="mygallery">
+<div class="" id="mygallery">
     {% for rand in rand_works %}
         <a href="{% url 'general:catalog_detail_page' rand.slug %}" title="{{ rand.name }}">
             <img loading="lazy" width="240" height="300" src="{{ rand.photo.url }}" alt="{{ rand.name }}"/>

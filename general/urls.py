@@ -38,6 +38,7 @@ urlpatterns = [
          views.ServicesDetail.as_view(),
          name="services_detail_page"),
     path('contact/', views.contact_page, name="contact_page"),
+    path('publishing-house/', views.PublishHouse.as_view(), name="publishing_house"),
 
     path('cart/', views.cart_page, name="cart_page"),
     path('order/', views.order_page, name="order_page"),

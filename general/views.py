@@ -29,7 +29,7 @@ from gallery.models import Article, Auctions, Works, Gallery, CartItem, CartItem
     StatusChoices, AppliedArt, Views
 from .models import Country, Categories, About, Flow, Region, Services, Sections, WorkType, Sell, TeamMember, \
     ServicesImage, ExpertMember, Partner, Aac, AacMember, Aocv, AocvMember, TeamMemberExtra, AuctionRules, Auction, \
-    Lots
+    Lots, PublishHouseArt, PublishHouseWork
 
 
 def error_404_view(request, exception):
@@ -1009,6 +1009,22 @@ class ServicesDetail(TemplateView):
             **common_context,
             "slider_images": slider_images,
             "service": service,
+        }
+        return context
+
+
+class PublishHouse(TemplateView):
+    template_name = "pages/publishing_house.html"
+
+    def get_context_data(self, **kwargs):
+        pub_house = get_object_or_404(PublishHouseArt)
+        pub_house_images = PublishHouseWork.objects.all()
+
+        common_context = get_common_context(self.request)
+        context = {
+            **common_context,
+            "pub_house": pub_house,
+            "pub_house_images": pub_house_images,
         }
         return context
 

@@ -11,6 +11,8 @@ from .models import (
 	Sell,
 	Seller,
 	Services,
+	PublishHouseArt,
+	PublishHouseWork,
 	Sections,
 	ServicesImage,
 	Tags,
@@ -122,6 +124,14 @@ class ServicesImageAdmin(admin.StackedInline):
 	model = ServicesImage
 
 
+class PublishHouseArtAdmin(TranslationAdmin):
+	list_display = ['title', 'description', 'images']
+
+
+class PublishHouseWorkAdmin(TranslationAdmin):
+	list_display = ['description', 'images']
+
+
 class TeamMembersExtraAdmin(TranslationAdmin):
 	pass
 
@@ -176,3 +186,5 @@ admin.site.register(TeamMemberExtra, TeamMembersExtraAdmin)
 admin.site.register(AuctionRules, AuctionRulesAdmin)
 admin.site.register(Auction, AuctionAdmin)
 admin.site.register(Lots, LotsAdmin)
+admin.site.register(PublishHouseArt, PublishHouseArtAdmin)
+admin.site.register(PublishHouseWork, PublishHouseWorkAdmin)

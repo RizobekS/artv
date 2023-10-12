@@ -230,6 +230,33 @@ class ServicesImage(models.Model):
         verbose_name_plural = _("Картинки в сервисах")
 
 
+class PublishHouseArt(models.Model):
+
+    class Meta:
+        verbose_name = _("Издательский дом Art Vernissage")
+        verbose_name_plural = _("Издательский дом Art Vernissage")
+
+    title = models.CharField(null=True, max_length=255)
+    images = models.ImageField(blank=True, null=True, upload_to='services/PublishHouseArt')
+    description = RichTextUploadingField(_('Описание'))
+
+    def __str__(self):
+        return self.title
+
+
+class PublishHouseWork(models.Model):
+
+    class Meta:
+        verbose_name = _("Картинка издательского дома")
+        verbose_name_plural = _("Картинки издательского дома")
+
+    images = models.ImageField(blank=True, null=True, upload_to='services/PublishHouseArt')
+    description = RichTextUploadingField(_('Описание'))
+
+    def __str__(self):
+        return self.description
+
+
 class Tags(models.Model):
     name = models.CharField(_("Название"), max_length=100)
 
