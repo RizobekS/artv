@@ -1604,6 +1604,9 @@ msgstr "服務詳情"
 msgid "Наши работы"
 msgstr "我们的工作"
 
+msgid "Издательский дом"
+msgstr "出版社"
+
 #: .\templates\pages\services.html:5
 msgid "Services"
 msgstr "服務"

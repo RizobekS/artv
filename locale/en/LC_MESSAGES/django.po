@@ -1704,6 +1704,9 @@ msgstr "Sale price:"
 msgid "Количество лотов:"
 msgstr "Number of lots:"
 
+msgid "Издательский дом"
+msgstr "Publishing house"
+
 #~ msgid "Просмотры"
 #~ msgstr "Views"
 

@@ -1707,6 +1707,9 @@ msgstr "Boshlang'ich narxi:"
 msgid "Цена продажи:"
 msgstr "Sotilgan narxi:"
 
+msgid "Издательский дом"
+msgstr "Nashriyot uyi"
+
 #~ msgid "Просмотры"
 #~ msgstr "Kor'ishlar soni"
 
