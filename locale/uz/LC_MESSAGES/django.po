@@ -1674,7 +1674,7 @@ msgstr "Xizmat tasnifi"
 
 #: .\templates\pages\service-detail.html:27
 msgid "Наши работы"
-msgstr "Bizning asarlar"
+msgstr "Bizning ishlar"
 
 #: .\templates\pages\services.html:5
 msgid "Services"
