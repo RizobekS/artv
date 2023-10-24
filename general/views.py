@@ -1018,7 +1018,7 @@ class PublishHouse(TemplateView):
 
     def get_context_data(self, **kwargs):
         pub_house = get_object_or_404(PublishHouseArt)
-        pub_house_images = PublishHouseWork.objects.all()
+        pub_house_images = PublishHouseWork.objects.order_by('-pk')
 
         common_context = get_common_context(self.request)
         context = {
