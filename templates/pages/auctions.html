@@ -42,9 +42,9 @@ rel="stylesheet"
             {% for auct in auction %}
                     <div class="card mb-3 mt-3" data-aos="fade-up">
                         <div class="row g-0">
-                            <div class="card_img ripple col-md-4">
+                            <div class="ripple col-md-4">
                                 <a href="{% url 'general:auctions_detail_page' auct.slug %}" class="">
-                                    <img src="{{ auct.photo.url }}" class="h-100 card_news_img img-fluid rounded-start"
+                                    <img src="{{ auct.photo.url }}" class="h-100 card_news_img img-fluid rounded"
                                          alt="news">
 
                                 </a>
