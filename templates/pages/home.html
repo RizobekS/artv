@@ -169,7 +169,7 @@
                                         <strong><a href="{% url 'general:blog_detail_page' article.slug %}">{{ article.title }}</a></strong>
                                         <span>{{ article.pub_date|date }}</span>
                                     </div>
-                                    {{ article.description }}
+                                    {{ article.description|safe|truncatechars:150 }}
                                 </div>
                             </div>
                         {% endfor %}
