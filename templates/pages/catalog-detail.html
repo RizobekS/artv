@@ -45,7 +45,7 @@
                                     {% endif %}
                                     <ul>
                                         {% if work.dimensions %}
-                                            <li>{% trans 'Размер' %}: {{ work.sizes.height }}x{{ work.sizes.width }} {{ work.dimensions }}</li>
+                                            <li>{% trans 'Размер (длина/ширина)' %}: {{ work.sizes.height }}x{{ work.sizes.width }} {{ work.dimensions }}</li>
                                         {% endif %}
                                         {% if work.signature %}
                                             <li>{% trans 'Подпись (положение подписи)' %}: {{ work.signature }}</li>

@@ -302,8 +302,8 @@ msgstr "服務"
 #: .\gallery\models.py:79 .\gallery\models.py:211
 #: .\templates\pages\auction-detail.html:37
 #: .\templates\pages\catalog-detail.html:48 .\templates\pages\sell.html:47
-msgid "Размер"
-msgstr "大小"
+msgid "Размер (длина/ширина)"
+msgstr "尺寸（長/寬）"
 
 #: .\gallery\models.py:81 .\gallery\models.py:213
 msgid "Система Исчесления"

@@ -302,8 +302,8 @@ msgstr "servislar"
 #: .\gallery\models.py:79 .\gallery\models.py:210
 #: .\templates\pages\auction-detail.html:37
 #: .\templates\pages\catalog-detail.html:48 .\templates\pages\sell.html:47
-msgid "Размер"
-msgstr "Hajmi"
+msgid "Размер (длина/ширина)"
+msgstr "Hajmi (uzunlik/kenglik)"
 
 #: .\gallery\models.py:81 .\gallery\models.py:212
 msgid "Система Исчесления"
