@@ -27,9 +27,10 @@ from utils import currency_change_utils, age_restriction_utils
 from accounts.forms import UpdateCheckoutProfileForm, UpdateProfileForm
 from gallery.models import Article, Auctions, Works, Gallery, CartItem, CartItemChoices, Order, Cart, \
     StatusChoices, AppliedArt, Views
-from .models import Country, Categories, About, Flow, Region, Services, Sections, WorkType, Sell, TeamMember, \
+from .models import Country, Categories, About, Region, Services, WorkType, Sell, TeamMember, \
     ServicesImage, ExpertMember, Partner, Aac, AacMember, Aocv, AocvMember, TeamMemberExtra, AuctionRules, Auction, \
     Lots, PublishHouseArt, PublishHouseWork
+from .common.common_data import Flow, Sections
 
 
 def error_404_view(request, exception):
@@ -1693,7 +1694,7 @@ class AppliedArtTypesView(TemplateView):
         genres = WorkType.objects.all()
 
         context = {
-            "genres": genres,
+            "genres": genres[:9],
             **common_context
         }
         return context
